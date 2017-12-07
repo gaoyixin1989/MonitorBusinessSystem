@@ -1,0 +1,24 @@
+﻿#tabContainer{ z-index:1000;}
+#tabContainer a.on
+{
+    color:Black;
+    background-image: url(images/map/tab.png);
+}
+#tabContainer a
+{
+    color:White;
+    cursor:pointer;
+    background-image: url(images/map/tabSelect.png);
+    width: 23px;
+    height: 98px;
+    font-weight:bold;
+    line-height:1.4;
+}
+
+    #DivContainer
+    {
+        background-image: url(images/map/tabBG.png);
+        
+        }
+        #con2{ padding-left:3px;}
+        .astreeview-tree, .drag-container{ padding-left:3px;}

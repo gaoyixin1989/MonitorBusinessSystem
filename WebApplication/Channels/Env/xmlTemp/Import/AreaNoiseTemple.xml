@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--区域环境噪声导入配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="import">
+  <Point pointtable="T_ENV_P_NOISE_AREA" itemtable="T_ENV_P_NOISE_AREA_ITEM" startrow="2" endrow="240">
+    <PointInfo>
+      <Column tablecolumn="POINT_CODE" column="5">监测点代码</Column>
+      <Column tablecolumn="POINT_NAME" column="4" primary="true">监测点名称</Column>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_NOISE_AREA</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>POINT_ID</FillTablePointColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_NOISE_AREA_ITEM</FillItemTableName>
+      <!--数据填报表序列号名称【必须】-->
+      <FillTableSerialNum>noise_area_fill_id</FillTableSerialNum>
+      <!--数据填报监测项目表序列号名称【必须】-->
+      <FillItemTableSerialNum>noise_area_fill_item_id</FillItemTableSerialNum>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="1">年</FillData>
+      <FillData tablecolumn="MONTH" column="9">月</FillData>
+      <FillData tablecolumn="BEGIN_DAY" column="10">日</FillData>
+      <FillData tablecolumn="BEGIN_HOUR" column="11">小时</FillData>
+	  <FillData tablecolumn="BEGIN_MINUTE" column="12">分钟</FillData>
+    </FillInfo>
+    <ItemInfo tablecolumn="ITEM_VALUE">
+      <Item column="13">LEQ</Item>
+      <Item column="14">L10</Item>
+      <Item column="15">L50</Item>
+      <Item column="16">L90</Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

@@ -1,0 +1,211 @@
+﻿.data
+{
+   
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #EEEEEE;
+}
+.data .video
+{
+}
+.video_div
+{
+    margin: auto; border: 2px solid #69AC45; width: 760px; height: 460px;
+    }
+.data .videoControl .content
+{
+    padding: 3px;
+}
+.data .videoControl .title
+{
+    padding: 6px 0 3px 14px;
+    border-bottom: 1px solid #69AC45;
+    
+    font-size: 13px;
+    font-weight: bold;
+    height:15px;
+}
+.data .videoDetail
+{
+    width:164px;
+    float: right;
+}
+.data .videoControl
+{
+    margin-top: 5px;
+    border: 1px solid #69AC45;
+}
+.videoControl .move span
+{
+    cursor: pointer;
+}
+
+.videoControl .ccc
+{
+    font-size: 13px;
+}
+.videoControl .ccc span
+{
+    margin: 3px;
+    cursor: pointer;
+}
+.videoControl .ccc .title
+{
+    padding: 6px 0 3px 14px;
+    border-top:1px solid #69AC45;
+    border-bottom: 1px solid #69AC45;
+    color: #005DAB;
+    font-size: 13px;
+    font-weight: bold;
+    height:15px;
+}
+.data .spanVideo
+{
+    background-image: url(images/VideoPlay/31_03.gif);
+    width: 70px;
+    height: 23px;
+    display: inline-block;
+}
+.data .spanXerox
+{
+    background-image: url(images/VideoPlay/31_05.gif);
+    width: 70px;
+    height: 23px;
+    display: inline-block;
+}
+.data .spanPaparazzi
+{
+    background-image: url(images/VideoPlay/31_04.gif);
+    width: 70px;
+    height: 23px;
+    display: inline-block;
+}
+.data .spanPlayback
+{
+    background-image: url(images/VideoPlay/31_10.gif);
+    width: 70px;
+    height: 23px;
+    display: inline-block;
+}
+.data .spanTalkback
+{
+    background-image: url(images/VideoPlay/31_13.gif);
+    width: 70px;
+    height: 23px;
+    display: inline-block;
+}
+.data .spanSurveillance
+{
+    background-image: url(images/VideoPlay/31_14.gif);
+    width: 70px;
+    height: 23px;
+    display: inline-block;
+}
+
+.data .spanAdd
+{
+    background-image: url(images/VideoPlay/18.gif);
+    width: 20px;
+    height: 19px;
+    display: inline-block;
+    margin: 3px;
+    cursor: pointer;
+}
+.data .spanDesc
+{
+    position: absolute;
+    font-size: 13px;
+    margin-top: 4px;
+}
+.data .spanMinus
+{
+    background-image: url(images/VideoPlay/19.gif);
+    width: 20px;
+    height: 19px;
+    display: inline-block;
+    margin: 3px 3px 3px 33px;
+    cursor: pointer;
+}
+.data .move
+{
+    background-image: url(images/VideoPlay/40.png);
+    width: 83px;
+    height: 83px;
+    display: inline-block;
+}
+.data .move span
+{
+    position: absolute;
+}
+.data .move .rest
+{
+    background-image: url(images/VideoPlay/22.png);
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.data .move .top
+{
+    background-image: url(images/VideoPlay/39_03.png);
+    width: 22px;
+    height: 14px;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 12px;
+}
+.data .move .left
+{
+    background-image: url(images/VideoPlay/39_07.png);
+    width: 14px;
+    height: 22px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.data .move .right
+{
+    background-image: url(images/VideoPlay/39_10.png);
+    width: 14px;
+    height: 22px;
+    display: inline-block;
+    margin-left: 59px;
+    margin-top: 30px;
+}
+.data .move .bottom
+{
+    background-image: url(images/VideoPlay/39_14.png);
+    width: 22px;
+    height: 14px;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 57px;
+}
+
+.ddl 
+{
+ font-size:12px;
+ color:#0052a4;		
+	}
+	
+.data .spanPreset
+{
+    background-image: url(images/VideoPlay/31_15.gif);
+    width: 70px;
+    height: 18px;
+    display: inline-block;
+    margin: 3px 3px 3px 33px;
+    cursor: pointer;
+    color:#005DAB;
+    text-align:center;
+    padding-top:5px;
+}
+
+.playimg
+{
+    width: 23px;
+    height:25px;
+    margin-bottom: 5px;
+    cursor:hand;
+}

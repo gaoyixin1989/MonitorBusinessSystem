@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* 公用 */
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td { margin: 0; padding: 0; }
+img { border: 0 none; vertical-align: top; }
+ul, li { list-style-type: none; }
+h1, h2, h3, h4, h5, h6 { font-size: 14px; }
+body, input, select, button, textarea { font-size: 12px; font-family: "微软雅黑", Arial, Helvetica, sans-serif;  }
+button { cursor: pointer; }
+i, em, cite { font-style: normal; }
+body { background: #fff; color:#333; line-height: 1.2; }
+
+/**/
+a, a:link { color: #333; text-decoration: none; }
+a:visited { }
+a:active, a:hover { text-decoration: none; color:#C30; }
+a:focus { outline: none; }
+.huise a:link,.huise a:visited{ color:#666;}
+.huise a:hover{ color: #C00}
+.more { float: right; }
+.more a { font-weight: normal; font-size: 12px; }
+
+
+/*框架*/
+.fl{ float:left; overflow:hidden; width:auto; display:inline;}
+.fr{ float:right; overflow:hidden;  width:auto;display:inline;}
+.fm{ float:left; overflow:hidden;  width:auto;display:inline;}
+
+/*追加*/
+html,body{height:100%;}
+body{background:url(../images/img/login2013_bg.jpg)  bottom repeat-x  #4696bc; }
+
+
+/*padding与margin*/
+.mgl42{ margin-left:42px;}
+.mgl0{ margin-left:10px;}
+.pt8{ padding-top:8px;}
+.ptm{ padding-bottom:15px; padding-top:5px;}
+.ptrbl{ padding:8px 10px;}
+
+/*header*/
+.header{ background:url(../images/img/login2013_headerbg.png) top repeat-x; }
+.logo{ background: url(../images/img/login2013_logo.png) no-repeat; width:325px; margin:0 auto; height:123px; overflow:hidden; text-indent:-999em;}
+
+/*login*/
+.login{ background:url(../images/img/login2013_maxbg.jpg) no-repeat  bottom ; height:100%; position: relative;}
+.login_min{ background:url(../images/img/login2013_minbg.png) no-repeat; height:230px; width:440px; overflow:hidden; position:absolute; top:50%; left:50%; margin-top:-115px; margin-left:-220px;}
+.login_min ul{ margin:0 auto; width:290px; padding-top:55px; font-size:14px;}
+.login_min ul li{ margin:15px 0;}
+.login_min .input2013{ overflow:hidden;  height:28px; line-height:28px; width:220px; padding:0 4px; font-weight:bold;}
+.register, .reset{ background:url(../images/img/login2013_button.png) no-repeat ; height:40px; display:inline-block; width:97px; border:none; text-indent:-999em; outline:none; overflow:hidden;}
+.register:hover{ background-position:0 -40px;}
+.reset{ background-position:0 -82px;}
+.reset:hover{ background-position:0 -122px;}

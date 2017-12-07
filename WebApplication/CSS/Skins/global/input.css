@@ -1,0 +1,69 @@
+﻿.common .save
+{
+    padding-left: 20px;
+    padding-right:7px;
+    cursor: pointer;
+    height: 21px;
+    margin-left: 5px;
+    margin-top: 3px;
+    background-image: url(images/grid/save.gif);
+}
+.common .return
+{
+    width: 65px;
+    padding-left: 13px;
+    padding-right: 3px;
+    cursor: pointer;
+    height: 21px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.common .return
+{
+    background-image: url(images/grid/return.gif);
+}
+.common .save:hover, .common .return:hover
+{
+    background-color: #F1F1F1;
+}
+
+.inputTool
+{
+    margin: 5px;
+}
+
+.input .sets
+{
+    padding: 4px 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+ 
+
+.metaDataTitle
+{
+    margin-top: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.6;
+    padding-left: 10px;
+}
+
+
+
+
+
+.input .combo input
+{
+    border: 0;
+}
+.content
+{
+    padding: 3px;
+}
+
+
+.validateBorder
+{
+     border:1px solid red;
+}

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--规划断面导入配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="import">
+  <Point pointtable="T_ENV_P_RIVER_PLAN" verticaltable="T_ENV_P_RIVER_PLAN_V" itemtable="T_ENV_P_RIVER_PLAN_V_ITEM">
+    <PointInfo>
+                <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">4</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="1"  column="6">花园口</SubPointName> 
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+                <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">3</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="2"  column="6">巩义七里铺</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_RIVER_PLAN</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>SECTION_ID</FillTablePointColumnName>
+      <!--数据填报表对应的垂线字段名称【非必须】-->
+      <FillTableVerticalColumnName>POINT_ID</FillTableVerticalColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_RIVER_PLAN_ITEM</FillItemTableName>
+      <!--数据填报表序列号名称【必须】-->
+      <FillTableSerialNum>river_plan_fill_id</FillTableSerialNum>
+      <!--数据填报监测项目表序列号名称【必须】-->
+      <FillItemTableSerialNum>river_plan_fill_item_id</FillItemTableSerialNum>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="0">年</FillData>
+      <FillData tablecolumn="MONTH" column="1">月</FillData>
+      <FillData tablecolumn="DAY" column="8">采样日期</FillData>
+      <FillData tablecolumn="KPF" column="9">水期代码</FillData>
+    </FillInfo>
+    <ItemInfo tablecolumn="ITEM_VALUE">
+      <Item column="10">PH值</Item>
+      <Item column="11">溶解氧</Item>
+      <Item column="12">高锰酸钾指数</Item>
+      <Item column="13">五日生化需氧量</Item>
+      <Item column="14">氨氮</Item>
+      <Item column="15">石油类</Item>
+      <Item column="16">挥发酚</Item>
+      <Item column="17">汞</Item>
+      <Item column="18">铅</Item>
+      <Item column="19">化学需氧量</Item>
+      <Item column="20">总磷</Item>
+      <Item column="21">铜</Item>
+      <Item column="22">锌</Item>
+      <Item column="23">氟化物</Item>
+      <Item column="24">硒</Item>
+      <Item column="25">砷</Item>
+      <Item column="26">镉</Item>
+      <Item column="27">六价铬</Item>
+      <Item column="28">总氰化物</Item>
+      <Item column="29">阴离子表面活性剂</Item>
+      <Item column="30">硫化物</Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

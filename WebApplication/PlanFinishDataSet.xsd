@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PlanFinishDataSet" targetNamespace="http://tempuri.org/PlanFinishDataSet.xsd" xmlns:mstns="http://tempuri.org/PlanFinishDataSet.xsd" xmlns="http://tempuri.org/PlanFinishDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PlanFinishDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="PlanFinishDataSet" msprop:Generator_UserDSName="PlanFinishDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Tb_PlanFinishList" msprop:Generator_TableClassName="Tb_PlanFinishListDataTable" msprop:Generator_TableVarName="tableTb_PlanFinishList" msprop:Generator_TablePropName="Tb_PlanFinishList" msprop:Generator_RowDeletingName="Tb_PlanFinishListRowDeleting" msprop:Generator_UserTableName="Tb_PlanFinishList" msprop:Generator_RowChangingName="Tb_PlanFinishListRowChanging" msprop:Generator_RowEvHandlerName="Tb_PlanFinishListRowChangeEventHandler" msprop:Generator_RowDeletedName="Tb_PlanFinishListRowDeleted" msprop:Generator_RowEvArgName="Tb_PlanFinishListRowChangeEvent" msprop:Generator_RowChangedName="Tb_PlanFinishListRowChanged" msprop:Generator_RowClassName="Tb_PlanFinishListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TASK_ID" msprop:Generator_ColumnVarNameInTable="columnTASK_ID" msprop:Generator_ColumnPropNameInRow="TASK_ID" msprop:Generator_ColumnPropNameInTable="TASK_IDColumn" msprop:Generator_UserColumnName="TASK_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="CONTRACT_ID" msprop:Generator_ColumnVarNameInTable="columnCONTRACT_ID" msprop:Generator_ColumnPropNameInRow="CONTRACT_ID" msprop:Generator_ColumnPropNameInTable="CONTRACT_IDColumn" msprop:Generator_UserColumnName="CONTRACT_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="CONTRACT_CODE" msprop:Generator_ColumnVarNameInTable="columnCONTRACT_CODE" msprop:Generator_ColumnPropNameInRow="CONTRACT_CODE" msprop:Generator_ColumnPropNameInTable="CONTRACT_CODEColumn" msprop:Generator_UserColumnName="CONTRACT_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="PLAN_ID" msprop:Generator_ColumnVarNameInTable="columnPLAN_ID" msprop:Generator_ColumnPropNameInRow="PLAN_ID" msprop:Generator_ColumnPropNameInTable="PLAN_IDColumn" msprop:Generator_UserColumnName="PLAN_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="PROJECT_NAME" msprop:Generator_ColumnVarNameInTable="columnPROJECT_NAME" msprop:Generator_ColumnPropNameInRow="PROJECT_NAME" msprop:Generator_ColumnPropNameInTable="PROJECT_NAMEColumn" msprop:Generator_UserColumnName="PROJECT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CONTRACT_TYPE" msprop:Generator_ColumnVarNameInTable="columnCONTRACT_TYPE" msprop:Generator_ColumnPropNameInRow="CONTRACT_TYPE" msprop:Generator_ColumnPropNameInTable="CONTRACT_TYPEColumn" msprop:Generator_UserColumnName="CONTRACT_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="CLIENT_COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCLIENT_COMPANY_ID" msprop:Generator_ColumnPropNameInRow="CLIENT_COMPANY_ID" msprop:Generator_ColumnPropNameInTable="CLIENT_COMPANY_IDColumn" msprop:Generator_UserColumnName="CLIENT_COMPANY_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="TESTED_COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnTESTED_COMPANY_ID" msprop:Generator_ColumnPropNameInRow="TESTED_COMPANY_ID" msprop:Generator_ColumnPropNameInTable="TESTED_COMPANY_IDColumn" msprop:Generator_UserColumnName="TESTED_COMPANY_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="ASKING_DATE" msprop:Generator_ColumnVarNameInTable="columnASKING_DATE" msprop:Generator_ColumnPropNameInRow="ASKING_DATE" msprop:Generator_ColumnPropNameInTable="ASKING_DATEColumn" msprop:Generator_UserColumnName="ASKING_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="FINISH_DATE" msprop:Generator_ColumnVarNameInTable="columnFINISH_DATE" msprop:Generator_ColumnPropNameInRow="FINISH_DATE" msprop:Generator_ColumnPropNameInTable="FINISH_DATEColumn" msprop:Generator_UserColumnName="FINISH_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="TASK_STATUS" msprop:Generator_ColumnVarNameInTable="columnTASK_STATUS" msprop:Generator_ColumnPropNameInRow="TASK_STATUS" msprop:Generator_ColumnPropNameInTable="TASK_STATUSColumn" msprop:Generator_UserColumnName="TASK_STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="REPORT_ID" msprop:Generator_ColumnVarNameInTable="columnREPORT_ID" msprop:Generator_ColumnPropNameInRow="REPORT_ID" msprop:Generator_ColumnPropNameInTable="REPORT_IDColumn" msprop:Generator_UserColumnName="REPORT_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="REPORT_CODE" msprop:Generator_ColumnVarNameInTable="columnREPORT_CODE" msprop:Generator_ColumnPropNameInRow="REPORT_CODE" msprop:Generator_ColumnPropNameInTable="REPORT_CODEColumn" msprop:Generator_UserColumnName="REPORT_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="IF_GET" msprop:Generator_ColumnVarNameInTable="columnIF_GET" msprop:Generator_ColumnPropNameInRow="IF_GET" msprop:Generator_ColumnPropNameInTable="IF_GETColumn" msprop:Generator_UserColumnName="IF_GET" type="xs:string" minOccurs="0" />
+              <xs:element name="BOOKTYPE" msprop:Generator_ColumnVarNameInTable="columnBOOKTYPE" msprop:Generator_ColumnPropNameInRow="BOOKTYPE" msprop:Generator_ColumnPropNameInTable="BOOKTYPEColumn" msprop:Generator_UserColumnName="BOOKTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="CTNUM" msprop:Generator_ColumnVarNameInTable="columnCTNUM" msprop:Generator_ColumnPropNameInRow="CTNUM" msprop:Generator_ColumnPropNameInTable="CTNUMColumn" msprop:Generator_UserColumnName="CTNUM" type="xs:string" minOccurs="0" />
+              <xs:element name="NUM" msprop:Generator_ColumnVarNameInTable="columnNUM" msprop:Generator_ColumnPropNameInRow="NUM" msprop:Generator_ColumnPropNameInTable="NUMColumn" msprop:Generator_UserColumnName="NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEMNUM" msprop:Generator_ColumnVarNameInTable="columnITEMNUM" msprop:Generator_ColumnPropNameInRow="ITEMNUM" msprop:Generator_ColumnPropNameInTable="ITEMNUMColumn" msprop:Generator_UserColumnName="ITEMNUM" type="xs:string" minOccurs="0" />
+              <xs:element name="ROWNUM" msprop:Generator_ColumnVarNameInTable="columnROWNUM" msprop:Generator_ColumnPropNameInRow="ROWNUM" msprop:Generator_ColumnPropNameInTable="ROWNUMColumn" msprop:Generator_UserColumnName="ROWNUM" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Tb_FinishChart" msprop:Generator_TableClassName="Tb_FinishChartDataTable" msprop:Generator_TableVarName="tableTb_FinishChart" msprop:Generator_TablePropName="Tb_FinishChart" msprop:Generator_RowDeletingName="Tb_FinishChartRowDeleting" msprop:Generator_UserTableName="Tb_FinishChart" msprop:Generator_RowChangingName="Tb_FinishChartRowChanging" msprop:Generator_RowEvHandlerName="Tb_FinishChartRowChangeEventHandler" msprop:Generator_RowDeletedName="Tb_FinishChartRowDeleted" msprop:Generator_RowEvArgName="Tb_FinishChartRowChangeEvent" msprop:Generator_RowChangedName="Tb_FinishChartRowChanged" msprop:Generator_RowClassName="Tb_FinishChartRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FinishSum" msprop:Generator_ColumnVarNameInTable="columnFinishSum" msprop:Generator_ColumnPropNameInRow="FinishSum" msprop:Generator_ColumnPropNameInTable="FinishSumColumn" msprop:Generator_UserColumnName="FinishSum" type="xs:string" minOccurs="0" />
+              <xs:element name="FinishType" msprop:Generator_ColumnVarNameInTable="columnFinishType" msprop:Generator_ColumnPropNameInRow="FinishType" msprop:Generator_ColumnPropNameInTable="FinishTypeColumn" msprop:Generator_UserColumnName="FinishType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

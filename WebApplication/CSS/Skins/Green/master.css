@@ -1,0 +1,20 @@
+﻿.navigator
+{
+    background-image: url(images/master/navbg.gif);
+    
+     border-color:#CCDFB3;
+}
+.navigator a
+{
+
+    color: #033D61;
+
+}
+.navigator a.currMenu
+{
+    background-image: url(images/master/threeMenuCurr.gif);
+    
+    border-color:
+    #77C412;
+
+}

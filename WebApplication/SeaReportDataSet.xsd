@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SeaReportDataSet" targetNamespace="http://tempuri.org/SeaReportDataSet.xsd" xmlns:mstns="http://tempuri.org/SeaReportDataSet.xsd" xmlns="http://tempuri.org/SeaReportDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SeaReportDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="SeaReportDataSet" msprop:Generator_UserDSName="SeaReportDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SeaTable" msprop:Generator_TableClassName="SeaTableDataTable" msprop:Generator_TableVarName="tableSeaTable" msprop:Generator_TablePropName="SeaTable" msprop:Generator_RowDeletingName="SeaTableRowDeleting" msprop:Generator_UserTableName="SeaTable" msprop:Generator_RowChangingName="SeaTableRowChanging" msprop:Generator_RowEvHandlerName="SeaTableRowChangeEventHandler" msprop:Generator_RowDeletedName="SeaTableRowDeleted" msprop:Generator_RowEvArgName="SeaTableRowChangeEvent" msprop:Generator_RowChangedName="SeaTableRowChanged" msprop:Generator_RowClassName="SeaTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="point_code" msprop:Generator_ColumnVarNameInTable="columnpoint_code" msprop:Generator_ColumnPropNameInRow="point_code" msprop:Generator_ColumnPropNameInTable="point_codeColumn" msprop:Generator_UserColumnName="point_code" type="xs:string" minOccurs="0" />
+              <xs:element name="station_code" msprop:Generator_ColumnVarNameInTable="columnstation_code" msprop:Generator_ColumnPropNameInRow="station_code" msprop:Generator_ColumnPropNameInTable="station_codeColumn" msprop:Generator_UserColumnName="station_code" type="xs:string" minOccurs="0" />
+              <xs:element name="sea_area" msprop:Generator_ColumnVarNameInTable="columnsea_area" msprop:Generator_ColumnPropNameInRow="sea_area" msprop:Generator_ColumnPropNameInTable="sea_areaColumn" msprop:Generator_UserColumnName="sea_area" type="xs:string" minOccurs="0" />
+              <xs:element name="pollution_sea_area" msprop:Generator_ColumnVarNameInTable="columnpollution_sea_area" msprop:Generator_ColumnPropNameInRow="pollution_sea_area" msprop:Generator_ColumnPropNameInTable="pollution_sea_areaColumn" msprop:Generator_UserColumnName="pollution_sea_area" type="xs:string" minOccurs="0" />
+              <xs:element name="sea_dept" msprop:Generator_ColumnVarNameInTable="columnsea_dept" msprop:Generator_ColumnPropNameInRow="sea_dept" msprop:Generator_ColumnPropNameInTable="sea_deptColumn" msprop:Generator_UserColumnName="sea_dept" type="xs:string" minOccurs="0" />
+              <xs:element name="year" msprop:Generator_ColumnVarNameInTable="columnyear" msprop:Generator_ColumnPropNameInRow="year" msprop:Generator_ColumnPropNameInTable="yearColumn" msprop:Generator_UserColumnName="year" type="xs:string" minOccurs="0" />
+              <xs:element name="month" msprop:Generator_ColumnVarNameInTable="columnmonth" msprop:Generator_ColumnPropNameInRow="month" msprop:Generator_ColumnPropNameInTable="monthColumn" msprop:Generator_UserColumnName="month" type="xs:string" minOccurs="0" />
+              <xs:element name="day" msprop:Generator_ColumnVarNameInTable="columnday" msprop:Generator_ColumnPropNameInRow="day" msprop:Generator_ColumnPropNameInTable="dayColumn" msprop:Generator_UserColumnName="day" type="xs:string" minOccurs="0" />
+              <xs:element name="spk" msprop:Generator_ColumnVarNameInTable="columnspk" msprop:Generator_ColumnPropNameInRow="spk" msprop:Generator_ColumnPropNameInTable="spkColumn" msprop:Generator_UserColumnName="spk" type="xs:string" minOccurs="0" />
+              <xs:element name="season" msprop:Generator_ColumnVarNameInTable="columnseason" msprop:Generator_ColumnPropNameInRow="season" msprop:Generator_ColumnPropNameInTable="seasonColumn" msprop:Generator_UserColumnName="season" type="xs:string" minOccurs="0" />
+              <xs:element name="cengci" msprop:Generator_ColumnVarNameInTable="columncengci" msprop:Generator_ColumnPropNameInRow="cengci" msprop:Generator_ColumnPropNameInTable="cengciColumn" msprop:Generator_UserColumnName="cengci" type="xs:string" minOccurs="0" />
+              <xs:element name="item_value" msprop:Generator_ColumnVarNameInTable="columnitem_value" msprop:Generator_ColumnPropNameInRow="item_value" msprop:Generator_ColumnPropNameInTable="item_valueColumn" msprop:Generator_UserColumnName="item_value" type="xs:string" minOccurs="0" />
+              <xs:element name="item_name" msprop:Generator_ColumnVarNameInTable="columnitem_name" msprop:Generator_ColumnPropNameInRow="item_name" msprop:Generator_ColumnPropNameInTable="item_nameColumn" msprop:Generator_UserColumnName="item_name" type="xs:string" minOccurs="0" />
+              <xs:element name="item_id" msprop:Generator_ColumnVarNameInTable="columnitem_id" msprop:Generator_ColumnPropNameInRow="item_id" msprop:Generator_ColumnPropNameInTable="item_idColumn" msprop:Generator_UserColumnName="item_id" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

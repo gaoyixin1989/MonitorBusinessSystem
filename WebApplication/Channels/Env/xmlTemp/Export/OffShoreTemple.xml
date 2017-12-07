@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--近岸直排导出配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="export">
+  <Point pointtable="T_ENV_P_OFFSHORE" itemtable="T_ENV_P_OFFSHORE_ITEM" startrow="1">
+    <PointInfo>
+      <Column tablecolumn="POINT_NAME" column="1">排污口名称</Column>
+      <Column tablecolumn="POINT_CODE"   column="5">排污口代码</Column>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_OFFSHORE</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>POINT_ID</FillTablePointColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_OFFSHORE_ITEM</FillItemTableName>
+    </Config>
+    <FillInfo>
+     
+      <FillData tablecolumn="YEAR" column="0">年</FillData>
+      <FillData tablecolumn="MONTH"  column="2">月</FillData>
+      <FillData tablecolumn="DAY" column="3">日</FillData>
+      <FillData tablecolumn="COMPANY_NAME"  column="4">企业名称</FillData>
+      <!--<FillData tablecolumn="POINT_CODE"   column="5">排污口代码</FillData>-->
+      <FillData tablecolumn="JUDGE"  column="6">是否达标</FillData> 
+      <FillData tablecolumn="OVERPROOF"  column="7">不达标项目</FillData>
+      <FillData tablecolumn="FLUX"  column="8">污水流量</FillData>
+      <FillData tablecolumn="LET_TIME"  column="9">污水排放时间</FillData>
+      <FillData tablecolumn="WATER_TOTAL"  column="10">污水量</FillData>
+      
+    </FillInfo>
+    <ItemInfo>
+
+      
+      <Item column="11" ItemName="化学需氧量"></Item>
+      <Item column="12" ItemName="五日生化需氧量"></Item>
+      <Item column="13" ItemName="悬浮物"></Item>
+      <Item column="14" ItemName="pH"></Item>
+      <Item column="15" ItemName="石油类"></Item>
+      <Item column="16" ItemName="挥发酚"></Item>
+      <Item column="17" ItemName="氟化物"></Item>
+      <Item column="18" ItemName="动植物油"></Item>
+      <Item column="19" ItemName="六价铬"></Item>
+      <Item column="20" ItemName="硫化物"></Item>
+      
+      <Item column="21" ItemName="氨氮"></Item>
+      <Item column="22" ItemName="总锌"></Item>
+      <Item column="23" ItemName="总硒"></Item>
+      <Item column="24" ItemName="总铜"></Item>
+      <Item column="25" ItemName="总砷"></Item>
+      <Item column="26" ItemName="总铅"></Item>
+      <Item column="27" ItemName="总铍"></Item>
+      <Item column="28" ItemName="总镍"></Item>
+      <Item column="29" ItemName="总锰"></Item>
+      <Item column="30" ItemName="总汞"></Item>
+      
+      <Item column="31" ItemName="总铬"></Item>
+      <Item column="32" ItemName="总镉"></Item>
+      <Item column="33" ItemName="总余氯"></Item>
+      <Item column="34" ItemName="总有机碳"></Item>
+      <Item column="35" ItemName="色度"></Item>
+      <Item column="36" ItemName="阴离子表面活性剂"></Item>
+      <Item column="37" ItemName="氰化物"></Item>
+      <Item column="38" ItemName="粪大肠菌群数"></Item>
+      <Item column="39" ItemName="苯"></Item>
+      <Item column="40" ItemName="甲苯"></Item>
+      
+      <Item column="41" ItemName="乙苯"></Item>
+      <Item column="42" ItemName="元素磷"></Item>
+      <Item column="43" ItemName="有机磷农药"></Item>
+      <Item column="44" ItemName="硝基苯类"></Item>
+      <Item column="45" ItemName="显影剂及氧化物总量"></Item>
+      <Item column="46" ItemName="五氯酚及五氯酚钠"></Item>
+      <Item column="47" ItemName="烷基汞"></Item>
+      <Item column="48" ItemName="四氯乙烯"></Item>
+      <Item column="49" ItemName="四氯化碳"></Item>
+      <Item column="50" ItemName="色度(稀释倍数)"></Item>
+      
+      <Item column="51" ItemName="三氯乙烯"></Item>
+      <Item column="52" ItemName="三氯甲烷"></Item>
+      <Item column="53" ItemName="马拉硫磷"></Item>
+      <Item column="54" ItemName="氯苯"></Item>
+      <Item column="55" ItemName="磷酸盐(以P计)"></Item>
+      <Item column="56" ItemName="邻-二氯苯"></Item>
+      <Item column="57" ItemName="邻-二甲苯"></Item>
+      <Item column="58" ItemName="邻苯二甲酸二辛脂"></Item>
+      <Item column="59" ItemName="邻苯二甲酸二丁脂"></Item>
+      <Item column="60" ItemName="乐果"></Item>
+      
+      <Item column="61" ItemName="可吸附有机卤化物(AOX)"></Item>
+      <Item column="62" ItemName="间-甲酚"></Item>
+      <Item column="63" ItemName="间-二甲苯"></Item>
+      <Item column="64" ItemName="甲醛"></Item>
+      <Item column="65" ItemName="甲基对硫磷"></Item>
+      <Item column="66" ItemName="对-硝基氯苯"></Item>
+      <Item column="67" ItemName="对硫磷"></Item>
+      <Item column="68" ItemName="对-二氯苯"></Item>
+      <Item column="69" ItemName="对-二甲苯"></Item>
+      <Item column="70" ItemName="彩色显影剂"></Item>
+      
+      <Item column="71" ItemName="丙烯腈"></Item>
+      <Item column="72" ItemName="苯酚"></Item>
+      <Item column="73" ItemName="苯并(a)芘"></Item>
+      <Item column="74" ItemName="苯胺类"></Item>
+      <Item column="75" ItemName="2,4-二硝基氯苯"></Item>
+      <Item column="76" ItemName="2,4-二氯酚"></Item>
+      <Item column="77" ItemName="2,4,6-三氯酚"></Item>
+      <Item column="78" ItemName="总氮"></Item>
+      <Item column="79" ItemName="总磷"></Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

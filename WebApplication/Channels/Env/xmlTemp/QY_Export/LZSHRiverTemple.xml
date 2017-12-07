@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--河流导出配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="export">
+  <!--设置监测监测点-->
+  <Point pointtable="T_ENV_P_RIVER" verticaltable="T_ENV_P_RIVER_V" itemtable="T_ENV_P_RIVER_V_ITEM">
+    <PointInfo>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="4"  column="4">飞来峡</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_RIVER</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>SECTION_ID</FillTablePointColumnName>
+      <!--数据填报表对应的垂线字段名称【非必须】-->
+      <FillTableVerticalColumnName>POINT_ID</FillTableVerticalColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_RIVER_ITEM</FillItemTableName>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="0">年</FillData>
+      <FillData tablecolumn="MONTH" column="1">月</FillData>
+      <FillData tablecolumn="DAY" column="2">日</FillData>
+    </FillInfo>
+    <ItemInfo>
+      <Item column="7" ItemName="水温"></Item>
+      <Item column="10" ItemName="PH值"></Item>
+      <Item column="11" ItemName="电导率"></Item>
+      <Item column="12" ItemName="溶解氧"></Item>
+      <Item column="13" ItemName="化学需氧量"></Item>
+      <Item column="14" ItemName="总氮"></Item>
+      <Item column="15" ItemName="总磷"></Item>
+      <Item column="16" ItemName="透明度"></Item>
+      <Item column="17" ItemName="叶绿素a"></Item>
+      <Item column="18" ItemName="蓝绿藻"></Item> 
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

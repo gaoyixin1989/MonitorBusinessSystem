@@ -1,0 +1,213 @@
+﻿
+.commonTitle
+{
+    background-image: url(images/help/common_title.gif);
+    width: 230px;
+    height: 34px;
+}
+.commonContent
+{
+    background-image: url(images/help/common_Content.gif);
+    padding: 10px;
+    width: 210px;
+}
+
+.commonBottom
+{
+    background-image: url(images/help/common_bottom.gif);
+    width: 230px;
+    height: 3px;
+}
+.plugin
+{
+    margin: 20px 0;
+}
+.pluginImg
+{
+    background-image: url(images/help/plugin.gif);
+    background-repeat: no-repeat;
+    padding-left: 39px;
+    padding-top: 14px;
+    font-size: 14px;
+}
+.contactImg
+{
+    background-image: url(images/help/contact.gif);
+    background-repeat: no-repeat;
+    padding-left: 37px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.hcc ul
+{
+    margin: 3px 0;
+    padding-left: 11px;
+}
+.mapContent li
+{
+    list-style-image: url(images/help/list.gif);
+    line-height: 1.5;
+}
+.split
+{
+    background-image: url(images/help/split.gif);
+    float: left;
+    height: 488px;
+    margin: 18px 15px 9px 0;
+    width: 4px;
+}
+.dtl_title
+{
+    background-image: url("images/help/dtl_title.gif");
+    border: 1px solid #DBDBDB;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    height: 21px;
+    padding-left: 30px;
+    padding-top: 4px;
+    width: 80%;
+}
+.dtl_Content
+{
+    margin: 8px 0;
+}
+
+.commonContent ul
+{
+    margin: 0;
+    padding-left: 20px;
+}
+.commonContent ul li
+{
+    line-height: 1.5;
+    list-style-type: square;
+}
+
+.ui-layout-center a
+{
+    line-height: 1.6;
+    text-decoration: none;
+    font-size: 14px;
+}
+.mapCenter
+{
+    background-image: url(images/help/center_bg.gif);
+}
+ul li a
+{
+    color: Black;
+}
+ul li a:hover
+{
+    color: #ed6d28;
+}
+.mapContent
+{
+}
+.mapContent .mcl
+{
+    background-image: url(images/help/center_bgListL.gif);
+    width: 42px;
+    height: 466px;
+}
+.mapContent .mcc
+{
+    background-image: url(images/help/center_bgListC.gif);
+    height: 409px;
+    margin-top: 4px;
+    padding-top: 53px;
+}
+.mapContent .mcr
+{
+    background-image: url(images/help/center_bgListR.gif);
+    height: 409px;
+    margin-top: 4px;
+    width: 8px;
+    padding-top: 53px;
+}
+
+.htcs
+{
+    float: left;
+    padding: 18px;
+}
+.htcs .htl
+{
+    float: left;
+    background: url(images/help/help_03.png) no-repeat 0 0;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/help/help_03.png" ,sizingMethod="crop");
+    width: 47px;
+    height: 51px;
+}
+.htcs .htc
+{
+    float: left;
+    background: url(images/help/help_05.png) repeat-x 0 0;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/help/help_05.png" ,sizingMethod="crop");
+    height: 51px;
+}
+.htcs .htr
+{
+    float: right;
+    background: url(images/help/help_07.png) no-repeat 0 0;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/help/help_07.png" ,sizingMethod="crop");
+    width: 11px;
+    height: 51px;
+}
+.htcs .hcl
+{
+    float: left;
+    background: url(images/help/help_09.png) repeat-y 0 0;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/help/help_09.png" ,sizingMethod="crop");
+    width: 17px;
+}
+.htcs .hcc
+{
+    padding: 6px 0 5px 34px;
+    background-color: White;
+    float: left;
+}
+.htcs .hcr
+{
+    background: url(images/help/help_11.png) repeat-y 0 0;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/help/help_11.png" ,sizingMethod="crop");
+    width: 11px;
+    float: right;
+}
+
+.htcs .hbl
+{
+    background: url(images/help/help_16.png) no-repeat 0 0;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/help/help_16.png" ,sizingMethod="crop");
+    height: 8px;
+    float: left;
+    width: 47px;
+}
+.htcs .hbc
+{
+    background: url(images/help/help_18.png) repeat-x 0 0;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/help/help_18.png" ,sizingMethod="crop");
+    height: 8px;
+    float: left;
+}
+.htcs .hbr
+{
+    background: url(images/help/help_20.png) no-repeat 0 0;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/help/help_20.png" ,sizingMethod="crop");
+    width: 11px;
+    height: 8px;
+    float: right;
+    background-repeat: no-repeat;
+}
+
+
+.ul_first { list-style-image:url(images/help/listimg2.jpg);}

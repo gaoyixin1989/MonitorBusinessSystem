@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55E5F8BA-C5EB-498C-8BBE-6D0A65D1B8C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>i3.ValueObject</RootNamespace>
+    <AssemblyName>i3.ValueObject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Channels\Base\Apparatus\TBaseApparatusCertificVo.cs" />
+    <Compile Include="Channels\Base\Apparatus\TBaseApparatusFilebakVo.cs" />
+    <Compile Include="Channels\Base\Apparatus\TBaseApparatusInfoVo.cs" />
+    <Compile Include="Channels\Base\Apparatus\TBaseApparatusMsgUserVo.cs" />
+    <Compile Include="Channels\Base\Apparatus\TBaseApparatusMsgVo.cs" />
+    <Compile Include="Channels\Base\CodeRule\TBaseSerialruleVo.cs" />
+    <Compile Include="Channels\Base\Company\TBaseCompanyInfoVo.cs" />
+    <Compile Include="Channels\Base\DynamicAttribute\TBaseAttrbuteValue3Vo.cs" />
+    <Compile Include="Channels\Base\DynamicAttribute\TBaseAttrbuteValueVo.cs" />
+    <Compile Include="Channels\Base\DynamicAttribute\TBaseAttributeInfoVo.cs" />
+    <Compile Include="Channels\Base\DynamicAttribute\TBaseAttributeTypeValueVo.cs" />
+    <Compile Include="Channels\Base\DynamicAttribute\TBaseAttributeTypeVo.cs" />
+    <Compile Include="Channels\Base\Evaluation\TBaseEvaluationConInfoVo.cs" />
+    <Compile Include="Channels\Base\Evaluation\TBaseEvaluationConItemVo.cs" />
+    <Compile Include="Channels\Base\Evaluation\TBaseEvaluationInfoVo.cs" />
+    <Compile Include="Channels\Base\Industry\TBaseIndustryInfoVo.cs" />
+    <Compile Include="Channels\Base\Industry\TBaseIndustryItemVo.cs" />
+    <Compile Include="Channels\Base\Item\TBaseItemAnalysisVo.cs" />
+    <Compile Include="Channels\Base\Item\TBaseItemInfoVo.cs" />
+    <Compile Include="Channels\Base\Item\TBaseItemSamplingInstrumentVo.cs" />
+    <Compile Include="Channels\Base\Item\TBaseItemSubItemVo.cs" />
+    <Compile Include="Channels\Base\Method\TBaseMethodAnalysisVo.cs" />
+    <Compile Include="Channels\Base\Method\TBaseMethodInfoVo.cs" />
+    <Compile Include="Channels\Base\MonitorType\TBaseMonitorTypeInfoVo.cs" />
+    <Compile Include="Channels\Base\Outcompany\TBaseOutcompanyAllowVo.cs" />
+    <Compile Include="Channels\Base\Outcompany\TBaseOutcompanyInfoVo.cs" />
+    <Compile Include="Channels\Base\Point\TBaseCompanyPointItemVo.cs" />
+    <Compile Include="Channels\Base\Point\TBaseCompanyPointVo.cs" />
+    <Compile Include="Channels\Mis\ProcessMgm\TMisProcessMgmVo.cs" />
+    <Compile Include="Channels\Env\Fill\Air30\TEnvFillAir30Vo.cs" />
+    <Compile Include="Channels\Env\Fill\Air30\TEnvFillAir30_ITEMVo.cs" />
+    <Compile Include="Channels\Env\Fill\AirHour\TEnvFillAirHourItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\AirHour\TEnvFillAirHourVo.cs" />
+    <Compile Include="Channels\Env\Fill\AirKS\TEnvFillAirksItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\AirKS\TEnvFillAirksVo.cs" />
+    <Compile Include="Channels\Env\Fill\Air\TEnvFillAirHourVo.cs" />
+    <Compile Include="Channels\Env\Fill\Air\TEnvFillAirVo.cs" />
+    <Compile Include="Channels\Env\Fill\Algae\TEnvFillAlgaeItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\Algae\TEnvFillAlgaeVo.cs" />
+    <Compile Include="Channels\Env\Fill\Alkali\TENVFILLALKALIITEMVo.cs" />
+    <Compile Include="Channels\Env\Fill\Alkali\TEnvFillAlkaliVo.cs" />
+    <Compile Include="Channels\Env\Fill\Bottom\TEnvFillRiverBottomItemVo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Channels\Env\Fill\Bottom\TEnvFillRiverBottomVo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Channels\Env\Fill\DrinkSource\TEnvFillDrinkSrcItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\DrinkSource\TEnvFillDrinkSrcVo.cs" />
+    <Compile Include="Channels\Env\Fill\DrinkUnder\TEnvFillDrinkUnderItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\DrinkUnder\TEnvFillDrinkUnderVo.cs" />
+    <Compile Include="Channels\Env\Fill\Dust\TEnvFillDustItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\Dust\TEnvFillDustVo.cs" />
+    <Compile Include="Channels\Env\Fill\Estuaries\TEnvFillEstuariesItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\Estuaries\TEnvFillEstuariesVo.cs" />
+    <Compile Include="Channels\Env\Fill\Lake\TEnvFillLakeItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\Lake\TEnvFillLakeVo.cs" />
+    <Compile Include="Channels\Env\Fill\Metal\TEnvFillMetalItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\Metal\TEnvFillMetalVo.cs" />
+    <Compile Include="Channels\Env\Fill\Metal\TEnvFillRMetalItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\MudRiver\TEnvFillMudRiverItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\MudRiver\TEnvFillMudRiverVo.cs" />
+    <Compile Include="Channels\Env\Fill\MudSea\TEnvFillMudSeaItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\MudSea\TEnvFillMudSeaVo.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseArea\TEnvFillNoiseAreaItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseArea\TEnvFillNoiseAreaSummaryVo.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseArea\TEnvFillNoiseAreaVo.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseFun\TEnvFillNoiseFunctionItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseFun\TEnvFillNoiseFunctionSummaryVo.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseFun\TEnvFillNoiseFunctionVo.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseRoad\TEnvFillNoiseRoadItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseRoad\TEnvFillNoiseRoadSummaryVo.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseRoad\TEnvFillNoiseRoadVo.cs" />
+    <Compile Include="Channels\Env\Fill\Offshore\TEnvFillOffshoreItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\Offshore\TEnvFillOffshoreVo.cs" />
+    <Compile Include="Channels\Env\Fill\PayFor\TEnvFillPayforItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\PayFor\TEnvFillPayforVo.cs" />
+    <Compile Include="Channels\Env\Fill\PolluteAir\TEnvFillPolluteAirItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\PolluteAir\TEnvFillPolluteAirVo.cs" />
+    <Compile Include="Channels\Env\Fill\PolluteWater\TEnvFillPolluteWaterItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\PolluteWater\TEnvFillPolluteWaterVo.cs" />
+    <Compile Include="Channels\Env\Fill\Rain\TEnvFillRainItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\Rain\TEnvFillRainVo.cs" />
+    <Compile Include="Channels\Env\Fill\River30\TEnvFillRiver30ItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\River30\TEnvFillRiver30Vo.cs" />
+    <Compile Include="Channels\Env\Fill\RiverCity\TEnvFillRiverCityItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\RiverCity\TEnvFillRiverCityVo.cs" />
+    <Compile Include="Channels\Env\Fill\RiverPlan\TEnvFillRiverPlanItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\RiverPlan\TEnvFillRiverPlanVo.cs" />
+    <Compile Include="Channels\Env\Fill\RiverTarget\TEnvFillRiverTargetItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\RiverTarget\TEnvFillRiverTargetVo.cs" />
+    <Compile Include="Channels\Env\Fill\River\TEnvFillRiverItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\River\TEnvFillRiverVo.cs" />
+    <Compile Include="Channels\Env\Fill\Rmetal\TEnvFillRMetalItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\Rmetal\TEnvFillRMetalVo.cs" />
+    <Compile Include="Channels\Env\Fill\Seabath\TEnvFillSeabathItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\Seabath\TEnvFillSeabathVo.cs" />
+    <Compile Include="Channels\Env\Fill\Sea\TEnvFillSeaItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\Sea\TEnvFillSeaVo.cs" />
+    <Compile Include="Channels\Env\Fill\Sediment\TEnvFillSedimentItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\Sediment\TEnvFillSedimentVo.cs" />
+    <Compile Include="Channels\Env\Fill\Soil\TEnvFillSoilItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\Soil\TEnvFillSoilVo.cs" />
+    <Compile Include="Channels\Env\Fill\Solid\TEnvFillSolidItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\Solid\TEnvFillSolidVo.cs" />
+    <Compile Include="Channels\Env\Fill\TEnvFillAttVo.cs" />
+    <Compile Include="Channels\Env\Fill\UnderDrinkSource\TEnvFillUnderDrinkSourceItemVo.cs" />
+    <Compile Include="Channels\Env\Fill\UnderDrinkSource\TEvnFillUnderDrinkSourceVo.cs" />
+    <Compile Include="Channels\Env\Point\Air30\TEnvPAir30ItemVo.cs" />
+    <Compile Include="Channels\Env\Point\Air30\TEnvPAir30Vo.cs" />
+    <Compile Include="Channels\Env\Point\DrinkSource\TEnvPDrinkSrcVItemVo.cs" />
+    <Compile Include="Channels\Env\Point\DrinkSource\TEnvPDrinkSrcVo.cs" />
+    <Compile Include="Channels\Env\Point\DrinkSource\TEnvPDrinkSrcVVo.cs" />
+    <Compile Include="Channels\Env\Point\DrinkUnder\TEnvPDrinkUnderItemVo.cs" />
+    <Compile Include="Channels\Env\Point\DrinkUnder\TEnvPDrinkUnderVo.cs" />
+    <Compile Include="Channels\Env\Point\Dust\TEnvPointDustItemVo.cs" />
+    <Compile Include="Channels\Env\Point\Dust\TEnvPointDustVo.cs" />
+    <Compile Include="Channels\Env\Point\Environment\TENVPAIRVo.cs" />
+    <Compile Include="Channels\Env\Point\Environment\TEnvPNoiseFunctionItemVo.cs" />
+    <Compile Include="Channels\Env\Point\Estuaries\TEnvPointEstuariesVerticalVo.cs" />
+    <Compile Include="Channels\Env\Point\Estuaries\TEnvPointEstuariesVItemVo.cs" />
+    <Compile Include="Channels\Env\Point\Estuaries\TEnvPointEstuariesVo.cs" />
+    <Compile Include="Channels\Env\Point\Lake\TEnvPLakeVItemVo.cs" />
+    <Compile Include="Channels\Env\Point\Lake\TEnvPLakeVo.cs" />
+    <Compile Include="Channels\Env\Point\Lake\TEnvPLakeVVo.cs" />
+    <Compile Include="Channels\Env\Point\MudRiver\TEnvPMudRiverVItemVo.cs" />
+    <Compile Include="Channels\Env\Point\MudRiver\TEnvPMudRiverVo.cs" />
+    <Compile Include="Channels\Env\Point\MudRiver\TEnvPMudRiverVVo.cs" />
+    <Compile Include="Channels\Env\Point\MudSea\TEnvPMudSeaVItemVo.cs" />
+    <Compile Include="Channels\Env\Point\MudSea\TEnvPMudSeaVo.cs" />
+    <Compile Include="Channels\Env\Point\MudSea\TEnvPMudSeaVVo.cs" />
+    <Compile Include="Channels\Env\Point\NoiseArea\TEnvPNoiseAreaItemVo.cs" />
+    <Compile Include="Channels\Env\Point\NoiseArea\TEnvPNoiseAreaVo.cs" />
+    <Compile Include="Channels\Env\Point\NoiseFun\TEnvPNoiseFunctionItemVo.cs" />
+    <Compile Include="Channels\Env\Point\NoiseFun\TEnvPNoiseFunctionVo.cs" />
+    <Compile Include="Channels\Env\Point\NoiseRoad\TEnvPNoiseRoadItemVo.cs" />
+    <Compile Include="Channels\Env\Point\NoiseRoad\TEnvPNoiseRoadVo.cs" />
+    <Compile Include="Channels\Env\Point\Offshore\TEnvPointOffshoreItemVo.cs" />
+    <Compile Include="Channels\Env\Point\Offshore\TEnvPointOffshoreVo.cs" />
+    <Compile Include="Channels\Env\Point\PayFor\TEnvPPayforItemVo.cs" />
+    <Compile Include="Channels\Env\Point\PayFor\TEnvPPayforVo.cs" />
+    <Compile Include="Channels\Env\Point\PolluteRule\TEnvPEnterinfoVo.cs" />
+    <Compile Include="Channels\Env\Point\PolluteRule\TEnvPPolluteItemVo.cs" />
+    <Compile Include="Channels\Env\Point\PolluteRule\TEnvPPolluteTypeVo .cs" />
+    <Compile Include="Channels\Env\Point\PolluteRule\TEnvPPolluteVo.cs" />
+    <Compile Include="Channels\Env\Point\Rain\TEnvPointRainItemVo.cs" />
+    <Compile Include="Channels\Env\Point\Rain\TEnvPointRainVo.cs" />
+    <Compile Include="Channels\Env\Point\River30\TEnvPRiver30VItemVo.cs" />
+    <Compile Include="Channels\Env\Point\River30\TEnvPRiver30Vo.cs" />
+    <Compile Include="Channels\Env\Point\River30\TEnvPRiver30VVo.cs" />
+    <Compile Include="Channels\Env\Point\RiverCity\TEnvPRiverCityVItemVo.cs" />
+    <Compile Include="Channels\Env\Point\RiverCity\TEnvPRiverCityVo.cs" />
+    <Compile Include="Channels\Env\Point\RiverCity\TEnvPRiverCityVVo.cs" />
+    <Compile Include="Channels\Env\Point\RiverPlan\TEnvPRiverPlanVItemVo.cs" />
+    <Compile Include="Channels\Env\Point\RiverPlan\TEnvPRiverPlanVo.cs" />
+    <Compile Include="Channels\Env\Point\RiverPlan\TEnvPRiverPlanVVo.cs" />
+    <Compile Include="Channels\Env\Point\RiverTarget\TEnvPRiverTargetVItemVo.cs" />
+    <Compile Include="Channels\Env\Point\RiverTarget\TEnvPRiverTargetVo.cs" />
+    <Compile Include="Channels\Env\Point\RiverTarget\TEnvPRiverTargetVVo.cs" />
+    <Compile Include="Channels\Env\Point\River\TEnvPRiverVItemVo.cs" />
+    <Compile Include="Channels\Env\Point\River\TEnvPRiverVo.cs" />
+    <Compile Include="Channels\Env\Point\River\TEnvPRiverVVo.cs" />
+    <Compile Include="Channels\Env\Point\Seabath\TENVPSEABATHITEMVO.cs" />
+    <Compile Include="Channels\Env\Point\Seabath\TENVPSEABATHVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Channels\Env\Point\Sea\TEnvPointSeaItemVo.cs" />
+    <Compile Include="Channels\Env\Point\Sea\TEnvPointSeaVo.cs" />
+    <Compile Include="Channels\Env\Point\Sediment\TEnvPSedimentItemVo.cs" />
+    <Compile Include="Channels\Env\Point\Sediment\TEnvPSedimentVo.cs" />
+    <Compile Include="Channels\Env\Point\Soil\TEnvPSoilItemVo.cs" />
+    <Compile Include="Channels\Env\Point\Soil\TEnvPSoilVo.cs" />
+    <Compile Include="Channels\Env\Point\Solid\TEnvPSolidItemVo.cs" />
+    <Compile Include="Channels\Env\Point\Solid\TEnvPSolidVo.cs" />
+    <Compile Include="Channels\Env\Point\Sulfate\TEnvPAlkaliItemVo.cs" />
+    <Compile Include="Channels\Env\Point\Sulfate\TEnvPAlkaliVo.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractAttfeeitemVo.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractAttfeeVo.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractCompanyVo.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractFeeVo.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractPlanPointstopVo.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractPlanPointVo.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractPlanVo.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractPointFreqVo.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractPointitemVo.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractPointVo.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractSampleitemVo.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractSamplePlanVo.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractSampleVo.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractTestfeeVo.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractUserdutyVo.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisMonitorQcAddQhdVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisMonitorQcAddVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisMonitorQcBlindZzVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisMonitorQcEmptyBatVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisMonitorQcEmptyOutVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisMonitorQcStVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisMonitorQcTwinQhdVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisMonitorQcTwinVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisPointitemQcsettingVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisPointQcsettingVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Report\TMisMonitorReportVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Result\TMisMonitorResultAppVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Result\TMisMonitorResultAttVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Result\TMisMonitorResultLogVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Result\TMisMonitorResultVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Result\TMisResultModifyInfoVo .cs" />
+    <Compile Include="Channels\Mis\Monitor\Retrun\TMisReturnInfoVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorDustattributePmVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorDustattributeSo2ornoxVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorDustinforVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorDustattributeVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorSampleAttVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorSampleHandsVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorSampleHandVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorSampleInfoVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorSampleLocaleVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorSampleSkyVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorSubsampleInfoVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\SubTask\TMisMonitorSubtaskAppVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\SubTask\TMisMonitorSubtaskVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Task\TMisMonitorTaskAttrbuteVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Task\TMisMonitorTaskCompanyVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Task\TMisMonitorTaskItemVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Task\TMisMonitorTaskOutVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Task\TMisMonitorTaskPointVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Task\TMisMonitorTaskVo.cs" />
+    <Compile Include="Channels\Mis\Monitor\Task\TMisReportVo.cs" />
+    <Compile Include="Channels\Mis\Report\ReportTestInfoVo.cs" />
+    <Compile Include="Channels\Mis\Report\ReportTestItemVo.cs" />
+    <Compile Include="Channels\Mis\Report\ReportTestPurposeVo.cs" />
+    <Compile Include="Channels\Mis\Report\ReportTestResultVo.cs" />
+    <Compile Include="Channels\OA\ARCHIVES\TOaArchivesBorrowVo.cs" />
+    <Compile Include="Channels\OA\ARCHIVES\TOaArchivesCheckVo.cs" />
+    <Compile Include="Channels\OA\ARCHIVES\TOaArchivesDirectoryVo.cs" />
+    <Compile Include="Channels\OA\ARCHIVES\TOaArchivesDocumentVo.cs" />
+    <Compile Include="Channels\OA\ARCHIVES\TOaArchivesSendVo.cs" />
+    <Compile Include="Channels\OA\ARCHIVES\TOaArchivesUpdateVo.cs" />
+    <Compile Include="Channels\OA\ATT\TOaAttForsysVo.cs" />
+    <Compile Include="Channels\OA\ATT\TOaAttVo.cs" />
+    <Compile Include="Channels\OA\EMPLOYE\TOaEmployeExaminehistoryVo.cs" />
+    <Compile Include="Channels\OA\EMPLOYE\TOaEmployeInfoVo.cs" />
+    <Compile Include="Channels\OA\EMPLOYE\TOaEmployeQualificationVo.cs" />
+    <Compile Include="Channels\OA\EMPLOYE\TOaEmployeResultorfaultVo.cs" />
+    <Compile Include="Channels\OA\EMPLOYE\TOaEmployeTrainhistoryVo.cs" />
+    <Compile Include="Channels\OA\EMPLOYE\TOaEmployeWorkhistoryVo.cs" />
+    <Compile Include="Channels\OA\EXAMINE\TOaExamineFileVo.cs" />
+    <Compile Include="Channels\OA\EXAMINE\TOaExamineInfoVo.cs" />
+    <Compile Include="Channels\OA\FW\TOaFwInfoVo.cs" />
+    <Compile Include="Channels\OA\Message\TOaMessageInfoDelVo.cs" />
+    <Compile Include="Channels\OA\Message\TOaMessageInfoDeptVo.cs" />
+    <Compile Include="Channels\OA\Message\TOaMessageInfoManVo.cs" />
+    <Compile Include="Channels\OA\Message\TOaMessageInfoReceiveVo.cs" />
+    <Compile Include="Channels\OA\Message\TOaMessageInfoVo.cs" />
+    <Compile Include="Channels\OA\Message\TOaMessageMobilSetupVo.cs" />
+    <Compile Include="Channels\OA\Message\TOaMessageSetupVo.cs" />
+    <Compile Include="Channels\OA\Notice\TOaNoticeVo.cs" />
+    <Compile Include="Channels\OA\PART\SAMPLE\TOaPartstandCollarVo.cs" />
+    <Compile Include="Channels\OA\PART\SAMPLE\TOaPartstandInfoVo.cs" />
+    <Compile Include="Channels\OA\PART\TOaPartAcceptedlistVo.cs" />
+    <Compile Include="Channels\OA\PART\TOaPartAcceptedVo.cs" />
+    <Compile Include="Channels\OA\PART\TOaPartBuyRequstLstVo.cs" />
+    <Compile Include="Channels\OA\PART\TOaPartBuyRequstVo.cs" />
+    <Compile Include="Channels\OA\PART\TOaPartCollarVo.cs" />
+    <Compile Include="Channels\OA\PART\TOaPartInfoVo.cs" />
+    <Compile Include="Channels\OA\SUPPLIER\TOaSupplierInfoVo.cs" />
+    <Compile Include="Channels\OA\SUPPLIER\TOaSupplierJudgeVo.cs" />
+    <Compile Include="Channels\OA\SW\TOaSwHandleVo.cs" />
+    <Compile Include="Channels\OA\SW\TOaSwInfoVo.cs" />
+    <Compile Include="Channels\OA\SW\TOaSwReadVo.cs" />
+    <Compile Include="Channels\OA\TRAIN\TOaTrainApplyVo.cs" />
+    <Compile Include="Channels\OA\TRAIN\TOaTrainFileVo.cs" />
+    <Compile Include="Channels\OA\TRAIN\TOaTrainInfoVo.cs" />
+    <Compile Include="Channels\OA\TRAIN\TOaTrainPlanVo.cs" />
+    <Compile Include="Channels\RPT\TRptFileSignatureVo.cs" />
+    <Compile Include="Channels\RPT\TRptFileVo.cs" />
+    <Compile Include="Channels\RPT\TRptMarkVo.cs" />
+    <Compile Include="Channels\RPT\TRptSignatureVo.cs" />
+    <Compile Include="Channels\RPT\TRptTemplateMarkVo.cs" />
+    <Compile Include="Channels\RPT\TRptTemplateVo.cs" />
+    <Compile Include="ConstValues.cs" />
+    <Compile Include="ObjectBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sys\Duty\TSysDutyVo.cs" />
+    <Compile Include="Sys\Duty\TSysUserDutyVo.cs" />
+    <Compile Include="Sys\General\TSysBaseRolePointVo.cs" />
+    <Compile Include="Sys\General\TSysEngineerVo.cs" />
+    <Compile Include="Sys\General\TSysMenuPostVo.cs" />
+    <Compile Include="Sys\General\TSysMenuRoleVo.cs" />
+    <Compile Include="Sys\General\TSysMenuVo.cs" />
+    <Compile Include="Sys\General\TSysPostVo.cs" />
+    <Compile Include="Sys\General\TSysRoleVo.cs" />
+    <Compile Include="Sys\General\TSysUserPostEx.cs" />
+    <Compile Include="Sys\General\TSysUserPostVo.cs" />
+    <Compile Include="Sys\General\TSysUserProxyVo.cs" />
+    <Compile Include="Sys\General\TSysUserRoleVo.cs" />
+    <Compile Include="Sys\General\TSysUserStatusVo.cs" />
+    <Compile Include="Sys\General\TSysUserVo.cs" />
+    <Compile Include="Sys\General\UserLogInfoVo.cs" />
+    <Compile Include="Sys\Log\TSysLogPageVo.cs" />
+    <Compile Include="Sys\Log\TSysLogVo.cs" />
+    <Compile Include="Sys\Resource\TSysConfigFlownumVo.cs" />
+    <Compile Include="Sys\Resource\TSysConfigVo.cs" />
+    <Compile Include="Sys\Resource\TSysDictVo.cs" />
+    <Compile Include="Sys\Resource\TSysSerialVo.cs" />
+    <Compile Include="Sys\WF\TWfCommDict.cs" />
+    <Compile Include="Sys\WF\TWfInstControlVo.cs" />
+    <Compile Include="Sys\WF\TWfInstFileListVo.cs" />
+    <Compile Include="Sys\WF\TWfInstOpLogVo.cs" />
+    <Compile Include="Sys\WF\TWfInstTaskDetailVo.cs" />
+    <Compile Include="Sys\WF\TWfInstTaskOpinionsVo.cs" />
+    <Compile Include="Sys\WF\TWfInstTaskServiceVo.cs" />
+    <Compile Include="Sys\WF\TWfSettingBelongsVo.cs" />
+    <Compile Include="Sys\WF\TWfSettingFlowVo.cs" />
+    <Compile Include="Sys\WF\TWfSettingFormListVo.cs" />
+    <Compile Include="Sys\WF\TWfSettingFormMainVo.cs" />
+    <Compile Include="Sys\WF\TWfSettingFormSubVo.cs" />
+    <Compile Include="Sys\WF\TWfSettingLinksVo.cs" />
+    <Compile Include="Sys\WF\TWfSettingTaskCmdVo.cs" />
+    <Compile Include="Sys\WF\TWfSettingTaskFormVo.cs" />
+    <Compile Include="Sys\WF\TWfSettingTaskHasappVo.cs" />
+    <Compile Include="Sys\WF\TWfSettingTaskVo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{28A3C76D-D766-42D9-B849-F0A8C1BB4FC4}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

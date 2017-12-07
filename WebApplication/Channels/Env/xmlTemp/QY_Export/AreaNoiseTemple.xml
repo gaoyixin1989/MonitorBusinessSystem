@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--区域环境噪声导出配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="export">
+  <Point pointtable="T_ENV_P_NOISE_AREA" itemtable="T_ENV_P_NOISE_AREA_ITEM" startrow="6">
+    <PointInfo>
+      <Column tablecolumn="POINT_CODE" column="5">测点代码</Column>
+      <Column tablecolumn="POINT_NAME" column="4">测点名称</Column>
+      <Column tablecolumn="SATAIONS_ID" column="0">城市代码</Column>
+      <Column tablecolumn="GRID_SIZE_X" column="2">网络长</Column>
+	  <Column tablecolumn="GRID_SIZE_Y" column="3">网络宽</Column>
+	  <Column tablecolumn="FUNCTION_AREA_ID" column="8">功能区类别</Column>
+	  <Column tablecolumn="SOUND_SOURCE_ID" column="9">声源类别</Column>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_NOISE_AREA</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>POINT_ID</FillTablePointColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_NOISE_AREA_ITEM</FillItemTableName>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="1">年</FillData>
+      <FillData tablecolumn="MONTH" column="11">月</FillData>
+      <FillData tablecolumn="BEGIN_DAY"   column="12">日</FillData>
+      <FillData tablecolumn="BEGIN_HOUR"  column="14">小时</FillData>
+	  <FillData tablecolumn="BEGIN_MINUTE"  column="15">分钟</FillData>
+    </FillInfo>
+    <ItemInfo>
+      <Item column="17" ItemName ="Leq"></Item> 
+      <Item column="18" ItemName ="L10"></Item>
+      <Item column="19" ItemName ="L50"></Item>
+      <Item column="20" ItemName ="L90"></Item>
+      <Item column="21" ItemName ="sd"></Item>
+      <Item column="22" ItemName ="Lmax"></Item>
+      <Item column="23" ItemName ="Lmin"></Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

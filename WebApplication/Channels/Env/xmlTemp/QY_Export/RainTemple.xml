@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--降水导出配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="export">
+  <Point pointtable="T_ENV_P_RAIN" itemtable="T_ENV_P_RAIN_ITEM" startrow="5">
+    <PointInfo>
+      <Column tablecolumn="POINT_CODE" column="1">监测点代码</Column>
+      <Column tablecolumn="POINT_NAME" column="2">监测点</Column>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_RAIN</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>POINT_ID</FillTablePointColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_RAIN_ITEM</FillItemTableName>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR"  column="0">年</FillData>
+      <FillData tablecolumn="MONTH"  column="3">月</FillData>
+      <FillData tablecolumn="BEGIN_DAY" primary="true"  column="4">开始日</FillData>
+      <FillData tablecolumn="BEGIN_HOUR" primary="true" column="5">开始时</FillData>
+      <FillData tablecolumn="BEGIN_MINUTE"  column="6">开始分</FillData>
+      <FillData tablecolumn="END_DAY"  column="7">结束日</FillData>
+      <FillData tablecolumn="END_HOUR"   column="8">结束时</FillData>
+      <FillData tablecolumn="END_MINUTE"  column="9">结束分</FillData>
+      <FillData tablecolumn="RAIN_TYPE"  column="10">降水类型</FillData>
+    </FillInfo>
+    <ItemInfo>
+      <Item column="11" ItemName="降雨量"></Item>
+      <Item column="12" ItemName="PH值"></Item>
+      <Item column="13" ItemName="电导率"></Item>
+      <Item column="14" ItemName="硫酸盐"></Item>
+      <Item column="15" ItemName="硝酸盐"></Item>
+      <Item column="16" ItemName="氟化物"></Item>
+      <Item column="17" ItemName="氯化物"></Item>
+      <Item column="18" ItemName="氨离子"></Item>
+      <Item column="19" ItemName="钙"></Item>
+      <Item column="20" ItemName="镁"></Item>
+      <Item column="21" ItemName="钠"></Item>
+      <Item column="22" ItemName="钾"></Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

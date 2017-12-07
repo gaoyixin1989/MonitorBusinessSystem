@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--饮用水源地导出配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="export">
+  <!--设置监测监测点-->
+  <Point pointtable="T_ENV_P_DRINK_SRC" verticaltable="T_ENV_P_DRINK_SRC_V" itemtable="T_ENV_P_DRINK_SRC_V_ITEM">
+    <PointInfo>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">01</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="4"  column="6">二水厂</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">02</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="5"  column="6">慈湖水厂</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_DRINK_SRC</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>SECTION_ID</FillTablePointColumnName>
+      <!--数据填报表对应的垂线字段名称【非必须】-->
+      <FillTableVerticalColumnName>POINT_ID</FillTableVerticalColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_DRINK_SRC_ITEM</FillItemTableName>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="13">年</FillData>
+      <FillData tablecolumn="MONTH" column="14">月</FillData>
+    </FillInfo>
+    <ItemInfo>
+	  <Item column="16" ItemName="水温"></Item>
+      <Item column="17" ItemName="PH值"></Item>
+      <Item column="18" ItemName="溶解氧"></Item>
+      <Item column="19" ItemName="高锰酸盐指数"></Item>
+      <Item column="20" ItemName="化学需氧量"></Item>
+      <Item column="21" ItemName="五日生化需氧量"></Item>
+      <Item column="22" ItemName="氨氮"></Item>
+      <Item column="23" ItemName="总磷"></Item>
+      <Item column="24" ItemName="总氮"></Item>
+	  <Item column="25" ItemName="铜"></Item>
+      <Item column="26" ItemName="锌"></Item>
+	  <Item column="27" ItemName="氟化物"></Item>
+      <Item column="28" ItemName="硒"></Item>
+      <Item column="29" ItemName="砷"></Item>
+      <Item column="30" ItemName="汞"></Item>
+      <Item column="31" ItemName="镉"></Item>
+	  <Item column="32" ItemName="六价铬"></Item>
+      <Item column="33" ItemName="铅"></Item>
+      <Item column="34" ItemName="氰化物"></Item>
+	  <Item column="35" ItemName="挥发酚"></Item>
+      <Item column="36" ItemName="石油类"></Item>
+      <Item column="37" ItemName="阴离子表面活性剂"></Item>
+      <Item column="38" ItemName="硫化物"></Item>
+      <Item column="39" ItemName="粪大肠菌群"></Item>
+	  <Item column="40" ItemName="硫酸盐"></Item>
+	  <Item column="41" ItemName="氯化物"></Item>
+	  <Item column="42" ItemName="硝酸盐"></Item>
+	  <Item column="43" ItemName="铁"></Item>
+	  <Item column="44" ItemName="锰"></Item>
+	  <Item column="45" ItemName="三氯甲烷"></Item>
+	  <Item column="46" ItemName="四氯化碳"></Item>
+	  <Item column="47" ItemName="三溴甲烷"></Item>
+	  <Item column="48" ItemName="二氯甲烷"></Item>
+      <Item column="49" ItemName="1,2-二氯乙烷"></Item>
+      <Item column="50" ItemName="环氧氯丙烷"></Item>
+	  <Item column="51" ItemName="氯乙烯"></Item>
+		<Item column="52" ItemName="1,1-二氯乙烯"></Item>	
+		<Item column="53" ItemName="1,2-二氯乙烯"></Item>
+		<Item column="54" ItemName="三氯乙烯"></Item>
+		<Item column="55" ItemName="四氯乙烯"></Item>
+		<Item column="56" ItemName="氯丁二烯"></Item>
+		<Item column="57" ItemName="六氯丁二烯"></Item>
+		<Item column="58" ItemName="苯乙烯"></Item>
+		<Item column="59" ItemName="甲醛"></Item>
+		<Item column="60" ItemName="乙醛"></Item>
+		<Item column="61" ItemName="丙烯醛"></Item>
+		<Item column="62" ItemName="三氯乙醛"></Item>
+		<Item column="63" ItemName="苯"></Item>
+		<Item column="64" ItemName="甲苯"></Item>
+		<Item column="65" ItemName="乙苯"></Item>
+		<Item column="66" ItemName="二甲苯①"></Item>
+		<Item column="67" ItemName="异丙苯"></Item>
+		<Item column="68" ItemName="氯苯"></Item>
+		<Item column="69" ItemName="1,2-二氯苯"></Item>	
+		<Item column="70" ItemName="1,4-二氯苯"></Item>
+		<Item column="71" ItemName="三氯苯②"></Item>
+		<Item column="72" ItemName="四氯苯③"></Item>
+		<Item column="73" ItemName="六氯苯"></Item>
+		<Item column="74" ItemName="硝基苯"></Item>
+		<Item column="75" ItemName="二硝基苯④"></Item>	
+		<Item column="76" ItemName="2,4-二硝基甲苯"></Item>	
+		<Item column="77" ItemName="2,4,6-三硝基甲苯"></Item>
+		<Item column="78" ItemName="硝基氯苯⑤"></Item>
+		<Item column="79" ItemName="2,4-二硝基氯苯"></Item>	
+		<Item column="80" ItemName="2,4-二氯苯酚"></Item>
+		<Item column="81" ItemName="2,4,6-三氯苯酚"></Item>
+		<Item column="82" ItemName="五氯酚"></Item>
+		<Item column="83" ItemName="苯胺"></Item>
+		<Item column="84" ItemName="联苯胺"></Item>
+		<Item column="85" ItemName="丙烯酰胺"></Item>
+		<Item column="86" ItemName="丙烯腈"></Item>
+		<Item column="87" ItemName="邻苯二甲酸二丁酯"></Item>	
+		<Item column="88" ItemName="邻苯二甲酸二（2-乙基己基）酯"></Item>
+		<Item column="89" ItemName="水合肼"></Item>
+		<Item column="90" ItemName="四乙基铅"></Item>
+		<Item column="91" ItemName="吡啶"></Item>
+		<Item column="92" ItemName="松节油"></Item>
+		<Item column="93" ItemName="苦味酸"></Item>
+		<Item column="94" ItemName="丁基黄原酸"></Item>	
+		<Item column="95" ItemName="活性氯"></Item>
+		<Item column="96" ItemName="滴滴涕"></Item>
+		<Item column="97" ItemName="林丹"></Item>
+		<Item column="98" ItemName="环氧七氯"></Item>
+		<Item column="99" ItemName="对硫磷"></Item>
+		<Item column="100" ItemName="甲基对硫磷"></Item>	
+		<Item column="101" ItemName="马拉硫磷"></Item>
+		<Item column="102" ItemName="乐果"></Item>
+		<Item column="103" ItemName="敌敌畏"></Item>
+		<Item column="104" ItemName="敌百虫"></Item>
+		<Item column="105" ItemName="内吸磷"></Item>
+		<Item column="106" ItemName="百菌清"></Item>
+		<Item column="107" ItemName="甲萘威"></Item>
+		<Item column="108" ItemName="溴氰菊酯"></Item>
+		<Item column="109" ItemName="阿特拉津"></Item>
+		<Item column="110" ItemName="苯并(a)芘"></Item>
+		<Item column="111" ItemName="甲基汞"></Item>
+		<Item column="112" ItemName="多氯联苯⑥"></Item>
+		<Item column="113" ItemName="微囊藻毒素-LR"></Item>
+		<Item column="114" ItemName="黄磷"></Item>
+		<Item column="115" ItemName="钼"></Item>
+		<Item column="116" ItemName="钴"></Item>
+		<Item column="117" ItemName="铍"></Item>
+		<Item column="118" ItemName="硼"></Item>
+		<Item column="119" ItemName="锑"></Item>
+		<Item column="120" ItemName="镍"></Item>
+		<Item column="121" ItemName="钡"></Item>
+		<Item column="122" ItemName="钒"></Item>
+		<Item column="123" ItemName="钛"></Item>
+		<Item column="124" ItemName="铊"></Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

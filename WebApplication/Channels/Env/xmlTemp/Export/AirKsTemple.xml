@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--环境空气科室导出配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="export">
+  <Point pointtable="T_ENV_P_AIR" itemtable="T_ENV_P_AIR_ITEM" startrow="1">
+    <PointInfo>
+      <Column tablecolumn="POINT_NAME" column="1">监测点名称</Column>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_AIRKS</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>POINT_ID</FillTablePointColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_AIRKS_ITEM</FillItemTableName>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="0" >年</FillData>
+      <FillData tablecolumn="MONTH"  column="2">月</FillData>
+      <!--<FillData tablecolumn="BEGIN_MONTH"  column="3">开始月</FillData>-->
+      <FillData tablecolumn="BEGIN_DAY"  column="3">开始日</FillData>
+      <FillData tablecolumn="BEGIN_HOUR"  column="4">开始时</FillData>
+      <FillData tablecolumn="BEGIN_MINUTE"  column="5">开始分</FillData>
+      <!--<FillData tablecolumn="END_MONTH"  column="7">结束月</FillData>-->
+      <FillData tablecolumn="END_DAY"  column="6">结束日</FillData>
+      <FillData tablecolumn="END_HOUR"   column="7">结束时</FillData>
+      <FillData tablecolumn="END_MINUTE"  column="8">结束分</FillData>
+    </FillInfo>
+    <ItemInfo>
+
+      <Item column="9" ItemName="二氧化硫"></Item>
+      <Item column="10" ItemName="二氧化氮"></Item>
+      <Item column="11" ItemName="PM10"></Item>
+      <Item column="12" ItemName="一氧化碳"></Item>
+      <Item column="13" ItemName="PM2.5"></Item>
+      <Item column="14" ItemName="臭氧最大1小时平均"></Item>
+      <Item column="15" ItemName="臭氧最大8小时滑动平均"></Item>
+     
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

@@ -1,0 +1,560 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Sys_GroupField>
+    <OID>19872</OID>
+    <Lab>LIMIS_BOD5</Lab>
+    <EnName>LIMIS_BOD5</EnName>
+    <Idx>1</Idx>
+    <GUID />
+  </Sys_GroupField>
+  <Sys_GroupField>
+    <OID>19874</OID>
+    <Lab>DtlLIMIS_BOD5270880</Lab>
+    <EnName>DtlLIMIS_BOD5270880</EnName>
+    <Idx>1</Idx>
+    <GUID />
+  </Sys_GroupField>
+  <Sys_MapData>
+    <No>LIMIS_BOD5</No>
+    <Name>LIMIS_BOD5</Name>
+    <FrmW>900</FrmW>
+    <FrmH>1200</FrmH>
+  </Sys_MapData>
+  <Sys_MapAttr>
+    <UIVisible>1</UIVisible>
+    <FK_MapData>DtlLIMIS_BOD5270880</FK_MapData>
+    <MyPK>DtlLIMIS_BOD5270880_analysis_id</MyPK>
+    <KeyOfEn>analysis_id</KeyOfEn>
+    <Name>analysis_id</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>5</X>
+    <Y>5</Y>
+    <UIBindKey>0</UIBindKey>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>1</UIVisible>
+    <FK_MapData>DtlLIMIS_BOD5270880</FK_MapData>
+    <MyPK>DtlLIMIS_BOD5270880_blank_volume</MyPK>
+    <KeyOfEn>blank_volume</KeyOfEn>
+    <Name>blank_volume</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>5</X>
+    <Y>5</Y>
+    <UIBindKey>0</UIBindKey>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>0</UIVisible>
+    <FK_MapData>DtlLIMIS_BOD5270880</FK_MapData>
+    <MyPK>DtlLIMIS_BOD5270880_FID</MyPK>
+    <KeyOfEn>FID</KeyOfEn>
+    <Name>FID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <X>5</X>
+    <Y>5</Y>
+    <UIBindKey />
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>1</UIVisible>
+    <FK_MapData>DtlLIMIS_BOD5270880</FK_MapData>
+    <MyPK>DtlLIMIS_BOD5270880_init_volume</MyPK>
+    <KeyOfEn>init_volume</KeyOfEn>
+    <Name>init_volume</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>5</X>
+    <Y>5</Y>
+    <UIBindKey>0</UIBindKey>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>1</UIVisible>
+    <FK_MapData>DtlLIMIS_BOD5270880</FK_MapData>
+    <MyPK>DtlLIMIS_BOD5270880_last_volume</MyPK>
+    <KeyOfEn>last_volume</KeyOfEn>
+    <Name>last_volume</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>5</X>
+    <Y>5</Y>
+    <UIBindKey>0</UIBindKey>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>1</UIVisible>
+    <FK_MapData>DtlLIMIS_BOD5270880</FK_MapData>
+    <MyPK>DtlLIMIS_BOD5270880_notes</MyPK>
+    <KeyOfEn>notes</KeyOfEn>
+    <Name>notes</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>5</X>
+    <Y>5</Y>
+    <UIBindKey>0</UIBindKey>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>0</UIVisible>
+    <FK_MapData>DtlLIMIS_BOD5270880</FK_MapData>
+    <MyPK>DtlLIMIS_BOD5270880_OID</MyPK>
+    <KeyOfEn>OID</KeyOfEn>
+    <Name>主键</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <X>5</X>
+    <Y>5</Y>
+    <UIBindKey />
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>0</UIVisible>
+    <FK_MapData>DtlLIMIS_BOD5270880</FK_MapData>
+    <MyPK>DtlLIMIS_BOD5270880_RDT</MyPK>
+    <KeyOfEn>RDT</KeyOfEn>
+    <Name>记录时间</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <X>5</X>
+    <Y>5</Y>
+    <UIBindKey />
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>0</UIVisible>
+    <FK_MapData>DtlLIMIS_BOD5270880</FK_MapData>
+    <MyPK>DtlLIMIS_BOD5270880_Rec</MyPK>
+    <KeyOfEn>Rec</KeyOfEn>
+    <Name>记录人</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>5</X>
+    <Y>5</Y>
+    <UIBindKey />
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>0</UIVisible>
+    <FK_MapData>DtlLIMIS_BOD5270880</FK_MapData>
+    <MyPK>DtlLIMIS_BOD5270880_RefPK</MyPK>
+    <KeyOfEn>RefPK</KeyOfEn>
+    <Name>关联ID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>5</X>
+    <Y>5</Y>
+    <UIBindKey />
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>1</UIVisible>
+    <FK_MapData>DtlLIMIS_BOD5270880</FK_MapData>
+    <MyPK>DtlLIMIS_BOD5270880_sample_consistency</MyPK>
+    <KeyOfEn>sample_consistency</KeyOfEn>
+    <Name>sample_consistency</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>5</X>
+    <Y>5</Y>
+    <UIBindKey>0</UIBindKey>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>1</UIVisible>
+    <FK_MapData>DtlLIMIS_BOD5270880</FK_MapData>
+    <MyPK>DtlLIMIS_BOD5270880_sample_id</MyPK>
+    <KeyOfEn>sample_id</KeyOfEn>
+    <Name>sample_id</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>5</X>
+    <Y>5</Y>
+    <UIBindKey>0</UIBindKey>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>1</UIVisible>
+    <FK_MapData>DtlLIMIS_BOD5270880</FK_MapData>
+    <MyPK>DtlLIMIS_BOD5270880_sample_volume</MyPK>
+    <KeyOfEn>sample_volume</KeyOfEn>
+    <Name>sample_volume</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>5</X>
+    <Y>5</Y>
+    <UIBindKey>0</UIBindKey>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>1</UIVisible>
+    <FK_MapData>DtlLIMIS_BOD5270880</FK_MapData>
+    <MyPK>DtlLIMIS_BOD5270880_titration_volume</MyPK>
+    <KeyOfEn>titration_volume</KeyOfEn>
+    <Name>titration_volume</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>5</X>
+    <Y>5</Y>
+    <UIBindKey>0</UIBindKey>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>1</UIVisible>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <MyPK>LIMIS_BOD5_analysis_date</MyPK>
+    <KeyOfEn>analysis_date</KeyOfEn>
+    <Name>analysis_date</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>284</X>
+    <Y>169</Y>
+    <UIBindKey />
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>1</UIVisible>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <MyPK>LIMIS_BOD5_analysis_item</MyPK>
+    <KeyOfEn>analysis_item</KeyOfEn>
+    <Name>analysis_item</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>497</X>
+    <Y>108</Y>
+    <UIBindKey />
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>1</UIVisible>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <MyPK>LIMIS_BOD5_item_standard</MyPK>
+    <KeyOfEn>item_standard</KeyOfEn>
+    <Name>item_standard</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>86</X>
+    <Y>238</Y>
+    <UIBindKey />
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>0</UIVisible>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <MyPK>LIMIS_BOD5_OID</MyPK>
+    <KeyOfEn>OID</KeyOfEn>
+    <Name>OID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <X>5</X>
+    <Y>5</Y>
+    <UIBindKey />
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>0</UIVisible>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <MyPK>LIMIS_BOD5_RDT</MyPK>
+    <KeyOfEn>RDT</KeyOfEn>
+    <Name>更新时间</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <X>5</X>
+    <Y>5</Y>
+    <UIBindKey />
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>1</UIVisible>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <MyPK>LIMIS_BOD5_sample_date</MyPK>
+    <KeyOfEn>sample_date</KeyOfEn>
+    <Name>sample_date</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>93</X>
+    <Y>162</Y>
+    <UIBindKey />
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>1</UIVisible>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <MyPK>LIMIS_BOD5_sample_name</MyPK>
+    <KeyOfEn>sample_name</KeyOfEn>
+    <Name>sample_name</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>302</X>
+    <Y>103</Y>
+    <UIBindKey />
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>1</UIVisible>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <MyPK>LIMIS_BOD5_sample_store</MyPK>
+    <KeyOfEn>sample_store</KeyOfEn>
+    <Name>sample_store</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>495</X>
+    <Y>182</Y>
+    <UIBindKey />
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <UIVisible>1</UIVisible>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <MyPK>LIMIS_BOD5_task_id</MyPK>
+    <KeyOfEn>task_id</KeyOfEn>
+    <Name>task_id</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <X>95</X>
+    <Y>94</Y>
+    <UIBindKey />
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+  </Sys_MapAttr>
+  <Sys_MapExt>
+    <MyPK>LIMIS_BOD5_analysis_item_AutoFull</MyPK>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <ExtType>AutoFull</ExtType>
+    <DoWay>0</DoWay>
+    <AttrOfOper>analysis_item</AttrOfOper>
+    <AttrsOfActive />
+    <Doc />
+    <Tag />
+    <Tag1 />
+    <Tag2 />
+    <Tag3 />
+    <AtPara />
+    <DBSrc />
+    <H>500</H>
+    <W>400</W>
+    <PRI>0</PRI>
+  </Sys_MapExt>
+  <Sys_MapExt>
+    <MyPK>LIMIS_BOD5_PageLoadFull</MyPK>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <ExtType>PageLoadFull</ExtType>
+    <DoWay>0</DoWay>
+    <AttrOfOper />
+    <AttrsOfActive />
+    <Doc />
+    <Tag>use [EMBMS_MAS]
+
+select task_id = DBO.T_MIS_MONITOR_TASK.TICKET_NUM, sample_name=DBO.T_MIS_MONITOR_TASK.PROJECT_NAME, 
+analysis_item=dbo.T_BASE_ITEM_INFO.ITEM_NAME, sample_date = dbo.T_MIS_MONITOR_SUBTASK.SAMPLE_FINISH_DATE,
+analysis_date=dbo.T_MIS_MONITOR_RESULT_APP.FINISH_DATE, sample_store=dbo.T_MIS_MONITOR_RESULT.REMARK_2,
+item_standard = dbo.T_BASE_METHOD_INFO.METHOD_CODE + ~ ~ +dbo.T_BASE_METHOD_INFO.METHOD_NAME
+
+from 
+dbo.T_MIS_MONITOR_RESULT
+left join dbo.T_MIS_MONITOR_RESULT_APP on (dbo.T_MIS_MONITOR_RESULT_APP.RESULT_ID = dbo.T_MIS_MONITOR_RESULT.ID)
+left join dbo.T_MIS_MONITOR_SAMPLE_INFO on (dbo.T_MIS_MONITOR_RESULT.SAMPLE_ID = dbo.T_MIS_MONITOR_SAMPLE_INFO.ID)
+left join dbo.T_MIS_MONITOR_SUBTASK on (T_MIS_MONITOR_SAMPLE_INFO.SUBTASK_ID = dbo.T_MIS_MONITOR_SUBTASK.ID)
+left join dbo.T_MIS_MONITOR_TASK on (dbo.T_MIS_MONITOR_TASK.ID = dbo.T_MIS_MONITOR_SUBTASK.task_ID)
+
+left join dbo.T_BASE_METHOD_INFO on (dbo.T_MIS_MONITOR_RESULT.STANDARD_ID= dbo.T_BASE_METHOD_INFO.ID)
+left join T_BASE_ITEM_INFO on (dbo.T_MIS_MONITOR_RESULT.ITEM_ID = dbo.T_BASE_ITEM_INFO.ID)
+
+left join dbo.T_BASE_ITEM_ANALYSIS on (dbo.T_BASE_ITEM_INFO.ID = dbo.T_BASE_ITEM_ANALYSIS.ITEM_ID and dbo.T_BASE_ITEM_ANALYSIS.ID = dbo.T_MIS_MONITOR_RESULT.ANALYSIS_METHOD_ID)
+left join dbo.T_BASE_APPARATUS_INFO on (dbo.T_BASE_APPARATUS_INFO.ID = dbo.T_BASE_ITEM_ANALYSIS.INSTRUMENT_ID)
+
+where dbo.T_MIS_MONITOR_RESULT.CCFLOW_ID1 = @OID</Tag>
+    <Tag1>*DtlLIMIS_BOD5270880=use [EMBMS_MAS]
+
+select sample_id=dbo.T_MIS_MONITOR_SAMPLE_INFO.SAMPLE_NAME
+from
+dbo.T_MIS_MONITOR_RESULT left join dbo.T_MIS_MONITOR_SAMPLE_INFO on (dbo.T_MIS_MONITOR_RESULT.SAMPLE_ID = dbo.T_MIS_MONITOR_SAMPLE_INFO.ID)
+left join dbo.T_MIS_MONITOR_SUBTASK on (T_MIS_MONITOR_SAMPLE_INFO.SUBTASK_ID = dbo.T_MIS_MONITOR_SUBTASK.ID)
+left join dbo.T_MIS_MONITOR_TASK on (dbo.T_MIS_MONITOR_TASK.ID = dbo.T_MIS_MONITOR_SUBTASK.task_ID)
+where dbo.T_MIS_MONITOR_RESULT.CCFLOW_ID1 = @OID</Tag1>
+    <Tag2 />
+    <Tag3 />
+    <AtPara />
+    <DBSrc />
+    <H>500</H>
+    <W>400</W>
+    <PRI>0</PRI>
+  </Sys_MapExt>
+  <Sys_FrmLab>
+    <MyPK>LB_1_LIMIS_BOD5</MyPK>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <Text>sample_store</Text>
+    <X>475</X>
+    <Y>182</Y>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontSize>14</FontSize>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight />
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>LB_2_LIMIS_BOD5</MyPK>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <Text>item_standard</Text>
+    <X>66</X>
+    <Y>238</Y>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontSize>14</FontSize>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight />
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>LB_3_LIMIS_BOD5</MyPK>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <Text>task_id</Text>
+    <X>75</X>
+    <Y>94</Y>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontSize>14</FontSize>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight />
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>LB_4_LIMIS_BOD5</MyPK>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <Text>sample_name</Text>
+    <X>282</X>
+    <Y>103</Y>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontSize>14</FontSize>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight />
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>LB_5_LIMIS_BOD5</MyPK>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <Text>analysis_item</Text>
+    <X>477</X>
+    <Y>108</Y>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontSize>14</FontSize>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight />
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>LB_6_LIMIS_BOD5</MyPK>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <Text>sample_date</Text>
+    <X>73</X>
+    <Y>162</Y>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontSize>14</FontSize>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight />
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>LB_7_LIMIS_BOD5</MyPK>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <Text>analysis_date</Text>
+    <X>264</X>
+    <Y>169</Y>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontSize>14</FontSize>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight />
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_MapDtl>
+    <FK_MapData>LIMIS_BOD5</FK_MapData>
+    <No>DtlLIMIS_BOD5270880</No>
+    <X>59</X>
+    <Y>289</Y>
+    <W>752</W>
+    <H>78</H>
+  </Sys_MapDtl>
+</NewDataSet>

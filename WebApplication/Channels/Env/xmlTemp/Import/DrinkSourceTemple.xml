@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--饮用水源地导入配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="import">
+  <!--设置监测监测点-->
+  <Point pointtable="T_ENV_P_DRINK_SRC" verticaltable="T_ENV_P_DRINK_SRC_V" itemtable="T_ENV_P_DRINK_SRC_V_ITEM">
+    <PointInfo>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">01</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="4"  column="6">二水厂</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">02</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="5"  column="6">慈湖水厂</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_DRINK_SRC</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>SECTION_ID</FillTablePointColumnName>
+      <!--数据填报表对应的垂线字段名称【非必须】-->
+      <FillTableVerticalColumnName>POINT_ID</FillTableVerticalColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_DRINK_SRC_ITEM</FillItemTableName>
+      <!--数据填报表序列号名称【必须】-->
+      <FillTableSerialNum>drink_src_fill_id</FillTableSerialNum>
+      <!--数据填报监测项目表序列号名称【必须】-->
+      <FillItemTableSerialNum>drink_src_fill_item_id</FillItemTableSerialNum>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="13">年</FillData>
+      <FillData tablecolumn="MONTH" column="14">月</FillData>
+    </FillInfo>
+    <ItemInfo tablecolumn="ITEM_VALUE">
+      <Item column="16">水温</Item>
+      <Item column="17">PH值</Item>
+      <Item column="18">溶解氧</Item>
+      <Item column="19">高锰酸盐指数</Item>
+      <Item column="20">化学需氧量</Item>
+      <Item column="21">五日生化需氧量</Item>
+      <Item column="22">氨氮</Item>
+      <Item column="23">总磷</Item>
+      <Item column="24">总氮</Item>
+	  <Item column="25">铜</Item>
+      <Item column="26">锌</Item>
+	  <Item column="27">氟化物</Item>
+      <Item column="28">硒</Item>
+      <Item column="29">砷</Item>
+      <Item column="30">汞</Item>
+      <Item column="31">镉</Item>
+	  <Item column="32">六价铬</Item>
+      <Item column="33">铅</Item>
+      <Item column="34">氰化物</Item>
+	  <Item column="35">挥发酚</Item>
+      <Item column="36">石油类</Item>
+      <Item column="37">阴离子表面活性剂</Item>
+      <Item column="38">硫化物</Item>
+      <Item column="39">粪大肠菌群</Item>
+	  <Item column="40">硫酸盐</Item>
+	  <Item column="41">氯化物</Item>
+	  <Item column="42">硝酸盐</Item>
+	  <Item column="43">铁</Item>
+	  <Item column="44">锰</Item>
+	  <Item column="45">三氯甲烷</Item>
+	  <Item column="46">四氯化碳</Item>
+	  <Item column="47">三溴甲烷</Item>
+	  <Item column="48">二氯甲烷</Item>
+      <Item column="49">1,2-二氯乙烷</Item>
+      <Item column="50">环氧氯丙烷</Item>
+	  <Item column="51">氯乙烯</Item>
+		<Item column="52">1,1-二氯乙烯</Item>	
+		<Item column="53">1,2-二氯乙烯</Item>
+		<Item column="54">三氯乙烯</Item>
+		<Item column="55">四氯乙烯</Item>
+		<Item column="56">氯丁二烯</Item>
+		<Item column="57">六氯丁二烯</Item>
+		<Item column="58">苯乙烯</Item>
+		<Item column="59">甲醛</Item>
+		<Item column="60">乙醛</Item>
+		<Item column="61">丙烯醛</Item>
+		<Item column="62">三氯乙醛</Item>
+		<Item column="63">苯</Item>
+		<Item column="64">甲苯</Item>
+		<Item column="65">乙苯</Item>
+		<Item column="66">二甲苯①</Item>
+		<Item column="67">异丙苯</Item>
+		<Item column="68">氯苯</Item>
+		<Item column="69">1,2-二氯苯</Item>	
+		<Item column="70">1,4-二氯苯</Item>
+		<Item column="71">三氯苯②</Item>
+		<Item column="72">四氯苯③</Item>
+		<Item column="73">六氯苯</Item>
+		<Item column="74">硝基苯</Item>
+		<Item column="75">二硝基苯④</Item>	
+		<Item column="76">2,4-二硝基甲苯</Item>	
+		<Item column="77">2,4,6-三硝基甲苯</Item>
+		<Item column="78">硝基氯苯⑤</Item>
+		<Item column="79">2,4-二硝基氯苯</Item>	
+		<Item column="80">2,4-二氯苯酚</Item>
+		<Item column="81">2,4,6-三氯苯酚</Item>
+		<Item column="82">五氯酚</Item>
+		<Item column="83">苯胺</Item>
+		<Item column="84">联苯胺</Item>
+		<Item column="85">丙烯酰胺</Item>
+		<Item column="86">丙烯腈</Item>
+		<Item column="87">邻苯二甲酸二丁酯</Item>	
+		<Item column="88">邻苯二甲酸二（2-乙基己基）酯</Item>
+		<Item column="89">水合肼</Item>
+		<Item column="90">四乙基铅</Item>
+		<Item column="91">吡啶</Item>
+		<Item column="92">松节油</Item>
+		<Item column="93">苦味酸</Item>
+		<Item column="94">丁基黄原酸</Item>	
+		<Item column="95">活性氯</Item>
+		<Item column="96">滴滴涕</Item>
+		<Item column="97">林丹</Item>
+		<Item column="98">环氧七氯</Item>
+		<Item column="99">对硫磷</Item>
+		<Item column="100">甲基对硫磷</Item>	
+		<Item column="101">马拉硫磷</Item>
+		<Item column="102">乐果</Item>
+		<Item column="103">敌敌畏</Item>
+		<Item column="104">敌百虫</Item>
+		<Item column="105">内吸磷</Item>
+		<Item column="106">百菌清</Item>
+		<Item column="107">甲萘威</Item>
+		<Item column="108">溴氰菊酯</Item>
+		<Item column="109">阿特拉津</Item>
+		<Item column="110">苯并(a)芘</Item>
+		<Item column="111">甲基汞</Item>
+		<Item column="112">多氯联苯⑥</Item>
+		<Item column="113">微囊藻毒素-LR</Item>
+		<Item column="114">黄磷</Item>
+		<Item column="115">钼</Item>
+		<Item column="116">钴</Item>
+		<Item column="117">铍</Item>
+		<Item column="118">硼</Item>
+		<Item column="119">锑</Item>
+		<Item column="120">镍</Item>
+		<Item column="121">钡</Item>
+		<Item column="122">钒</Item>
+		<Item column="123">钛</Item>
+		<Item column="124">铊</Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

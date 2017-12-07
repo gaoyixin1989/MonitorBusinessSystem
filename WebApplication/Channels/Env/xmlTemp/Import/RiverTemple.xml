@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--河流导入配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="import">
+  <!--设置监测监测点-->
+  <Point pointtable="T_ENV_P_RIVER" verticaltable="T_ENV_P_RIVER_V" itemtable="T_ENV_P_RIVER_V_ITEM">
+    <PointInfo>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1001</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="9"  column="1">大坝</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1002</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="11"  column="1">铁路桥</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1003</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="13"  column="1">石河河口</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1004</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="15"  column="1">海阳桥</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1005</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="17"  column="1">汤河桥</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1006</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="19"  column="1">汤河河口</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1007</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="21"  column="1">戴河村</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1008</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="23"  column="1">尼龙坝</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1009</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="25"  column="1">戴河河口</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1010</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="27"  column="1">水库出口</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1011</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="29"  column="1">卢王庄</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1012</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="31"  column="1">洋河河口</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1013</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="33"  column="1">王店子</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1014</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="35"  column="1">歇马台</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1015</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="37"  column="1">饮马河河口</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1016</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="39"  column="1">红旗杆</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1017</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="41"  column="1">桃林口</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1018</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="43"  column="1">田庄子</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1019</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="45"  column="1">新开河河口</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_RIVER</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>SECTION_ID</FillTablePointColumnName>
+      <!--数据填报表对应的垂线字段名称【非必须】-->
+      <FillTableVerticalColumnName>POINT_ID</FillTableVerticalColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_RIVER_ITEM</FillItemTableName>
+      <!--数据填报表序列号名称【必须】-->
+      <FillTableSerialNum>river_fill_id</FillTableSerialNum>
+      <!--数据填报监测项目表序列号名称【必须】-->
+      <FillItemTableSerialNum>river_fill_item_id</FillItemTableSerialNum>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="2">年</FillData>
+      <FillData tablecolumn="MONTH" column="3">月</FillData>
+      <FillData tablecolumn="DAY" column="4">日</FillData>
+    </FillInfo>
+    <ItemInfo tablecolumn="ITEM_VALUE">
+      <Item column="5">水温</Item>
+      <Item column="6">PH值</Item>
+      <Item column="7">溶解氧</Item>
+      <Item column="8">高锰酸盐指数</Item>
+      <Item column="9">化学需氧量</Item>
+      <Item column="10">五日生化需氧量</Item>
+      <Item column="11">氨氮（非离子氨）</Item>
+      <Item column="12">总氮</Item>
+      <Item column="13">总磷</Item>
+      <Item column="14">挥发酚</Item>
+      <Item column="15">石油类</Item>
+      <Item column="16">铜</Item>
+      <Item column="17">锌</Item>
+      <Item column="18">硒</Item>
+      <Item column="19">砷</Item>
+      <Item column="20">总汞</Item>
+      <Item column="21">镉</Item>
+      <Item column="22">氟化物</Item>
+      <Item column="23">六价铬</Item>
+      <Item column="24">铅</Item>
+      <Item column="25">氰化物</Item>
+      <Item column="26">阴离子表面活性剂</Item>
+      <Item column="27">硫化物</Item>
+      <Item column="28">粪大肠菌群</Item>
+      <Item column="29">盐度</Item>
+      <Item column="30">电导率</Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

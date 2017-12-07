@@ -1,0 +1,1466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Node_CreateBlankWork">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="flowNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="starter" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="parentWorkID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="parentFID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="parentFlowNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="parentNodeID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="parentEmp" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="jumpToNode" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="jumpToEmp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paras" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Node_CreateBlankWorkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Node_CreateBlankWorkResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFlowIdentification">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="workId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFlowIdentificationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFlowIdentificationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpWorkCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpWorkCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetEmpWorkCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRuningCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRuningCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetRuningCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApplyCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApplyCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetApplyCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCCCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isRead" nillable="true" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCCCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCCCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpWorks">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="queryParams" type="tns:ArrayOfArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="page" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ArrayOfString" nillable="true" type="tns:ArrayOfString" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetEmpWorksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmpWorksResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpStart">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpStartResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmpStartResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpStartHistory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fk_flow" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="queryParams" type="tns:ArrayOfArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="page" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpStartHistoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmpStartHistoryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSharing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isShare" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="queryParams" type="tns:ArrayOfArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="page" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSharingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSharingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRunning">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="queryParams" type="tns:ArrayOfArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="page" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRunningResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRunningResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompleateWork">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="queryParams" type="tns:ArrayOfArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="page" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompleateWorkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCompleateWorkResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="queryParams" type="tns:ArrayOfArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="page" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCCResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHungUp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="queryParams" type="tns:ArrayOfArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="page" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHungUpResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHungUpResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetNextWork">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="flowid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="workid" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="nodeid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="emps" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetNextWorkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetNextWorkResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetNextNodeFH">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="flowid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="workid" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="nodeid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="emps" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetNextNodeFHResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetNextNodeFHResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetNextCC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="workid" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="nodeid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="emps" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetNextCCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetNextCCResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBatchResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSingleWork">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="workid" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSingleWorkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSingleWorkResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Node_CC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fk_flow" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fk_node" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="workID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="toEmpNos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msgTitle" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msgDoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pFlowNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pWorkID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Node_CCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Node_CCResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="long" type="s:long" />
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="int" type="s:int" />
+      <s:element name="boolean" type="s:boolean" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Node_CreateBlankWorkSoapIn">
+    <wsdl:part name="parameters" element="tns:Node_CreateBlankWork" />
+  </wsdl:message>
+  <wsdl:message name="Node_CreateBlankWorkSoapOut">
+    <wsdl:part name="parameters" element="tns:Node_CreateBlankWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFlowIdentificationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFlowIdentification" />
+  </wsdl:message>
+  <wsdl:message name="GetFlowIdentificationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFlowIdentificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpWorkCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmpWorkCount" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpWorkCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmpWorkCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRuningCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRuningCount" />
+  </wsdl:message>
+  <wsdl:message name="GetRuningCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRuningCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApplyCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApplyCount" />
+  </wsdl:message>
+  <wsdl:message name="GetApplyCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApplyCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCCCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCCCount" />
+  </wsdl:message>
+  <wsdl:message name="GetCCCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCCCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpWorksSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmpWorks" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpWorksSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmpWorksResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpStartSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmpStart" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpStartSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmpStartResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpStartHistorySoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmpStartHistory" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpStartHistorySoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmpStartHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSharingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSharing" />
+  </wsdl:message>
+  <wsdl:message name="GetSharingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSharingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRunningSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRunning" />
+  </wsdl:message>
+  <wsdl:message name="GetRunningSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRunningResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCompleateWorkSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCompleateWork" />
+  </wsdl:message>
+  <wsdl:message name="GetCompleateWorkSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCompleateWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCCSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCC" />
+  </wsdl:message>
+  <wsdl:message name="GetCCSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCCResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHungUpSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHungUp" />
+  </wsdl:message>
+  <wsdl:message name="GetHungUpSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHungUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetNextWorkSoapIn">
+    <wsdl:part name="parameters" element="tns:SetNextWork" />
+  </wsdl:message>
+  <wsdl:message name="SetNextWorkSoapOut">
+    <wsdl:part name="parameters" element="tns:SetNextWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetNextNodeFHSoapIn">
+    <wsdl:part name="parameters" element="tns:SetNextNodeFH" />
+  </wsdl:message>
+  <wsdl:message name="SetNextNodeFHSoapOut">
+    <wsdl:part name="parameters" element="tns:SetNextNodeFHResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetNextCCSoapIn">
+    <wsdl:part name="parameters" element="tns:SetNextCC" />
+  </wsdl:message>
+  <wsdl:message name="SetNextCCSoapOut">
+    <wsdl:part name="parameters" element="tns:SetNextCCResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBatch" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSingleWorkSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSingleWork" />
+  </wsdl:message>
+  <wsdl:message name="GetSingleWorkSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSingleWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="Node_CCSoapIn">
+    <wsdl:part name="parameters" element="tns:Node_CC" />
+  </wsdl:message>
+  <wsdl:message name="Node_CCSoapOut">
+    <wsdl:part name="parameters" element="tns:Node_CCResponse" />
+  </wsdl:message>
+  <wsdl:message name="Node_CreateBlankWorkHttpGetIn">
+    <wsdl:part name="userNo" type="s:string" />
+    <wsdl:part name="flowNo" type="s:string" />
+    <wsdl:part name="starter" type="s:string" />
+    <wsdl:part name="title" type="s:string" />
+    <wsdl:part name="parentWorkID" type="s:string" />
+    <wsdl:part name="parentFID" type="s:string" />
+    <wsdl:part name="parentFlowNo" type="s:string" />
+    <wsdl:part name="parentNodeID" type="s:string" />
+    <wsdl:part name="parentEmp" type="s:string" />
+    <wsdl:part name="jumpToNode" type="s:string" />
+    <wsdl:part name="jumpToEmp" type="s:string" />
+    <wsdl:part name="paras" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Node_CreateBlankWorkHttpGetOut">
+    <wsdl:part name="Body" element="tns:long" />
+  </wsdl:message>
+  <wsdl:message name="GetFlowIdentificationHttpGetIn">
+    <wsdl:part name="userNo" type="s:string" />
+    <wsdl:part name="workId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetFlowIdentificationHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpWorkCountHttpGetIn">
+    <wsdl:part name="userNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpWorkCountHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetRuningCountHttpGetIn">
+    <wsdl:part name="userNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetRuningCountHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetApplyCountHttpGetIn">
+    <wsdl:part name="userNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetApplyCountHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpStartHttpGetIn">
+    <wsdl:part name="userNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpStartHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SetNextWorkHttpGetIn">
+    <wsdl:part name="flowid" type="s:string" />
+    <wsdl:part name="workid" type="s:string" />
+    <wsdl:part name="nodeid" type="s:string" />
+    <wsdl:part name="emps" type="s:string" />
+    <wsdl:part name="fid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetNextWorkHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="SetNextNodeFHHttpGetIn">
+    <wsdl:part name="flowid" type="s:string" />
+    <wsdl:part name="workid" type="s:string" />
+    <wsdl:part name="nodeid" type="s:string" />
+    <wsdl:part name="emps" type="s:string" />
+    <wsdl:part name="fid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetNextNodeFHHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="SetNextCCHttpGetIn">
+    <wsdl:part name="workid" type="s:string" />
+    <wsdl:part name="nodeid" type="s:string" />
+    <wsdl:part name="emps" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetNextCCHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchHttpGetIn">
+    <wsdl:part name="userNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSingleWorkHttpGetIn">
+    <wsdl:part name="workid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSingleWorkHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Node_CCHttpGetIn">
+    <wsdl:part name="userNo" type="s:string" />
+    <wsdl:part name="sid" type="s:string" />
+    <wsdl:part name="fk_flow" type="s:string" />
+    <wsdl:part name="fk_node" type="s:string" />
+    <wsdl:part name="workID" type="s:string" />
+    <wsdl:part name="toEmpNos" type="s:string" />
+    <wsdl:part name="msgTitle" type="s:string" />
+    <wsdl:part name="msgDoc" type="s:string" />
+    <wsdl:part name="pFlowNo" type="s:string" />
+    <wsdl:part name="pWorkID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Node_CCHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Node_CreateBlankWorkHttpPostIn">
+    <wsdl:part name="userNo" type="s:string" />
+    <wsdl:part name="flowNo" type="s:string" />
+    <wsdl:part name="starter" type="s:string" />
+    <wsdl:part name="title" type="s:string" />
+    <wsdl:part name="parentWorkID" type="s:string" />
+    <wsdl:part name="parentFID" type="s:string" />
+    <wsdl:part name="parentFlowNo" type="s:string" />
+    <wsdl:part name="parentNodeID" type="s:string" />
+    <wsdl:part name="parentEmp" type="s:string" />
+    <wsdl:part name="jumpToNode" type="s:string" />
+    <wsdl:part name="jumpToEmp" type="s:string" />
+    <wsdl:part name="paras" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Node_CreateBlankWorkHttpPostOut">
+    <wsdl:part name="Body" element="tns:long" />
+  </wsdl:message>
+  <wsdl:message name="GetFlowIdentificationHttpPostIn">
+    <wsdl:part name="userNo" type="s:string" />
+    <wsdl:part name="workId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetFlowIdentificationHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpWorkCountHttpPostIn">
+    <wsdl:part name="userNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpWorkCountHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetRuningCountHttpPostIn">
+    <wsdl:part name="userNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetRuningCountHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetApplyCountHttpPostIn">
+    <wsdl:part name="userNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetApplyCountHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpStartHttpPostIn">
+    <wsdl:part name="userNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpStartHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SetNextWorkHttpPostIn">
+    <wsdl:part name="flowid" type="s:string" />
+    <wsdl:part name="workid" type="s:string" />
+    <wsdl:part name="nodeid" type="s:string" />
+    <wsdl:part name="emps" type="s:string" />
+    <wsdl:part name="fid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetNextWorkHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="SetNextNodeFHHttpPostIn">
+    <wsdl:part name="flowid" type="s:string" />
+    <wsdl:part name="workid" type="s:string" />
+    <wsdl:part name="nodeid" type="s:string" />
+    <wsdl:part name="emps" type="s:string" />
+    <wsdl:part name="fid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetNextNodeFHHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="SetNextCCHttpPostIn">
+    <wsdl:part name="workid" type="s:string" />
+    <wsdl:part name="nodeid" type="s:string" />
+    <wsdl:part name="emps" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetNextCCHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchHttpPostIn">
+    <wsdl:part name="userNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSingleWorkHttpPostIn">
+    <wsdl:part name="workid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSingleWorkHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Node_CCHttpPostIn">
+    <wsdl:part name="userNo" type="s:string" />
+    <wsdl:part name="sid" type="s:string" />
+    <wsdl:part name="fk_flow" type="s:string" />
+    <wsdl:part name="fk_node" type="s:string" />
+    <wsdl:part name="workID" type="s:string" />
+    <wsdl:part name="toEmpNos" type="s:string" />
+    <wsdl:part name="msgTitle" type="s:string" />
+    <wsdl:part name="msgDoc" type="s:string" />
+    <wsdl:part name="pFlowNo" type="s:string" />
+    <wsdl:part name="pWorkID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Node_CCHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="ComleaderServerSoap">
+    <wsdl:operation name="Node_CreateBlankWork">
+      <wsdl:input message="tns:Node_CreateBlankWorkSoapIn" />
+      <wsdl:output message="tns:Node_CreateBlankWorkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFlowIdentification">
+      <wsdl:input message="tns:GetFlowIdentificationSoapIn" />
+      <wsdl:output message="tns:GetFlowIdentificationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpWorkCount">
+      <wsdl:input message="tns:GetEmpWorkCountSoapIn" />
+      <wsdl:output message="tns:GetEmpWorkCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRuningCount">
+      <wsdl:input message="tns:GetRuningCountSoapIn" />
+      <wsdl:output message="tns:GetRuningCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplyCount">
+      <wsdl:input message="tns:GetApplyCountSoapIn" />
+      <wsdl:output message="tns:GetApplyCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCCCount">
+      <wsdl:input message="tns:GetCCCountSoapIn" />
+      <wsdl:output message="tns:GetCCCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpWorks">
+      <wsdl:input message="tns:GetEmpWorksSoapIn" />
+      <wsdl:output message="tns:GetEmpWorksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpStart">
+      <wsdl:input message="tns:GetEmpStartSoapIn" />
+      <wsdl:output message="tns:GetEmpStartSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpStartHistory">
+      <wsdl:input message="tns:GetEmpStartHistorySoapIn" />
+      <wsdl:output message="tns:GetEmpStartHistorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSharing">
+      <wsdl:input message="tns:GetSharingSoapIn" />
+      <wsdl:output message="tns:GetSharingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRunning">
+      <wsdl:input message="tns:GetRunningSoapIn" />
+      <wsdl:output message="tns:GetRunningSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompleateWork">
+      <wsdl:input message="tns:GetCompleateWorkSoapIn" />
+      <wsdl:output message="tns:GetCompleateWorkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCC">
+      <wsdl:input message="tns:GetCCSoapIn" />
+      <wsdl:output message="tns:GetCCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHungUp">
+      <wsdl:input message="tns:GetHungUpSoapIn" />
+      <wsdl:output message="tns:GetHungUpSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetNextWork">
+      <wsdl:input message="tns:SetNextWorkSoapIn" />
+      <wsdl:output message="tns:SetNextWorkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetNextNodeFH">
+      <wsdl:input message="tns:SetNextNodeFHSoapIn" />
+      <wsdl:output message="tns:SetNextNodeFHSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetNextCC">
+      <wsdl:input message="tns:SetNextCCSoapIn" />
+      <wsdl:output message="tns:SetNextCCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatch">
+      <wsdl:input message="tns:GetBatchSoapIn" />
+      <wsdl:output message="tns:GetBatchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleWork">
+      <wsdl:input message="tns:GetSingleWorkSoapIn" />
+      <wsdl:output message="tns:GetSingleWorkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Node_CC">
+      <wsdl:input message="tns:Node_CCSoapIn" />
+      <wsdl:output message="tns:Node_CCSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ComleaderServerHttpGet">
+    <wsdl:operation name="Node_CreateBlankWork">
+      <wsdl:input message="tns:Node_CreateBlankWorkHttpGetIn" />
+      <wsdl:output message="tns:Node_CreateBlankWorkHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFlowIdentification">
+      <wsdl:input message="tns:GetFlowIdentificationHttpGetIn" />
+      <wsdl:output message="tns:GetFlowIdentificationHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpWorkCount">
+      <wsdl:input message="tns:GetEmpWorkCountHttpGetIn" />
+      <wsdl:output message="tns:GetEmpWorkCountHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRuningCount">
+      <wsdl:input message="tns:GetRuningCountHttpGetIn" />
+      <wsdl:output message="tns:GetRuningCountHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplyCount">
+      <wsdl:input message="tns:GetApplyCountHttpGetIn" />
+      <wsdl:output message="tns:GetApplyCountHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpStart">
+      <wsdl:input message="tns:GetEmpStartHttpGetIn" />
+      <wsdl:output message="tns:GetEmpStartHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetNextWork">
+      <wsdl:input message="tns:SetNextWorkHttpGetIn" />
+      <wsdl:output message="tns:SetNextWorkHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetNextNodeFH">
+      <wsdl:input message="tns:SetNextNodeFHHttpGetIn" />
+      <wsdl:output message="tns:SetNextNodeFHHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetNextCC">
+      <wsdl:input message="tns:SetNextCCHttpGetIn" />
+      <wsdl:output message="tns:SetNextCCHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatch">
+      <wsdl:input message="tns:GetBatchHttpGetIn" />
+      <wsdl:output message="tns:GetBatchHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleWork">
+      <wsdl:input message="tns:GetSingleWorkHttpGetIn" />
+      <wsdl:output message="tns:GetSingleWorkHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Node_CC">
+      <wsdl:input message="tns:Node_CCHttpGetIn" />
+      <wsdl:output message="tns:Node_CCHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ComleaderServerHttpPost">
+    <wsdl:operation name="Node_CreateBlankWork">
+      <wsdl:input message="tns:Node_CreateBlankWorkHttpPostIn" />
+      <wsdl:output message="tns:Node_CreateBlankWorkHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFlowIdentification">
+      <wsdl:input message="tns:GetFlowIdentificationHttpPostIn" />
+      <wsdl:output message="tns:GetFlowIdentificationHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpWorkCount">
+      <wsdl:input message="tns:GetEmpWorkCountHttpPostIn" />
+      <wsdl:output message="tns:GetEmpWorkCountHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRuningCount">
+      <wsdl:input message="tns:GetRuningCountHttpPostIn" />
+      <wsdl:output message="tns:GetRuningCountHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplyCount">
+      <wsdl:input message="tns:GetApplyCountHttpPostIn" />
+      <wsdl:output message="tns:GetApplyCountHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpStart">
+      <wsdl:input message="tns:GetEmpStartHttpPostIn" />
+      <wsdl:output message="tns:GetEmpStartHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetNextWork">
+      <wsdl:input message="tns:SetNextWorkHttpPostIn" />
+      <wsdl:output message="tns:SetNextWorkHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetNextNodeFH">
+      <wsdl:input message="tns:SetNextNodeFHHttpPostIn" />
+      <wsdl:output message="tns:SetNextNodeFHHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetNextCC">
+      <wsdl:input message="tns:SetNextCCHttpPostIn" />
+      <wsdl:output message="tns:SetNextCCHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatch">
+      <wsdl:input message="tns:GetBatchHttpPostIn" />
+      <wsdl:output message="tns:GetBatchHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleWork">
+      <wsdl:input message="tns:GetSingleWorkHttpPostIn" />
+      <wsdl:output message="tns:GetSingleWorkHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Node_CC">
+      <wsdl:input message="tns:Node_CCHttpPostIn" />
+      <wsdl:output message="tns:Node_CCHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ComleaderServerSoap" type="tns:ComleaderServerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Node_CreateBlankWork">
+      <soap:operation soapAction="http://tempuri.org/Node_CreateBlankWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlowIdentification">
+      <soap:operation soapAction="http://tempuri.org/GetFlowIdentification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpWorkCount">
+      <soap:operation soapAction="http://tempuri.org/GetEmpWorkCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRuningCount">
+      <soap:operation soapAction="http://tempuri.org/GetRuningCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplyCount">
+      <soap:operation soapAction="http://tempuri.org/GetApplyCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCCCount">
+      <soap:operation soapAction="http://tempuri.org/GetCCCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpWorks">
+      <soap:operation soapAction="http://tempuri.org/GetEmpWorks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpStart">
+      <soap:operation soapAction="http://tempuri.org/GetEmpStart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpStartHistory">
+      <soap:operation soapAction="http://tempuri.org/GetEmpStartHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSharing">
+      <soap:operation soapAction="http://tempuri.org/GetSharing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRunning">
+      <soap:operation soapAction="http://tempuri.org/GetRunning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompleateWork">
+      <soap:operation soapAction="http://tempuri.org/GetCompleateWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCC">
+      <soap:operation soapAction="http://tempuri.org/GetCC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHungUp">
+      <soap:operation soapAction="http://tempuri.org/GetHungUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetNextWork">
+      <soap:operation soapAction="http://tempuri.org/SetNextWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetNextNodeFH">
+      <soap:operation soapAction="http://tempuri.org/SetNextNodeFH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetNextCC">
+      <soap:operation soapAction="http://tempuri.org/SetNextCC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatch">
+      <soap:operation soapAction="http://tempuri.org/GetBatch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleWork">
+      <soap:operation soapAction="http://tempuri.org/GetSingleWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Node_CC">
+      <soap:operation soapAction="http://tempuri.org/Node_CC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ComleaderServerSoap12" type="tns:ComleaderServerSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Node_CreateBlankWork">
+      <soap12:operation soapAction="http://tempuri.org/Node_CreateBlankWork" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlowIdentification">
+      <soap12:operation soapAction="http://tempuri.org/GetFlowIdentification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpWorkCount">
+      <soap12:operation soapAction="http://tempuri.org/GetEmpWorkCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRuningCount">
+      <soap12:operation soapAction="http://tempuri.org/GetRuningCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplyCount">
+      <soap12:operation soapAction="http://tempuri.org/GetApplyCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCCCount">
+      <soap12:operation soapAction="http://tempuri.org/GetCCCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpWorks">
+      <soap12:operation soapAction="http://tempuri.org/GetEmpWorks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpStart">
+      <soap12:operation soapAction="http://tempuri.org/GetEmpStart" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpStartHistory">
+      <soap12:operation soapAction="http://tempuri.org/GetEmpStartHistory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSharing">
+      <soap12:operation soapAction="http://tempuri.org/GetSharing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRunning">
+      <soap12:operation soapAction="http://tempuri.org/GetRunning" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompleateWork">
+      <soap12:operation soapAction="http://tempuri.org/GetCompleateWork" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCC">
+      <soap12:operation soapAction="http://tempuri.org/GetCC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHungUp">
+      <soap12:operation soapAction="http://tempuri.org/GetHungUp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetNextWork">
+      <soap12:operation soapAction="http://tempuri.org/SetNextWork" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetNextNodeFH">
+      <soap12:operation soapAction="http://tempuri.org/SetNextNodeFH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetNextCC">
+      <soap12:operation soapAction="http://tempuri.org/SetNextCC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatch">
+      <soap12:operation soapAction="http://tempuri.org/GetBatch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleWork">
+      <soap12:operation soapAction="http://tempuri.org/GetSingleWork" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Node_CC">
+      <soap12:operation soapAction="http://tempuri.org/Node_CC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ComleaderServerHttpGet" type="tns:ComleaderServerHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="Node_CreateBlankWork">
+      <http:operation location="/Node_CreateBlankWork" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlowIdentification">
+      <http:operation location="/GetFlowIdentification" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpWorkCount">
+      <http:operation location="/GetEmpWorkCount" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRuningCount">
+      <http:operation location="/GetRuningCount" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplyCount">
+      <http:operation location="/GetApplyCount" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpStart">
+      <http:operation location="/GetEmpStart" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetNextWork">
+      <http:operation location="/SetNextWork" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetNextNodeFH">
+      <http:operation location="/SetNextNodeFH" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetNextCC">
+      <http:operation location="/SetNextCC" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatch">
+      <http:operation location="/GetBatch" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleWork">
+      <http:operation location="/GetSingleWork" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Node_CC">
+      <http:operation location="/Node_CC" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ComleaderServerHttpPost" type="tns:ComleaderServerHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="Node_CreateBlankWork">
+      <http:operation location="/Node_CreateBlankWork" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlowIdentification">
+      <http:operation location="/GetFlowIdentification" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpWorkCount">
+      <http:operation location="/GetEmpWorkCount" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRuningCount">
+      <http:operation location="/GetRuningCount" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplyCount">
+      <http:operation location="/GetApplyCount" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpStart">
+      <http:operation location="/GetEmpStart" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetNextWork">
+      <http:operation location="/SetNextWork" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetNextNodeFH">
+      <http:operation location="/SetNextNodeFH" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetNextCC">
+      <http:operation location="/SetNextCC" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatch">
+      <http:operation location="/GetBatch" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleWork">
+      <http:operation location="/GetSingleWork" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Node_CC">
+      <http:operation location="/Node_CC" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ComleaderServer">
+    <wsdl:port name="ComleaderServerSoap" binding="tns:ComleaderServerSoap">
+      <soap:address location="http://localhost:20005/AppServices/ComleaderServer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ComleaderServerSoap12" binding="tns:ComleaderServerSoap12">
+      <soap12:address location="http://localhost:20005/AppServices/ComleaderServer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ComleaderServerHttpGet" binding="tns:ComleaderServerHttpGet">
+      <http:address location="http://localhost:20005/AppServices/ComleaderServer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ComleaderServerHttpPost" binding="tns:ComleaderServerHttpPost">
+      <http:address location="http://localhost:20005/AppServices/ComleaderServer.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

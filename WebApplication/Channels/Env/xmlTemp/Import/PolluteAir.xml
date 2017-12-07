@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--污染源常规废气导入配置信息-->
+<!--模板设置-->
+<GlobalSettings type="import">
+  <Point pointtable="T_ENV_P_POLLUTE" itemtable="T_ENV_P_POLLUTE_ITEM" startrow="1" endrow="200"> 
+    <PointInfo>
+      <Column tablecolumn="POINT_NAME" column="6" primary="true">监测点名称</Column>
+    </PointInfo>
+  </Point>
+
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_POLLUTE_AIR</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>POINT_ID</FillTablePointColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_POLLUTE_AIR_ITEM</FillItemTableName>
+      <!--数据填报表序列号名称【必须】-->
+      <FillTableSerialNum>PolluteAir_fill_id</FillTableSerialNum>
+      <!--数据填报监测项目表序列号名称【必须】-->
+      <FillItemTableSerialNum>PolluteAir_fill_item_id</FillItemTableSerialNum>
+    </Config>
+
+    <!--数据填报表字段-->
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="0">年</FillData>
+      <FillData tablecolumn="EnterPrise_Name" column="1" primary="true">企业名称</FillData>
+      <FillData tablecolumn="Season" column="2">季度</FillData>
+      <FillData tablecolumn="Times" column="3">次数</FillData>
+      <FillData tablecolumn="MONTH"  column="4">月</FillData>
+      <FillData tablecolumn="DAY"   column="5">日</FillData>
+      <FillData tablecolumn="OQty"  column="7">排污设备名称</FillData>
+      <FillData tablecolumn="PollutePer"   column="8">排放设备类型</FillData>
+      <FillData tablecolumn="PolluteCalPer"   column="9">生产产品</FillData>
+      <FillData tablecolumn="Is_Standard"   column="10">生产能力</FillData>
+      <FillData tablecolumn="AirQty"  column="11">生产能力单位</FillData>
+      <FillData tablecolumn="MO_Date"  column="12">投产日期</FillData>
+      <FillData tablecolumn="Fuel_Type"  column="13">燃料类型</FillData>
+      <FillData tablecolumn="Fuel_Qty"  column="14">燃料年消耗量</FillData>
+      <FillData tablecolumn="Fuel_Model"  column="15">锅炉燃烧方式</FillData>
+      <FillData tablecolumn="Fuel_Tech"  column="16">低炭燃烧技术</FillData>
+      <FillData tablecolumn="Is_Fuel"  column="17">是否循环流化床锅炉</FillData>
+      <FillData tablecolumn="Discharge_Way"  column="18">排放规律</FillData>
+      <FillData tablecolumn="MO_Hour_Qty"  column="19">日生产小时数</FillData>
+      <FillData tablecolumn="Load_Mode"  column="20">工况负荷</FillData>
+      <FillData tablecolumn="Point_Temp"  column="21">测点温度</FillData>
+      <FillData tablecolumn="Is_Run"  column="22">治理设施是否正常运行</FillData>
+      <FillData tablecolumn="Measured"  column="23">处理设施前实测浓度</FillData>
+      <FillData tablecolumn="Waste_Air_Qty"  column="24">处理设施前实测废气排放量</FillData>
+    </FillInfo>
+
+    <!--数据填报监测项目表字段-->
+    <ItemInfo tablecolumn="ITEM_VALUE">
+      <Item column="25" ItemName="烟尘">
+        <Evaluation rowtype="horizontal" tablecolumn="OQty" column="26">烟尘含氧量</Evaluation>
+        <Evaluation rowtype="horizontal" tablecolumn="PollutePer" column="27">烟尘污染物实测浓度</Evaluation>
+        <Evaluation rowtype="horizontal" tablecolumn="PolluteCalPer" column="28">烟尘污染物折算浓度</Evaluation>
+        <Evaluation rowtype="horizontal" tablecolumn="Up_Line" column="29">烟尘排放上线</Evaluation>
+        <Evaluation rowtype="horizontal" tablecolumn="Down_Line" column="30">烟尘排放下线</Evaluation>
+        <Evaluation rowtype="horizontal" tablecolumn="Uom" column="31">烟尘排放单位</Evaluation>
+        <Evaluation rowtype="horizontal" tablecolumn="Standard" column="32">烟尘超标倍数</Evaluation>
+        <Evaluation rowtype="horizontal" tablecolumn="Is_Standard" column="33">烟尘浓度是否达标</Evaluation>
+        <Evaluation rowtype="horizontal" tablecolumn="AirQty" column="34">烟尘废气排放量</Evaluation>
+      </Item>
+      <Item column="35" ItemName="二氧化硫">
+      <Evaluation rowtype="horizontal" tablecolumn="OQty" column="36">二氧化硫含氧量</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="PollutePer" column="37">二氧化硫污染物实测浓度</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="PolluteCalPer" column="38">二氧化硫污染物折算浓度</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="Up_Line" column="39">二氧化硫排放上线</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="Down_Line" column="40">二氧化硫排放下线</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="Uom" column="41">二氧化硫排放单位</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="Standard" column="42">二氧化硫超标倍数</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="Is_Standard" column="43">二氧化硫浓度是否达标</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="AirQty" column="44">二氧化硫废气排放量</Evaluation>
+      </Item>
+      <Item column="45"  ItemName="氮氧化物">
+      <Evaluation rowtype="horizontal" tablecolumn="OQty" column="46">氮氧化物含氧量</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="PollutePer" column="47">氮氧化物污染物实测浓度</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="PolluteCalPer" column="48">氮氧化物污染物折算浓度</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="Up_Line" column="49">氮氧化物排放上线</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="Down_Line" column="50">氮氧化物排放下线</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="Uom" column="51">氮氧化物排放单位</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="Standard" column="52">氮氧化物超标倍数</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="Is_Standard" column="53">氮氧化物浓度是否达标</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="AirQty" column="54">氮氧化物废气排放量</Evaluation>
+      </Item>
+      <Item column="55"  ItemName="颗粒物">
+      <Evaluation rowtype="horizontal" tablecolumn="OQty" column="56">颗粒物含氧量</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="PollutePer" column="57">颗粒物污染物实测浓度</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="PolluteCalPer" column="58">颗粒物污染物折算浓度</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="Up_Line" column="59">颗粒物排放上线</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="Down_Line" column="60">颗粒物排放下线</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="Uom" column="61">颗粒物排放单位</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="Standard" column="62">颗粒物超标倍数</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="Is_Standard" column="63">颗粒物浓度是否达标</Evaluation>
+      <Evaluation rowtype="horizontal" tablecolumn="AirQty" column="64">颗粒物废气排放量</Evaluation>
+        <Item column="65"  ItemName="氟化物">
+          <Evaluation rowtype="horizontal" tablecolumn="OQty" column="66">颗粒物含氧量</Evaluation>
+          <Evaluation rowtype="horizontal" tablecolumn="PollutePer" column="67">颗粒物污染物实测浓度</Evaluation>
+          <Evaluation rowtype="horizontal" tablecolumn="PolluteCalPer" column="68">颗粒物污染物折算浓度</Evaluation>
+          <Evaluation rowtype="horizontal" tablecolumn="Up_Line" column="69">颗粒物排放上线</Evaluation>
+          <Evaluation rowtype="horizontal" tablecolumn="Down_Line" column="70">颗粒物排放下线</Evaluation>
+          <Evaluation rowtype="horizontal" tablecolumn="Uom" column="71">颗粒物排放单位</Evaluation>
+          <Evaluation rowtype="horizontal" tablecolumn="Standard" column="72">颗粒物超标倍数</Evaluation>
+          <Evaluation rowtype="horizontal" tablecolumn="Is_Standard" column="73">颗粒物浓度是否达标</Evaluation>
+          <Evaluation rowtype="horizontal" tablecolumn="AirQty" column="74">颗粒物废气排放量</Evaluation>
+        </Item>
+          <Item column="75"  ItemName="林格曼黑度">
+            <Evaluation rowtype="horizontal" tablecolumn="OQty" column="76">颗粒物含氧量</Evaluation>
+            <Evaluation rowtype="horizontal" tablecolumn="PollutePer" column="77">颗粒物污染物实测浓度</Evaluation>
+            <Evaluation rowtype="horizontal" tablecolumn="PolluteCalPer" column="78">颗粒物污染物折算浓度</Evaluation>
+            <Evaluation rowtype="horizontal" tablecolumn="Up_Line" column="79">颗粒物排放上线</Evaluation>
+            <Evaluation rowtype="horizontal" tablecolumn="Down_Line" column="80">颗粒物排放下线</Evaluation>
+            <Evaluation rowtype="horizontal" tablecolumn="Uom" column="81">颗粒物排放单位</Evaluation>
+            <Evaluation rowtype="horizontal" tablecolumn="Standard" column="82">颗粒物超标倍数</Evaluation>
+            <Evaluation rowtype="horizontal" tablecolumn="Is_Standard" column="83">颗粒物浓度是否达标</Evaluation>
+            <Evaluation rowtype="horizontal" tablecolumn="AirQty" column="84">颗粒物废气排放量</Evaluation>
+          </Item>
+      </Item>
+    </ItemInfo>
+
+  </FillData>
+</GlobalSettings>

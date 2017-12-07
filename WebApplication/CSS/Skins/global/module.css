@@ -1,0 +1,95 @@
+﻿body
+{
+    margin: 3px;
+}
+.search, .input
+{
+    margin-bottom: 2px;
+}
+
+/* 查询条件 */
+.search .filter
+{
+    font-size: 13px;
+    line-height: 2.5;
+    padding: 0 6px;
+}
+
+
+/* 模块名称 */
+.moduleDesc
+{
+    padding-top: 11px;
+}
+.moduleDesc .split
+{
+    padding: 2px;
+}
+.moduleDesc .title
+{
+    font-size: 13px;
+    padding: 5px 14px 1px;
+}
+.checkboxList label
+{
+    font-size: 12px;
+}
+.label
+{
+    font-size: 12px;
+}
+
+.report #llblChart, .report #llblData,.report #llblDataChart
+{
+    display: inline-block;
+    height: 24px;
+    width: 102px;
+    margin-right: 4px;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+.report .tool .action
+{
+    height: 24px;
+}
+.report .tool .action a
+{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: Black;
+}
+.report #llblDataChart{ margin-left:208px; padding: 6px 0 0 13px;}
+.report .reportdatachart{margin-left:35px;}
+.report #llblData
+{
+    margin-left: 104px;
+}
+.report .tool
+{
+    margin-bottom: 3px;
+}
+.report .tool .days
+{
+    float:left;
+    width: 111px;
+    margin-left: 500px;
+     position: absolute;
+}
+.report .tool .days .next, .report .tool .days .prev
+{
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+    text-decoration: none;
+    padding: 4px 0 0 9px;
+}
+.report .tool .days .prev
+{
+    width: 46px;
+}
+.report .tool .days .next
+{
+    width: 47px;
+}
+

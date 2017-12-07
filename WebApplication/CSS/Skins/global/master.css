@@ -1,0 +1,127 @@
+﻿body
+{
+    margin: 0;
+}
+.search .moduleDesc
+{
+    padding: 4px 20px;
+    font-size: 13px;
+    border-bottom:1px solid #CCCCCC;
+    
+}
+.search .moduleDesc .title
+{
+    
+    color: White;
+    font-size: 13px;
+    margin-left: 10px;
+    padding: 3px 8px;
+    }
+
+.search .moduleDesc .split
+{
+     height:3px;
+    }
+.search
+{
+    margin-bottom: 2px;
+    background-color: #F0F0F0;
+    border: 1px solid #D6D5D5;
+}
+
+.search .filter
+{
+    font-size: 13px;
+    line-height: 2.5;
+    padding: 0 6px;
+}
+
+.search .filter select, .search .filter input
+{
+    border: 1px solid #D6D5D5;
+}
+.search .combo, .panel .combo-panel
+{
+    border-color: #D6D5D5;
+}
+.search .combo input
+{
+    border: 0;
+}
+
+
+.data table.grid td.edit, .data table.grid td.del
+{
+    text-align: center;
+}
+.data table.grid td.edit a
+{
+    background-image: url(images/gridEdit.gif);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    width: 12px;
+}
+.data table.grid td.del a
+{
+    background-image: url(images/gridDel.gif);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    width: 12px;
+}
+.data table.grid
+{
+    font-size: 12px;
+    font-family: Arial;
+    border: 1px solid #D6D6D6;
+    border-collapse: collapse;
+    width: 100%;
+}
+.data table.grid th
+{
+    background: url(images/thbg.jpg) repeat;
+    border-bottom: 1px solid #D6D6D6;
+    border-right: 1px solid #D6D6D6;
+    color: #666666;
+    font-weight:  bold;
+    padding: 4px 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+.data table.grid td
+{
+    border-bottom: 1px solid #D6D6D6;
+    border-right: 1px solid #D6D6D6;
+    padding: 7px 10px 7px 5px;
+    
+    white-space: nowrap;
+}
+.data .panel-body
+{
+    border-color: #D6D6D6;
+}
+.data .datagrid-header td
+{
+    background: url(images/thbg.jpg) repeat;
+    border-bottom: 1px solid #D6D6D6;
+    border-right: 1px solid #D6D6D6;
+    padding: 4px 10px;
+    color: #666666;
+    font-weight: normal;
+}
+.data .datagrid-body td, .data .datagrid-footer td
+{
+    border-bottom: 1px solid #D6D6D6;
+    border-right: 1px solid #D6D6D6;
+    padding: 7px 15px 7px 5px;
+    text-align: right;
+}
+.data .panel-header
+{
+    background-image: url("images/searchTitleBG.gif");
+    border-color: #D6D5D5;
+    color: #484747;
+}
+
+

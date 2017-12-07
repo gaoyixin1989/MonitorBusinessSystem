@@ -1,0 +1,26 @@
+﻿
+.node
+{
+    border: 1px solid #00A6E0;
+
+}
+.node .title
+{
+    background-image: url(images/master/sititle.gif);
+    border-bottom: 1px solid #00A6E0;
+    border-left: 6px solid #44B3EC;
+    border-right: 6px solid #44B3EC;
+
+}
+.node .content
+{
+    border-bottom: 5px solid #D6F4FB;
+    border-left: 5px solid #D6F4FB;
+    border-right: 5px solid #D6F4FB;
+}
+.node .content table,.node .content2
+{
+    border-bottom: 1px solid #00A6E0;
+    border-left: 1px solid #00A6E0;
+    border-right: 1px solid #00A6E0;
+}

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--饮用水源地（地下）导入配置信息--> 
+
+<!--模板设置-->
+<GlobalSettings type="import">
+  <!--设置监测监测点-->
+  <Point pointtable="T_ENV_P_DRINK_SRC" verticaltable="T_ENV_P_DRINK_SRC_V" itemtable="T_ENV_P_DRINK_SRC_V_ITEM">
+    <PointInfo>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">214</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="1"  column="4">井水厂</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">215</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="2"  column="4">东周水厂</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">216</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="3"  column="4">石佛水厂</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_UNDERDRINK_SRC</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>SECTION_ID</FillTablePointColumnName>
+      <!--数据填报表对应的垂线字段名称【非必须】-->
+      <FillTableVerticalColumnName>POINT_ID</FillTableVerticalColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_UNDERDRINK_SRC_ITEM</FillItemTableName>
+      <!--数据填报表序列号名称【必须】-->
+      <FillTableSerialNum>drink_src_fill_id</FillTableSerialNum>
+      <!--数据填报监测项目表序列号名称【必须】-->
+      <FillItemTableSerialNum>drink_src_fill_item_id</FillItemTableSerialNum>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="0">年</FillData>
+      <FillData tablecolumn="MONTH" column="1">月</FillData>
+      <FillData tablecolumn="DAY" column="7">采样时间</FillData>
+	  <FillData tablecolumn="KPF" column="8">水期代码</FillData>
+    </FillInfo>
+    <ItemInfo tablecolumn="ITEM_VALUE">
+      <Item column="9">pH值</Item>
+      <Item column="10">总硬度</Item>
+      <Item column="11">硫酸盐</Item>
+      <Item column="12">氯化物</Item>
+      <Item column="13">铁</Item>
+      <Item column="14">锰</Item>
+      <Item column="15">铜</Item>
+      <Item column="16">锌</Item>
+      <Item column="17">挥发酚</Item>
+	  <Item column="18">阴离子表面活性剂</Item>
+      <Item column="19">高锰酸盐指数</Item>
+	  <Item column="20">硝酸盐</Item>
+      <Item column="21">亚硝酸盐</Item>
+      <Item column="22">氨氮</Item>
+      <Item column="23">氟化物</Item>
+      <Item column="24">总氰化物</Item>
+      <Item column="25">汞</Item>
+      <Item column="26">砷</Item>
+	  <Item column="27">硒</Item>
+      <Item column="28">镉</Item>
+      <Item column="29">六价铬</Item>
+      <Item column="30">铅</Item>
+      <Item column="31">总大肠菌群</Item>
+	  <Item column="32">色度</Item>
+	  <Item column="33">浊度</Item>
+	  <Item column="34">碘化物</Item>
+	  <Item column="35">钼</Item>
+	  <Item column="36">铍</Item>
+	  <Item column="37">钴</Item>
+	  <Item column="38">钡</Item>
+	  <Item column="39">镍</Item>
+	  <Item column="40">滴滴涕</Item>
+      <Item column="41">六六六</Item>
+      <Item column="42">细菌总数</Item>
+	  <Item column="43">总α放射性</Item>
+		<Item column="44">总β放射性</Item>	
+		<Item column="45">溶解性总固体</Item>
+		<Item column="46">嗅和味</Item>
+		<Item column="47">肉眼可见物</Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

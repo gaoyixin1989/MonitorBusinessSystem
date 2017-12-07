@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--河流导出配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="export">
+  <!--设置监测监测点-->
+  <Point pointtable="T_ENV_P_DRINK_UNDER" verticaltable="" itemtable="T_ENV_P_DRINK_UNDER_ITEM">
+    <PointInfo>
+      <SubPoint>
+        <SubPointCode tablecolumn="POINT_CODE">XD032</SubPointCode>
+        <SubPointName tablecolumn="POINT_NAME" row="11"  column="0">柳江</SubPointName>
+      </SubPoint>
+	  <SubPoint>
+        <SubPointCode tablecolumn="POINT_CODE">XD031</SubPointCode>
+        <SubPointName tablecolumn="POINT_NAME" row="13"  column="0">枣园</SubPointName>
+      </SubPoint>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_DRINK_UNDER</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>POINT_ID</FillTablePointColumnName>
+      <!--数据填报表对应的垂线字段名称【非必须】-->
+      <FillTableVerticalColumnName></FillTableVerticalColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_DRINK_UNDER_ITEM</FillItemTableName>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="2">年</FillData>
+      <FillData tablecolumn="MONTH" column="3">月</FillData>
+      <FillData tablecolumn="DAY" column="4">日</FillData>
+      <FillData tablecolumn="JUDGE" column="33">总评价</FillData>
+    </FillInfo>
+    <ItemInfo>
+		<Item column="5" ItemName="水温">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="5">评价</Evaluation>
+		</Item>
+		<Item column="6" ItemName="PH值">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="6">评价</Evaluation>
+		</Item>
+		<Item column="7" ItemName="总硬度">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="7">评价</Evaluation>
+		</Item>
+		<Item column="8" ItemName="氯化物">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="8">评价</Evaluation>
+		</Item>
+		<Item column="9" ItemName="挥发酚">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="9">评价</Evaluation>
+		</Item>
+		<Item column="10" ItemName="高锰酸盐指数">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="10">评价</Evaluation>
+		</Item>
+		<Item column="11" ItemName="硝酸盐氮">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="11">评价</Evaluation>
+		</Item>
+		<Item column="12" ItemName="亚硝酸盐氮">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="12">评价</Evaluation>
+		</Item>
+		<Item column="13" ItemName="氨氮">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="13">评价</Evaluation>
+		</Item>
+		<Item column="14" ItemName="氟化物">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="14">评价</Evaluation>
+		</Item>
+		<Item column="15" ItemName="总汞">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="15">评价</Evaluation>
+		</Item>
+		<Item column="16" ItemName="总砷">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="16">评价</Evaluation>
+		</Item>
+		<Item column="17" ItemName="六价铬">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="17">评价</Evaluation>
+		</Item>
+		<Item column="18" ItemName="总铅">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="18">评价</Evaluation>
+		</Item>
+		<Item column="19" ItemName="总大肠菌群">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="19">评价</Evaluation>
+		</Item>
+		<Item column="20" ItemName="浊度">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="20">评价</Evaluation>
+		</Item>
+		<Item column="21" ItemName="氰化物">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="21">评价</Evaluation>
+		</Item>
+		<Item column="22" ItemName="阴离子表面活性剂">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="22">评价</Evaluation>
+		</Item>
+		<Item column="23" ItemName="铁">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="23">评价</Evaluation>
+		</Item>
+		<Item column="24" ItemName="锰">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="24">评价</Evaluation>
+		</Item>
+		<Item column="25" ItemName="镉">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="25">评价</Evaluation>
+		</Item>
+		<Item column="26" ItemName="石油类">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="26">评价</Evaluation>
+		</Item>
+		<Item column="27" ItemName="硒">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="27">评价</Evaluation>
+		</Item>
+		<Item column="28" ItemName="铜">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="28">评价</Evaluation>
+		</Item>
+		<Item column="29" ItemName="溶解性总固体">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="29">评价</Evaluation>
+		</Item>
+		<Item column="30" ItemName="硫酸盐">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="30">评价</Evaluation>
+		</Item>
+		<Item column="31" ItemName="锌">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="31">评价</Evaluation>
+		</Item>
+		<Item column="32" ItemName="总磷">
+			<Evaluation rowtype="bottom" tablecolumn="JUDGE" column="32">评价</Evaluation>
+		</Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

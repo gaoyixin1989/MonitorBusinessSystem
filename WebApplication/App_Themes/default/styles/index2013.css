@@ -1,0 +1,265 @@
+﻿@charset "utf-8";
+
+/* 公用 */
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td { margin: 0; padding: 0; }
+img { border: 0 none; vertical-align: top; }
+ul, li { list-style-type: none; }
+h1, h2, h3, h4, h5, h6 { font-size: 14px; }
+body, input, select, button, textarea { font-size: 12px; font-family: "微软雅黑", Arial, Helvetica, sans-serif;  }
+button { cursor: pointer; }
+i, em, cite { font-style: normal; }
+body { background: #fff; color:#333; line-height: 1.2; }
+
+/**/
+a, a:link { color: #333; text-decoration: none; }
+a:visited { }
+a:active, a:hover { text-decoration: none; color:#f60; }
+a:focus { outline: none; }
+.huise a:link,.huise a:visited{ color:#666;}
+.huise a:hover{ color: #C00}
+.more { float: right; }
+.more a { font-weight: normal; font-size: 12px; }
+
+a.red{ color:#f00;}
+a.red:hover{color:#f60;}
+
+
+
+/*框架*/
+.fl{ float:left; overflow:hidden; width:auto; display:inline;}
+.fr{ float:right; overflow:hidden;  width:auto;display:inline;}
+.fm{ float:left; overflow:hidden;  width:auto;display:inline;}
+.layout{ width:960px; overflow:hidden; margin:0 auto; padding:0; clear:both;}
+.layoutleft{ width:182px; overflow:hidden; margin:0 ; padding:4px 4px 0 4px; clear:both;}
+.layoutright{ padding-right:278px; background:#fff; position:relative; z-index:2;}
+.layoutright_min{ position:absolute; width:260px; right:10px; top:0; min-height:430px; overflow:hidden;}
+.sidebar{overflow:hidden;}
+.main{width:650px; overflow:hidden;}
+.main .imgtb img{ margin:5px 0;}
+.w100{ width:100%}
+.layoutmin{   position:relative; z-index:2;width:815px; margin-top:15px;}
+
+
+/*追加*/
+
+
+
+/*padding与margin*/
+.mgl42{ margin-left:42px;}
+.pt4{ padding-top:4px;}
+.pt8{ padding-top:8px;}
+.pdt15{ padding-top:15px;}
+.ptm{ padding-bottom:15px; padding-top:5px;}
+.ptrbl{ padding:8px 10px;}
+.mg10{ margin-left:10px;}
+.mgtl{ margin-bottom:15px; margin-left:15px; }
+.lht20{ line-height:20px;}
+.mtb10{ margin:10px 0;}
+.textr{ text-align:right;}
+/*header*/
+.logo2013{ background: url(../images/img/headerlogo.png); width:410px; height:45px; display: block;  margin-left:10px;  text-indent:-999em; overflow:hidden;}
+.header{ background:url(../images/img/headertop_bg.gif) repeat-x; overflow:hidden; height:45px; position:relative}
+.headertop{ background:url(../images/img/headertop_minbg.gif ) no-repeat; text-align:left;} 
+.headertop img{ vertical-align:middle; margin-left:10px;}
+.headeright{ background:url(../images/img/headeright.png); position:absolute; right:5px; top:0; width:125px; height:24px; overflow:hidden; text-align:left;}
+.headeright a{ background-image: url(../images/img/headericon.png); background-repeat: no-repeat; background-position:0 0; display:inline-block;  padding-left:20px; margin:5px 8px;}
+.headeright a.esc{ background-position:0 -17px;}
+.headewelcome{ position:absolute; right:8px; top:27px; color:#b2e7ff; text-align:right;}
+
+/*right*/
+.shortcut{}
+.shortcut a{ display: inline-block; text-align: center; padding-bottom:10px; margin-right:18px; margin-top:5px;}
+.shortcut a span{ background-image:url(../images/img/shortcut.png);background-repeat: no-repeat;  display:block; width:60px; height:16px;  overflow:hidden; height:60px; margin:0 auto;}
+.shortcut a:hover{ background-iamge:url(../images/img/shortcut.png);background-repeat: no-repeat; background-position:-192px 0;}
+
+.shortcut a span.shortcut1{ background-position:0 0;}
+.shortcut a span:hover.shortcut1{ background-position:-192px 0;}
+
+.shortcut a span.shortcut2{ background-position:0 -80px;}
+.shortcut a span:hover.shortcut2{ background-position:-192px -80px;}
+
+.shortcut a span.shortcut3{ background-position:0 -160px;}
+.shortcut a span:hover.shortcut3{ background-position:-192px -160px;}
+
+.shortcut a span.shortcut4{ background-position:0 -240px;}
+.shortcut a span:hover.shortcut4{ background-position:-192px -240px;}
+
+.shortcut a span.shortcut5{ background-position:0 -320px;}
+.shortcut a span:hover.shortcut5{ background-position:-192px -320px;}
+
+.shortcut a span.shortcut6{ background-position:0 -400px;}
+.shortcut a span:hover.shortcut6{ background-position:-192px -400px;}
+
+.shortcut a span.shortcut7{ background-position:0 -480px;}
+.shortcut a span:hover.shortcut7{ background-position:-192px -480px;}
+
+.shortcut a span.shortcut8{ background-position:0 -560px;}
+.shortcut a span:hover.shortcut8{ background-position:-192px -560px;}
+
+.shortcut a span.shortcut9{ background-position:0 -720px;}
+.shortcut a span:hover.shortcut9{ background-position:-192px -720px;}
+
+.shortcut a span.shortcut10{ background-position:0 -800px;}
+.shortcut a span:hover.shortcut10{ background-position:-192px -800px;}
+
+.shortcut a span.shortcut11{ background-position:0 -880px;}
+.shortcut a span:hover.shortcut11{ background-position:-192px -880px;}
+
+.shortcut a span.shortcut12{ background-position:0 -960px;}
+.shortcut a span:hover.shortcut12{ background-position:-192px -960px;}
+
+.shortcut a span.shortcut13{ background-position:0 -1040px;}
+.shortcut a span:hover.shortcut13{ background-position:-192px -1040px;}
+
+.shortcut a span.shortcut13{ background-position:0 -1120px;}
+.shortcut a span:hover.shortcut13{ background-position:-192px -1120px;}
+
+
+/*list列表*/
+.listborder{border:1px solid  #b4d9ea;}
+.listh2{ background:url(../images/img/rightlistbg_top.gif) 0 -80px repeat-x; height:30px; overflow: hidden; position:relative;}
+.listh2 h2{ background:url(../images/img/rightlist_header.gif) no-repeat; height:30px; line-height:30px; text-indent:2em;}
+.listh2 span{ position:absolute; top:10px; right:10px;}
+.listleft{ margin:10px;}
+.listleft img{ width:120px; height:120px; padding:5px;}
+.listright{ height:120px; overflow:hidden;}
+
+.listh3{ background:url(../images/img/rightlistbg_top.gif) repeat-x;}
+.listh3 a{ display:inline-block; width:33.33%; text-align:center;  border-bottom:1px solid  #b4d9ea; height:26px; line-height:26px; overflow:hidden;}
+.listh3 a.on{background:url(../images/img/rightlistbg_top.gif) repeat-x 0 -28px; border:none;}
+.listtop{ background:#fcf0de; border:1px solid #e4d9c7; padding:2px; margin:4px 0;}
+.listtop span{ display:inline-block; background:url(../images/img/rightlist_title.gif) no-repeat; width:75px; height:23px; line-height:23px;padding-left:8px; color:#FFF; }
+.listtop strong{ color:#F30; padding:0 3px;}
+.listul { margin:0;}
+.listul li{ position:relative;}
+.listul li strong{ background:url(../images/img/listmun.gif) no-repeat; width:18px; height:18px; line-height:18px; text-align:center; display:inline-block; margin-right:6px; color:#036; }
+.listul li span{position:absolute; right:-4px; top:3px; }
+.listul li span a{ background:url(../images/img/rightlistbg_top.gif);border:1px solid  #b4d9ea; text-align:center;  height:20px; line-height:20px; width:60px; display:block;}
+.listul li span a.gray, .listbutton a.gray{background:url(../images/img/rightlistbg_top.gif) 0 -132px; border:1px solid  #d2d2d2;  color:#999; }
+
+
+.listul_more{ text-align:right; background:#eef8ff; position:absolute; height:24px; display:block; width:100%; right:0; bottom:0; padding-top:4px;}
+.listul_more a{ display: inline-block;  margin-bottom:5px; background:url(../images/img/rightlistbg_top.gif) repeat-x 0 -112px; width:60px; height:18px; line-height:18px; border:1px solid #4093ba; text-align:center; color:#FFF; margin-right:11px;}
+
+.listh4{ background:url(../images/img/rightlistbg_top.gif) repeat-x; height:26px; line-height:26px; text-indent:5px; border-bottom:1px solid  #b4d9ea;}
+.leader, .environment, .quality, .business
+{ background-image:url(../images/img/righticon.gif); background-repeat:no-repeat; padding-left:25px;  height:18px; margin:4px 4px; line-height:18px; background-color:#fff;}
+.environment{ background-position:0 -22px}
+.quality{ background-position:0 -45px}
+.business{ background-position:0 -67px;}
+.listbutton{ line-height:0;}
+.listbutton a{ background:url(../images/img/rightlistbg_top.gif) repeat-x 0 -56px; height:20px; line-height:20px; border:1px solid  #b4d9ea; width:105px; overflow:hidden; text-align:center; margin:3px 0 2px 9px; display:inline-block;  color:#036;}
+.listbutton a:hover{ color:#f60;}
+.listbutton a.gray:hover{ color:#999;}
+/*banner*/
+.clearfix:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix{zoom:1;}
+ul,li{list-style:none;}
+img{border:0;}
+.wrapper{width:960px;margin:0 auto;/*padding-bottom:50px;*/ z-index:1}
+h1{height:50px;line-height:50px;font-size:22px;font-weight:normal;font-family:"Microsoft YaHei",SimHei;margin-bottom:20px;}
+/* focus */
+#focus{width:528px;height:165px;overflow:hidden;position:relative; margin:0 auto;}
+#focus ul{height:162px;position:absolute;}
+#focus ul li{float:left;width:528px;height:142px; line-height:19px;overflow:hidden;position:relative;display:block;  }
+#focus ul li img{ float:left;  padding:2px; margin: auto 10px; width:120px; height:120px; border:1px solid #eaeaea; clear:left;}
+#focus ul li div{ padding:10px 10px 10px 0;}
+#focus ul li  div h2{  font-family:14px; margin:4px 0; }
+#focus ul li  div  p{ text-indent:2em;}
+#focus .btnBg{position:absolute;width:100%;height:20px;left:0;bottom:0; }
+#focus .btn{position:absolute;height:10px;padding-bottom:6px;left:50%;bottom:0;text-align:center;}
+#focus .btn span{display:inline-block;_display:inline;_zoom:1;width:12px;height:12px;_font-size:0;margin-left:10px;cursor:pointer; background:url(../images/img/btnbg.png) no-repeat ;}
+#focus .btn span.on{background:#fff;}
+/*#focus .preNext{width:45px;height:100px;position:absolute;top:90px;background:url(img/sprite.png) no-repeat 0 0;cursor:pointer;}*/
+#focus .pre{left:0;}
+#focus .next{right:0;background-position:right top;}
+
+
+/*tab */
+.demo{margin-top:10px;position:relative;}
+.demo h2{font-size:16px;height:44px;color:#3366cc;margin-top:20px;}
+.demo dl dt{font-size:14px;color:#ff6600;margin-top:30px;font-weight:800;}
+.demo dl dt,.demo dl dd{line-height:22px;}
+/* tabbtn */
+.tabbtn{height:30px;background:url(../images/img/tabbg.gif) repeat-x;border-left:solid 1px #b5d9ea;border-right:solid 1px #b5d9ea;}
+.tabbtn li{float:left;position:relative;margin:0 0 0 -1px;}
+.tabbtn li a{display:block;float:left;height:30px;line-height:30px;overflow:hidden;width:108px;text-align:center;font-size:12px;cursor:pointer;}
+.tabbtn li.current{border-left:solid 1px #b5d9ea;border-right:solid 1px #b5d9ea;border-top:solid 1px #c5c5c5;}
+.tabbtn li.current a{border-top:solid 2px #ff6600;height:27px;line-height:27px;background:#fff;color:#036;font-weight:800;}
+/* tabcon */
+.tabcon{border-width:0 1px 1px 1px;border-color:#b5d9ea;border-style:solid;position:relative;/*必要元素*/height:194px;overflow:hidden;}
+.tabcon .subbox{position:absolute;/*必要元素*/left:0;top:0; width:100%;}
+.tabcon .sublist{padding:5px 10px;height:190px; overflow:hidden; position:relative;}
+.tabcon .sublist ul li a span{ position:absolute; right:11px; top:2px font-weight:normal; color:#999;}
+.tabcon .sublist ul li a span.right{ right:65px;}
+/* leftcon */
+#leftcon .subbox{width:9999em;}
+#leftcon .subbox .sublist{float:left;width:664px;}
+/* sublist */
+.sublist{padding:10px;}
+.sublist li{ line-height:26px; height:26px;font-size:12px;}
+.sublist li:hover { background:#eef8ff;}
+.sublist li span{margin:0 5px 0 0;font-family:"宋体";font-size:12px;font-weight:400;color:#b5d9ea;}
+
+/*菜单menu*/
+.l-accordion-header-inner{background:url(../images/img/menuicicon.gif) no-repeat; padding-left:20px; }
+
+/*滚动条*/
+html{
+scrollbar-arrow-color: #fff; /*三角箭头的颜色*/
+
+scrollbar-face-color: #b0d8ec; /*立体滚动条的颜色（包括箭头部分的背景色）*/
+
+scrollbar-3dlight-color: #e6f6ff; /*立体滚动条亮边的颜色*/
+
+scrollbar-highlight-color: #e6f6ff; /*滚动条的高亮颜色（左阴影？）*/
+
+scrollbar-shadow-color: #e6f6ff; /*立体滚动条阴影的颜色*/
+
+scrollbar-darkshadow-color: #e6f6ff; /*立体滚动条外阴影的颜色*/
+
+scrollbar-track-color: #e6f6ff; /*立体滚动条背景颜色*/
+
+scrollbar-base-color: #e6f6ff; /*滚动条的基色*/
+}
+
+
+
+.clearfix:after{content:" ";display:block;height:0;clear:both;visibility:hidden;}.clearfix{display:inline-block;}
+
+.rrow{width:262px; margin:0;}
+.login{ width:260px;  overflow:hidden; border:1px solid #b1dbf0;}
+.login h2{ color:#333; font-size:12px; padding:0 0 0 28px; margin-bottom:6px; line-height: 25px;height:25px; overflow:hidden;  background:url(../images/img/h2.gif) ; }
+.login h2 span{ font-size:12px; float:right;margin:-31px 23px 0 0;line-height: 32px;font-weight:400; cursor:pointer;}
+.rrow ul{ margin:2px 6px; }
+.rrow ul li {width:260px; height:31px;margin-bottom: 3px; overflow:hidden; float:left;}
+.rrow ul li a,.rrow ul li span{cursor:pointer; display:block; float:left; margin-right: 8px; width:120px; height:28px;  overflow:hidden; line-height: 28px;   text-align:center; font-weight:700; color:#069;}
+.rrow ul li .lhover{ display:block; float:left; margin-right: 4px; background:url(../images/img/button_on.gif) 0 -29px; width:120px; height:33px;  overflow:hidden; line-height: 32px; font-weight:700;}
+.rrow ul li .yhzc{ background:url(../images/img/title.gif) 0 -152px;}
+#yhzc{background:url(../images/img/button_on.gif);}
+
+.rrow ul li .hysj{ background:url(../images/img/title.gif) -104px -152px; }
+#hysj{ background:url(../images/img/title.gif) -104px -183px;height:34px;}
+
+
+
+.rrow ul li .bzzx{ background:url(../images/img/button_on.gif); }
+.rrow ul li .bzzx:hover{ color:#FF6600; }
+
+#bzzx{  background:url(../images/img/button_on.gif) 0 -29px;height:34px;}
+
+.rrow ul .hoverli{background:url(../images/img/tableft.gif) no-repeat;height:113px;  overflow:hidden; line-height: 32px; font-weight:700; }
+
+.qlogin{height:92px; width:210px; line-height: 32px; margin:5px 0 0 10px; display:none; }
+.qlogin dt{ height:0; overflow:hidden; }
+.qlogin dd{ padding:4px; width:210px; height:22px; text-align:left; float:left;clear:both;overflow:hidden;}
+.qlogin dd .passw,.qlogin a:hover.passw{ margin: -4px 12px 0 0; float:right;}
+
+
+.rrow ul li div{  width:260px; display:none; clear:left; }
+.rrow ul li div a,.rrow ul li div a:hover{background:url(../images/img/title.gif)  -90px -1px; height:20px; line-height: 20px;  font-weight: 400; width:120px; float:left; display: block; text-align:left; text-indent:18px; margin-top:3px; }
+
+.rrow ul li div a:hover{ text-decoration:underline; }
+.rrow ul li .block,.rrow .block{ display:block;  }
+.rrow ul .none{ display:none; }
+

@@ -1,0 +1,209 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.Script;
+using System.Data;
+using System.Web.Services;
+
+using i3.BusinessLogic.Channels.Mis.Contract;
+using i3.BusinessLogic.Channels.Mis.Monitor;
+using i3.ValueObject.Channels.Mis.Contract;
+using i3.ValueObject.Channels.Mis.Monitor;
+using i3.View;
+using i3.ValueObject;
+using i3.BusinessLogic.Sys.Resource;
+using i3.BusinessLogic.Sys.General;
+using i3.BusinessLogic.Channels.Mis.Monitor.Task;
+using i3.ValueObject.Channels.Mis.Monitor.Task;
+using i3.BusinessLogic.Channels.Mis.Monitor.SubTask;
+using i3.ValueObject.Channels.Mis.Monitor.SubTask;
+using i3.BusinessLogic.Channels.Base.MonitorType;
+using i3.BusinessLogic.Channels.RPT;
+
+/// <summary>
+/// 功能： "数据汇总表--实验室"功能
+/// 创建人：潘德军
+/// 创建时间： 2013.8.12
+/// </summary>
+public partial class Channels_Base_Search_SearchZZ_SummarySheet_Lab : PageBase
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!string.IsNullOrEmpty(Request.QueryString["Action"]) && Request.QueryString["Action"] == "selectTask")
+        {
+            selectTask();
+        }
+
+        if (!string.IsNullOrEmpty(Request.QueryString["Action"]) && Request.QueryString["Action"] == "selectsubTask")
+        {
+            selectsubTask();
+        }
+
+        if (!string.IsNullOrEmpty(Request.QueryString["Action"]) && Request.QueryString["Action"] == "GetSheetType")
+        {
+            GetSheetType();
+        }
+    }
+
+    /// <summary>
+    /// 获取监测任务列表信息
+    /// </summary>
+    /// <returns></returns>
+    protected void selectTask()
+    {
+        string strSortname = Request.Params["sortname"];
+        string strSortorder = Request.Params["sortorder"];
+        int intPageIdx = Convert.ToInt32(Request.Params["page"]);
+        int intPagesize = Convert.ToInt32(Request.Params["pagesize"]);
+
+        //任务单号
+        string strTICKET_NUM = !string.IsNullOrEmpty(Request.QueryString["SrhTICKET_NUM"]) ? Request.QueryString["SrhTICKET_NUM"].ToString() : "";
+
+        //构造查询对象
+        TMisMonitorTaskVo objTask = new TMisMonitorTaskVo();
+        TMisMonitorTaskLogic objTaskLogic = new TMisMonitorTaskLogic();
+        if (strSortname == null || strSortname.Length == 0)
+            strSortname = TMisMonitorTaskVo.ID_FIELD;
+
+        objTask.SORT_FIELD = "ID";
+        objTask.SORT_TYPE = "desc";
+        objTask.TICKET_NUM = strTICKET_NUM;
+
+        string strJson = "";
+        int intTotalCount = objTaskLogic.GetSelectResultCount_ForSummary(objTask, false);//总计的数据条数
+        DataTable dt = objTaskLogic.SelectByTable_ForSummary(objTask, false, intPageIdx, intPagesize);
+
+        strJson = CreateToJson(dt, intTotalCount);
+
+        Response.Write(strJson);
+        Response.End();
+    }
+
+    /// <summary>
+    /// 获取监测子任务列表信息
+    /// </summary>
+    /// <returns></returns>
+    protected void selectsubTask()
+    {
+        string strSortname = Request.Params["sortname"];
+        string strSortorder = Request.Params["sortorder"];
+        int intPageIdx = Convert.ToInt32(Request.Params["page"]);
+        int intPagesize = Convert.ToInt32(Request.Params["pagesize"]);
+
+        //构造查询对象
+        TMisMonitorSubtaskVo objSubTask = new TMisMonitorSubtaskVo();
+        TMisMonitorSubtaskLogic objSubTaskLogic = new TMisMonitorSubtaskLogic();
+        if (strSortname == null || strSortname.Length == 0)
+            strSortname = TMisMonitorSubtaskVo.ID_FIELD;
+
+        objSubTask.SORT_FIELD = strSortname;
+        objSubTask.SORT_TYPE = strSortorder;
+        objSubTask.TASK_ID = !string.IsNullOrEmpty(Request.QueryString["task_id"]) ? Request.QueryString["task_id"].ToString() : "";
+
+        string strJson = "";
+        //int intTotalCount = objSubTaskLogic.GetSelectResultCount(objSubTask);//总计的数据条数
+        DataTable dt = objSubTaskLogic.SelectByTable_ForSummary(objSubTask,false,0,0);
+        DataTable dtRe = doWithSubtaskData(dt);
+
+        strJson = CreateToJson(dtRe, dtRe.Rows.Count);
+
+        Response.Write(strJson);
+        Response.End();
+    }
+
+    private DataTable doWithSubtaskData(DataTable dt)
+    {
+        DataTable dtRe = new DataTable();
+        string strMonitorIDs = "";
+        if (dt.Rows.Count > 0)
+        {
+            for (int j = 0; j < dt.Columns.Count; j++)
+            {
+                dtRe.Columns.Add(dt.Columns[j].ColumnName);
+            }
+        }
+        for (int i = 0; i < dt.Rows.Count; i++)
+        {
+            if (!strMonitorIDs.Contains(dt.Rows[i]["MONITOR_ID"].ToString()))
+            {
+                strMonitorIDs += "," + dt.Rows[i]["MONITOR_ID"].ToString();
+                DataRow dr = dtRe.NewRow();
+                for (int j = 0; j < dt.Columns.Count; j++)
+                {
+                    dr[dt.Columns[j].ColumnName] = dt.Rows[i][dt.Columns[j].ColumnName].ToString();
+                }
+                dtRe.Rows.Add(dr);
+            }
+        }
+        for (int i = 0; i < dtRe.Rows.Count; i++)
+        {
+            if (dtRe.Rows[i]["SAMPLING_MANAGER_ID"].ToString().Length > 0)
+            {
+                string strUsername = new TSysUserLogic().Details(dtRe.Rows[i]["SAMPLING_MANAGER_ID"].ToString()).REAL_NAME;
+                if (!dtRe.Rows[i]["SAMPLING_MAN"].ToString().Contains(strUsername))
+                    dtRe.Rows[i]["SAMPLING_MAN"] = strUsername + (dtRe.Rows[i]["SAMPLING_MAN"].ToString().Length > 0 ? "，" : "") + dtRe.Rows[i]["SAMPLING_MAN"].ToString();
+            }
+        }
+        dtRe.AcceptChanges();
+
+        return dtRe;
+    }
+
+    //01,水质样品监测结果汇总表;
+    //02,环境空气监测结果汇总表
+    //03,大气污染源监测结果汇总表;
+    //04,固体样品监测结果汇总表 
+    protected void GetSheetType()
+    {
+        string strSubTaskID = !string.IsNullOrEmpty(Request.QueryString["subTaskID"]) ? Request.QueryString["subTaskID"].ToString() : "";
+        if (strSubTaskID.Length == 0)
+            return;
+
+        TMisMonitorSubtaskVo objSubTask = new TMisMonitorSubtaskLogic().Details(strSubTaskID);
+        string strMonitorID = objSubTask.MONITOR_ID;
+
+        DataTable dtRe = new DataTable();
+        dtRe.Columns.Add("id");
+        dtRe.Columns.Add("text");
+
+        string strSheetType01 = "000000001,EnvDrinkingSource,EnvReservoir,EnvRiver,EnvMudRiver,EnvRain";//水和废水,饮用水源地,底泥,湖库,河流,降水
+        string strSheetType02 = "000000002,EnvAir";//气和废气,环境空气
+        string strSheetType04 = "000000003,EnvPSoild,EnvSoil";//固废和土壤,固废,土壤
+
+        if (strMonitorID.Length > 0 && strSheetType01.Contains(strMonitorID))//水质样品监测结果汇总表;
+        {
+            DataRow dr = dtRe.NewRow();
+            dr["id"] = "01";
+            dr["text"] = "水质样品监测结果汇总表";
+            dtRe.Rows.Add(dr);
+        }
+        if (strMonitorID.Length > 0 && strSheetType02.Contains(strMonitorID))//环境空气监测结果汇总表 大气污染源监测结果汇总表;
+        {
+            DataRow dr = dtRe.NewRow();
+            dr["id"] = "02";
+            dr["text"] = "环境空气监测结果汇总表";
+            dtRe.Rows.Add(dr);
+            dr = dtRe.NewRow();
+            dr["id"] = "03";
+            dr["text"] = "大气污染源监测结果汇总表";
+            dtRe.Rows.Add(dr);
+        }
+        if (strMonitorID.Length > 0 && strSheetType04.Contains(strMonitorID))//固体样品监测结果汇总表;
+        {
+            DataRow dr = dtRe.NewRow();
+            dr["id"] = "04";
+            dr["text"] = "固体样品监测结果汇总表";
+            dtRe.Rows.Add(dr);
+        }
+
+        dtRe.AcceptChanges();
+
+        string strJson = DataTableToJson(dtRe);
+
+        Response.Write(strJson);
+        Response.End();
+    }
+}

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--降尘导出配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="export">
+  <Point pointtable="T_ENV_P_DUST" itemtable="T_ENV_P_DUST_ITEM" startrow="1">
+    <PointInfo>
+      <Column tablecolumn="POINT_CODE" column="1">监测点名称</Column>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_DUST</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>POINT_ID</FillTablePointColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_DUST_ITEM</FillItemTableName>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR"  column="0">年</FillData>
+      <FillData tablecolumn="MONTH"  column="2">监测开始月</FillData>
+      <FillData tablecolumn="BEGIN_MONTH"  column="3">监测开始月</FillData>
+      <FillData tablecolumn="BEGIN_DAY"  column="4">监测开始日</FillData>
+      <FillData tablecolumn="BEGIN_HOUR"  column="5">监测开始时</FillData>
+      <FillData tablecolumn="BEGIN_MINUTE"  column="6">监测开始分</FillData>
+      <FillData tablecolumn="END_MONTH"  column="7">监测结束月</FillData>
+      <FillData tablecolumn="END_DAY"  column="8">监测结束日</FillData>
+      <FillData tablecolumn="END_HOUR"   column="9">监测结束时</FillData>
+      <FillData tablecolumn="END_MINUTE"  column="10">监测结束分</FillData>
+    </FillInfo>
+    <ItemInfo>
+      <Item column="11" ItemName="降尘量"></Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

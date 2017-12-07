@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DrinkingReportDataSet" targetNamespace="http://tempuri.org/DrinkingReportDataSet.xsd" xmlns:mstns="http://tempuri.org/DrinkingReportDataSet.xsd" xmlns="http://tempuri.org/DrinkingReportDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DrinkingReportDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DrinkingReportDataSet" msprop:Generator_UserDSName="DrinkingReportDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AllAnalysisTable" msprop:Generator_TableClassName="AllAnalysisTableDataTable" msprop:Generator_TableVarName="tableAllAnalysisTable" msprop:Generator_TablePropName="AllAnalysisTable" msprop:Generator_RowDeletingName="AllAnalysisTableRowDeleting" msprop:Generator_UserTableName="AllAnalysisTable" msprop:Generator_RowChangingName="AllAnalysisTableRowChanging" msprop:Generator_RowEvHandlerName="AllAnalysisTableRowChangeEventHandler" msprop:Generator_RowDeletedName="AllAnalysisTableRowDeleted" msprop:Generator_RowEvArgName="AllAnalysisTableRowChangeEvent" msprop:Generator_RowChangedName="AllAnalysisTableRowChanged" msprop:Generator_RowClassName="AllAnalysisTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ORDER_NUM" msdata:Caption="POINT_NAME" msprop:Generator_ColumnVarNameInTable="columnORDER_NUM" msprop:Generator_ColumnPropNameInRow="ORDER_NUM" msprop:Generator_ColumnPropNameInTable="ORDER_NUMColumn" msprop:Generator_UserColumnName="ORDER_NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="POINT_CODE" msprop:Generator_ColumnVarNameInTable="columnPOINT_CODE" msprop:Generator_ColumnPropNameInRow="POINT_CODE" msprop:Generator_ColumnPropNameInTable="POINT_CODEColumn" msprop:Generator_UserColumnName="POINT_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="RIVER_NAME" msprop:Generator_ColumnVarNameInTable="columnRIVER_NAME" msprop:Generator_ColumnPropNameInRow="RIVER_NAME" msprop:Generator_ColumnPropNameInTable="RIVER_NAMEColumn" msprop:Generator_UserColumnName="RIVER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME" msprop:Generator_ColumnPropNameInRow="ITEM_NAME" msprop:Generator_ColumnPropNameInTable="ITEM_NAMEColumn" msprop:Generator_UserColumnName="ITEM_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_VALUE" msprop:Generator_ColumnVarNameInTable="columnITEM_VALUE" msprop:Generator_ColumnPropNameInRow="ITEM_VALUE" msprop:Generator_ColumnPropNameInTable="ITEM_VALUEColumn" msprop:Generator_UserColumnName="ITEM_VALUE" type="xs:string" minOccurs="0" />
+              <xs:element name="POINT_ID" msprop:Generator_ColumnVarNameInTable="columnPOINT_ID" msprop:Generator_ColumnPropNameInRow="POINT_ID" msprop:Generator_ColumnPropNameInTable="POINT_IDColumn" msprop:Generator_UserColumnName="POINT_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_ID" msprop:Generator_ColumnVarNameInTable="columnITEM_ID" msprop:Generator_ColumnPropNameInRow="ITEM_ID" msprop:Generator_ColumnPropNameInTable="ITEM_IDColumn" msprop:Generator_UserColumnName="ITEM_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="UPPER_VALUE" msprop:Generator_ColumnVarNameInTable="columnUPPER_VALUE" msprop:Generator_ColumnPropNameInRow="UPPER_VALUE" msprop:Generator_ColumnPropNameInTable="UPPER_VALUEColumn" msprop:Generator_UserColumnName="UPPER_VALUE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

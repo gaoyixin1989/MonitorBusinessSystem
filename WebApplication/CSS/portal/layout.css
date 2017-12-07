@@ -1,0 +1,17 @@
+﻿body{ margin:0;}
+.siteHeader
+{
+    height: 110px;
+}
+.siteMenu, .siteContent
+{
+    float: left;
+}
+.siteMenu
+{
+    width: 300px;
+}
+.siteContent
+{
+    width: 700px;
+}

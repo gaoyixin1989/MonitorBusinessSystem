@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--近岸海域导出配置信息-->
+<!--模板设置-->
+<GlobalSettings type="export">
+  <Point pointtable="T_ENV_P_SEA" itemtable="T_ENV_P_SEA_ITEM" startrow="1">
+    <PointInfo>
+      <Column tablecolumn="POINT_CODE" column="1">监测点编码</Column> 
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_SEA</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>POINT_ID</FillTablePointColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_SEA_ITEM</FillItemTableName>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="0">年</FillData>
+      <FillData tablecolumn="MONTH" primary="true" column="2">月</FillData>
+      <FillData tablecolumn="DAY"   column="3">日</FillData>
+      <FillData tablecolumn="SEA_AREA_CODE" column="4">海区代码</FillData>
+      <FillData tablecolumn="KEY_AREA_CODE"  column="5">重点海域代码</FillData>
+      <FillData tablecolumn="DEPTH"  column="6">水深</FillData>
+      <FillData tablecolumn="KPF"  column="7">水期</FillData>
+      <FillData tablecolumn="Season"  column="8">季度</FillData>
+      <FillData tablecolumn="LEVEL"  column="9">层次</FillData>
+
+    </FillInfo>
+    <ItemInfo>
+      <Item column="10" ItemName="水温"></Item>
+      <Item column="11"  ItemName="盐度"></Item>
+      <Item column="12"  ItemName="悬浮物"></Item>
+      <Item column="13"  ItemName="溶解氧"></Item>
+      <Item column="14"  ItemName="PH值"></Item>
+      <Item column="15"  ItemName="活性磷酸盐"></Item>
+      <Item column="16"  ItemName="化学需氧量"></Item>
+      <Item column="17"  ItemName="亚硝酸盐"></Item>
+      <Item column="18" ItemName="硝酸盐"></Item>
+      <Item column="19"  ItemName="氨氮"></Item>
+      <Item column="20"  ItemName="无机氮"></Item>
+      
+      <Item column="21"  ItemName="石油类"></Item>
+      <Item column="22"  ItemName="汞"></Item>
+      <Item column="23"  ItemName="铜"></Item>
+      <Item column="24"  ItemName="铅"></Item>
+      <Item column="25"  ItemName="镉"></Item>
+      <Item column="26"  ItemName="非离子氨"></Item>
+      <Item column="27"  ItemName="砷"></Item>
+      <Item column="28"  ItemName="锌"></Item>
+      <Item column="29"  ItemName="硒"></Item>
+      <Item column="30"  ItemName="镍"></Item>
+      
+      <Item column="31"  ItemName="总铬"></Item>
+      <Item column="32"  ItemName="六价铬"></Item>
+      <Item column="33"  ItemName="硫化物"></Item>
+      <Item column="34"  ItemName="六六六"></Item>
+      <Item column="35"  ItemName="滴滴涕"></Item>
+      <Item column="36"  ItemName="大肠菌群"></Item>
+      <Item column="37"  ItemName="粪大肠菌群"></Item>
+      <Item column="38"  ItemName="马拉硫磷"></Item>
+      <Item column="39"  ItemName="甲基对硫磷"></Item>
+      <Item column="40"  ItemName="漂浮物"></Item>
+      
+      <Item column="41"  ItemName="色"></Item>
+      <Item column="42"  ItemName="臭"></Item>
+      <Item column="43"  ItemName="味"></Item>
+      <Item column="44"  ItemName="苯并(α)芘"></Item>
+      <Item column="45"  ItemName="生化需氧量"></Item>
+      <Item column="46"  ItemName="挥发性酚"></Item>
+      <Item column="47"  ItemName="氰化物"></Item>
+      <Item column="48"  ItemName="阴离子表面活性剂"></Item>
+      
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

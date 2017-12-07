@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--河流导出配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="export">
+  <!--设置监测监测点-->
+  <Point pointtable="T_ENV_P_RIVER" verticaltable="T_ENV_P_RIVER_V" itemtable="T_ENV_P_RIVER_V_ITEM">
+    <PointInfo>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="4"  column="3">七星岗</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">左</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="5"  column="3">七星岗</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="6"  column="3">七星岗</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中（平）</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">1</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="7"  column="3">七星岗</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">右</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">2</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="8"  column="3">清远港</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">左</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">2</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="9"  column="3">清远港</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">2</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="10"  column="3">清远港</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">右</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">3</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="11"  column="3">界牌</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">左</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">3</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="12"  column="3">界牌</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">3</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="13"  column="3">界牌</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">右</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">4</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="14"  column="3">高桥</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">左</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">4</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="15"  column="3">高桥</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">4</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="16"  column="3">高桥</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">右</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">5</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="17"  column="3">北江石尾</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">左</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">5</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="18"  column="3">北江石尾</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">5</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="19"  column="3">北江石尾</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">右</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">6</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="20"  column="3">连江西牛</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">左</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">6</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="21"  column="3">连江西牛</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">6</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="22"  column="3">连江西牛</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">右</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">7</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="23"  column="3">滨江河正江口段</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">8</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="24"  column="3">滨江河迳口段</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">9</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="25"  column="3">滃江大站</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">左</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">9</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="26"  column="3">滃江大站</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">9</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="27"  column="3">滃江大站</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">右</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">10</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="28"  column="3">大燕河</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">11</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="29"  column="3">笔架新村</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">12</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="30"  column="3">乐排河</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">13</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="31"  column="3">潖江口</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">14</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="32"  column="3">北江水利枢纽大坝出口</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">15</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="33"  column="3">大排坑1#</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">16</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="34"  column="3">大排坑2#</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">17</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="35"  column="3">龙塘河1#</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">18</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="36"  column="3">龙塘河2#</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">19</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="37"  column="3">大燕河1#</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">20</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="38"  column="3">大燕河2#</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">21</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="39"  column="3">北江2#</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">左</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">21</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="40"  column="3">北江2#</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">21</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="41"  column="3">北江2#</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">右</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">22</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="42"  column="3">飞来峡</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">中</Vertical>
+      </SubPoint>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_RIVER</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>SECTION_ID</FillTablePointColumnName>
+      <!--数据填报表对应的垂线字段名称【非必须】-->
+      <FillTableVerticalColumnName>POINT_ID</FillTableVerticalColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_RIVER_ITEM</FillItemTableName>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="0">年</FillData>
+      <FillData tablecolumn="MONTH" column="1">月</FillData>
+      <FillData tablecolumn="DAY" column="2">日</FillData>
+    </FillInfo>
+    <ItemInfo>
+      <Item column="5" ItemName="悬浮物"></Item>
+      <Item column="6" ItemName="电导率"></Item>
+      <Item column="7" ItemName="水温"></Item>
+      <Item column="8" ItemName="PH值"></Item>
+      <Item column="9" ItemName="溶解氧"></Item>
+      <Item column="10" ItemName="高锰酸盐指数"></Item>
+      <Item column="11" ItemName="化学需氧量"></Item>
+      <Item column="12" ItemName="五日生化需氧量"></Item>
+      <Item column="13" ItemName="氨氮"></Item>
+      <Item column="14" ItemName="总磷"></Item>
+      <Item column="15" ItemName="总氮"></Item>
+      <Item column="16" ItemName="铜"></Item>
+      <Item column="17" ItemName="锌"></Item>
+      <Item column="18" ItemName="氟化物"></Item>
+      <Item column="19" ItemName="硒"></Item>
+      <Item column="20" ItemName="砷"></Item>
+      <Item column="21" ItemName="汞"></Item>
+      <Item column="22" ItemName="镉"></Item>
+      <Item column="23" ItemName="六价铬"></Item>
+      <Item column="24" ItemName="铅"></Item>
+      <Item column="25" ItemName="氰化物"></Item>
+      <Item column="26" ItemName="挥发酚"></Item>
+      <Item column="27" ItemName="石油类"></Item>
+      <Item column="28" ItemName="阴离子表面活性剂"></Item>
+      <Item column="29" ItemName="硫化物"></Item>
+      <Item column="30" ItemName="粪大肠菌群"></Item>
+      <Item column="31" ItemName="硫酸盐"></Item>
+      <Item column="32" ItemName="氯化物"></Item>
+      <Item column="33" ItemName="硝酸盐"></Item>
+      <Item column="34" ItemName="铁"></Item>
+      <Item column="35" ItemName="锰"></Item>
+      <Item column="36" ItemName="镍"></Item>
+      <Item column="37" ItemName="钼"></Item>
+      <Item column="38" ItemName="钴"></Item>
+      <Item column="39" ItemName="铍"></Item>
+      <Item column="40" ItemName="硼"></Item>
+      <Item column="41" ItemName="锑"></Item>
+      <Item column="42" ItemName="钡"></Item>
+      <Item column="43" ItemName="钒"></Item>
+      <Item column="44" ItemName="钛"></Item>
+      <Item column="45" ItemName="铊"></Item>
+      <Item column="46" ItemName="蓝绿藻"></Item>
+      <Item column="47" ItemName="叶绿素a"></Item>
+      <Item column="48" ItemName="透明度"></Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

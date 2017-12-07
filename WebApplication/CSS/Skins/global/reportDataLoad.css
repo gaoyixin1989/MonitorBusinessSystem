@@ -1,0 +1,39 @@
+﻿
+ .LoadBackGround {
+                display: block;
+                width: 100%;
+                height: 100%;
+                opacity: 0.4;
+                filter: alpha(opacity=40);
+                background:while;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2000;
+                }
+                .LoadProgressBar {
+                border: solid 2px #86A5AD;
+                height: 20px;
+                background: #ece9d8 url(images/wait1.gif) no-repeat 10px 25px;
+                overflow:auto;
+                }
+                .LoadProgressBar {
+                display: block;
+                width: 180px;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                margin-left: -104px;
+                margin-top: -34px;
+                padding: 30px 10px 28px 50px;
+                text-align: left;
+                line-height: 27px;
+                font-weight: bold;
+                position: absolute;
+                z-index: 2001;
+                font-size: 14px;
+                line-height: 100%;
+                font-family: 宋体, sans-serif;
+                }
+        
+

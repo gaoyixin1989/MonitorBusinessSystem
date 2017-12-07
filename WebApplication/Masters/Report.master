@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Masters_Report" Codebehind="Report.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="" rel="stylesheet" type="text/css" id="switchSkin" />
+    <link href="" rel="stylesheet" type="text/css" id="switchSkinModule" />
+    <link href="" rel="stylesheet" type="text/css" id="switchSkinControl" />
+    <link id="easyuicss" rel="stylesheet" type="text/css" />
+
+    <link href="~/CSS/Skins/global/search.css" rel="stylesheet" type="text/css" />
+    <link href="~/CSS/Skins/global/module.css" rel="stylesheet" type="text/css" />
+    <link href="~/CSS/Skins/global/control.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/Scripts/Controls/dateTimepicker/dateTimepicker.css" rel="stylesheet"
+        type="text/css" />
+    <style>
+        .reportView td
+        {
+            height: auto;
+        }
+        .commonm
+        {
+            font-size: 12px;
+            margin-left: 300px;
+            padding-top: 9px;
+            position: absolute;
+            color: gray;
+        }
+        .commonm a
+        {
+            text-decoration: none;
+            margin-right: 3px;
+        }
+    </style>
+    <script>
+        function changeSkin() {
+            var baseURI = $("#easyuicss").attr("href");
+
+
+            var baseURIIndex = baseURI.indexOf("/Scripts");
+            var baseURI = baseURI.substring(0, baseURIIndex);
+
+            var skin = $.cookie("skin");
+            $("#switchSkin").attr("href", baseURI + "/CSS/Skins/" + skin + "/search.css");
+            $("#switchSkinModule").attr("href", baseURI + "/CSS/Skins/" + skin + "/module.css");
+            $("#switchSkinControl").attr("href", baseURI + "/CSS/Skins/" + skin + "/control.css");
+
+        }
+        //changeSkin();
+        $(document).ready(function () {
+
+            if ($("[id*='ReportViewer1']").length != 0) {
+                $(".commonm").css({ "padding-top": "12px" });
+                $(".commonm a").css({ "font-size": "11px" });
+                $(".commonm a:not(.aspNetDisabled)").css({ "color": "#3366CC" });
+            }
+            try {
+
+                //                $("#ctl00_cphData_ReportViewer1_Toolbar").children().append($(".commonm")).children().css("float", "left").parent().append("<div style='clear:both'></div>");
+
+                if ($.browser.msie) {
+                    $(".commonm").css("margin-left", "350px");
+                    $(".commonm a").css("margin-right", "11px");
+                }
+                $("#llblChart").click(function () {
+                    $(this).addClass("actionFlashC").removeClass("actionFlashN");
+                    $(this).parent().find(".actionDataC").addClass("actionDataN").removeClass("actionDataC");
+                });
+                $("#llblData").click(function () {
+                    $(this).parent().find(".actionDataC").addClass("actionDataN").removeClass("actionDataC");
+                    $(this).addClass("actionDataC").removeClass("actionDataN");
+                    $(this).parent().find(".actionFlashC").addClass("actionFlashN").removeClass("actionFlashC");
+                });
+
+                $("#llblDataChart").click(function () {
+                    $(this).parent().find(".actionFlashC").addClass("actionFlashN").removeClass("actionFlashC");
+                    $(this).parent().find(".actionDataC").addClass("actionDataN").removeClass("actionDataC");
+                    $(this).addClass("actionDataC").removeClass("actionDataN");
+
+                });
+
+                $("#ctl00_cphData_ReportViewer1_ctl09").css("overflow-x", "auto").css("overflow-y", "hidden").css("");
+                $("#ctl00_cphData_ReportViewer1_ctl06").css({ "background-image": "url(" + baseURI + "/css/skins/blue/images/grid/topTool.gif)", "border": "0" });
+            } catch (e) {
+
+            }
+            if ($(".reportflash").length != 0) {
+                var doc = document.compatMode == 'CSS1Compat' ? document.documentElement : document.body;
+                $(".div_reportData").height(doc.clientHeight - $(".search").height() - 12);
+            }
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server" id="form1">
+    <div class="content">
+        <div class="search">
+            <div class="moduleDesc" id="divReportTitle">
+                <%-- 模块名称 --%>
+                <span class="title">
+                    <asp:Label ID="LblTitle" runat="server"></asp:Label>
+                    <asp:ContentPlaceHolder ID="cphModuleDesc" runat="server">
+                    </asp:ContentPlaceHolder>
+                </span>
+                <div class="split">
+                </div>
+            </div>
+            <div class="filter">
+                <%-- 查询条件 --%>
+                <asp:ContentPlaceHolder ID="cphInput" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="commonm">
+                <%-- 事件按钮 --%>
+                <asp:ContentPlaceHolder ID="cphInputCommon" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="div_reportData">
+            <div class="report">
+                <%-- 报表 --%>
+                <div class="flashChart">
+                    <asp:ContentPlaceHolder ID="cphReport" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="data">
+                <%-- 表格数据 --%>
+                <asp:ContentPlaceHolder ID="cphData" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

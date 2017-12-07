@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QCAccountDataSet" targetNamespace="http://tempuri.org/QCAccountDataSet.xsd" xmlns:mstns="http://tempuri.org/QCAccountDataSet.xsd" xmlns="http://tempuri.org/QCAccountDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="i3OracleConnect" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="i3OracleConnect (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.i3OracleConnect.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QCAccountDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="False" msprop:Generator_DataSetName="QCAccountDataSet" msprop:Generator_UserDSName="QCAccountDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemName" msprop:Generator_ColumnVarNameInTable="columnItemName" msprop:Generator_ColumnPropNameInRow="ItemName" msprop:Generator_ColumnPropNameInTable="ItemNameColumn" msprop:Generator_UserColumnName="ItemName" type="xs:string" minOccurs="0" />
+              <xs:element name="SampleCount" msprop:Generator_ColumnVarNameInTable="columnSampleCount" msprop:Generator_ColumnPropNameInRow="SampleCount" msprop:Generator_ColumnPropNameInTable="SampleCountColumn" msprop:Generator_UserColumnName="SampleCount" type="xs:string" minOccurs="0" />
+              <xs:element name="EmptyOutCount" msprop:Generator_ColumnVarNameInTable="columnEmptyOutCount" msprop:Generator_ColumnPropNameInRow="EmptyOutCount" msprop:Generator_ColumnPropNameInTable="EmptyOutCountColumn" msprop:Generator_UserColumnName="EmptyOutCount" type="xs:string" minOccurs="0" />
+              <xs:element name="EmptyOutIsOK" msprop:Generator_ColumnVarNameInTable="columnEmptyOutIsOK" msprop:Generator_ColumnPropNameInRow="EmptyOutIsOK" msprop:Generator_ColumnPropNameInTable="EmptyOutIsOKColumn" msprop:Generator_UserColumnName="EmptyOutIsOK" type="xs:string" minOccurs="0" />
+              <xs:element name="EmptyBatCount" msprop:Generator_ColumnVarNameInTable="columnEmptyBatCount" msprop:Generator_ColumnPropNameInRow="EmptyBatCount" msprop:Generator_ColumnPropNameInTable="EmptyBatCountColumn" msprop:Generator_UserColumnName="EmptyBatCount" type="xs:string" minOccurs="0" />
+              <xs:element name="EmptyBatOffset" msprop:Generator_ColumnVarNameInTable="columnEmptyBatOffset" msprop:Generator_ColumnPropNameInRow="EmptyBatOffset" msprop:Generator_ColumnPropNameInTable="EmptyBatOffsetColumn" msprop:Generator_UserColumnName="EmptyBatOffset" type="xs:string" minOccurs="0" />
+              <xs:element name="EmptyBatIsOK" msprop:Generator_ColumnVarNameInTable="columnEmptyBatIsOK" msprop:Generator_ColumnPropNameInRow="EmptyBatIsOK" msprop:Generator_ColumnPropNameInTable="EmptyBatIsOKColumn" msprop:Generator_UserColumnName="EmptyBatIsOK" type="xs:string" minOccurs="0" />
+              <xs:element name="TwinCount" msprop:Generator_ColumnVarNameInTable="columnTwinCount" msprop:Generator_ColumnPropNameInRow="TwinCount" msprop:Generator_ColumnPropNameInTable="TwinCountColumn" msprop:Generator_UserColumnName="TwinCount" type="xs:string" minOccurs="0" />
+              <xs:element name="TwinProportion" msprop:Generator_ColumnVarNameInTable="columnTwinProportion" msprop:Generator_ColumnPropNameInRow="TwinProportion" msprop:Generator_ColumnPropNameInTable="TwinProportionColumn" msprop:Generator_UserColumnName="TwinProportion" type="xs:string" minOccurs="0" />
+              <xs:element name="TwinOffset" msprop:Generator_ColumnVarNameInTable="columnTwinOffset" msprop:Generator_ColumnPropNameInRow="TwinOffset" msprop:Generator_ColumnPropNameInTable="TwinOffsetColumn" msprop:Generator_UserColumnName="TwinOffset" type="xs:string" minOccurs="0" />
+              <xs:element name="TwinIsOKCount" msprop:Generator_ColumnVarNameInTable="columnTwinIsOKCount" msprop:Generator_ColumnPropNameInRow="TwinIsOKCount" msprop:Generator_ColumnPropNameInTable="TwinIsOKCountColumn" msprop:Generator_UserColumnName="TwinIsOKCount" type="xs:string" minOccurs="0" />
+              <xs:element name="TwinIsOK" msprop:Generator_ColumnVarNameInTable="columnTwinIsOK" msprop:Generator_ColumnPropNameInRow="TwinIsOK" msprop:Generator_ColumnPropNameInTable="TwinIsOKColumn" msprop:Generator_UserColumnName="TwinIsOK" type="xs:string" minOccurs="0" />
+              <xs:element name="AddCount" msprop:Generator_ColumnVarNameInTable="columnAddCount" msprop:Generator_ColumnPropNameInRow="AddCount" msprop:Generator_ColumnPropNameInTable="AddCountColumn" msprop:Generator_UserColumnName="AddCount" type="xs:string" minOccurs="0" />
+              <xs:element name="AddProportion" msprop:Generator_ColumnVarNameInTable="columnAddProportion" msprop:Generator_ColumnPropNameInRow="AddProportion" msprop:Generator_ColumnPropNameInTable="AddProportionColumn" msprop:Generator_UserColumnName="AddProportion" type="xs:string" minOccurs="0" />
+              <xs:element name="AddBack" msprop:Generator_ColumnVarNameInTable="columnAddBack" msprop:Generator_ColumnPropNameInRow="AddBack" msprop:Generator_ColumnPropNameInTable="AddBackColumn" msprop:Generator_UserColumnName="AddBack" type="xs:string" minOccurs="0" />
+              <xs:element name="AddIsOKCount" msprop:Generator_ColumnVarNameInTable="columnAddIsOKCount" msprop:Generator_ColumnPropNameInRow="AddIsOKCount" msprop:Generator_ColumnPropNameInTable="AddIsOKCountColumn" msprop:Generator_UserColumnName="AddIsOKCount" type="xs:string" minOccurs="0" />
+              <xs:element name="AddIsOK" msprop:Generator_ColumnVarNameInTable="columnAddIsOK" msprop:Generator_ColumnPropNameInRow="AddIsOK" msprop:Generator_ColumnPropNameInTable="AddIsOKColumn" msprop:Generator_UserColumnName="AddIsOK" type="xs:string" minOccurs="0" />
+              <xs:element name="ZPBYGS" msprop:Generator_ColumnVarNameInTable="columnZPBYGS" msprop:Generator_ColumnPropNameInRow="ZPBYGS" msprop:Generator_ColumnPropNameInTable="ZPBYGSColumn" msprop:Generator_UserColumnName="ZPBYGS" type="xs:string" minOccurs="0" />
+              <xs:element name="YPBL" msprop:Generator_ColumnVarNameInTable="columnYPBL" msprop:Generator_ColumnPropNameInRow="YPBL" msprop:Generator_ColumnPropNameInTable="YPBLColumn" msprop:Generator_UserColumnName="YPBL" type="xs:string" minOccurs="0" />
+              <xs:element name="XDWCFW" msprop:Generator_ColumnVarNameInTable="columnXDWCFW" msprop:Generator_ColumnPropNameInRow="XDWCFW" msprop:Generator_ColumnPropNameInTable="XDWCFWColumn" msprop:Generator_UserColumnName="XDWCFW" type="xs:string" minOccurs="0" />
+              <xs:element name="HGS" msprop:Generator_ColumnVarNameInTable="columnHGS" msprop:Generator_ColumnPropNameInRow="HGS" msprop:Generator_ColumnPropNameInTable="HGSColumn" msprop:Generator_UserColumnName="HGS" type="xs:string" minOccurs="0" />
+              <xs:element name="HGL" msprop:Generator_ColumnVarNameInTable="columnHGL" msprop:Generator_ColumnPropNameInRow="HGL" msprop:Generator_ColumnPropNameInTable="HGLColumn" msprop:Generator_UserColumnName="HGL" type="xs:string" minOccurs="0" />
+              <xs:element name="YZBYGS" msprop:Generator_ColumnVarNameInTable="columnYZBYGS" msprop:Generator_ColumnPropNameInRow="YZBYGS" msprop:Generator_ColumnPropNameInTable="YZBYGSColumn" msprop:Generator_UserColumnName="YZBYGS" type="xs:string" minOccurs="0" />
+              <xs:element name="SHL2" msprop:Generator_ColumnVarNameInTable="columnSHL2" msprop:Generator_ColumnPropNameInRow="SHL2" msprop:Generator_ColumnPropNameInTable="SHL2Column" msprop:Generator_UserColumnName="SHL2" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EmptyOut" msprop:Generator_TableClassName="EmptyOutDataTable" msprop:Generator_TableVarName="tableEmptyOut" msprop:Generator_TablePropName="EmptyOut" msprop:Generator_RowDeletingName="EmptyOutRowDeleting" msprop:Generator_UserTableName="EmptyOut" msprop:Generator_RowChangingName="EmptyOutRowChanging" msprop:Generator_RowEvHandlerName="EmptyOutRowChangeEventHandler" msprop:Generator_RowDeletedName="EmptyOutRowDeleted" msprop:Generator_RowEvArgName="EmptyOutRowChangeEvent" msprop:Generator_RowChangedName="EmptyOutRowChanged" msprop:Generator_RowClassName="EmptyOutRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ItemName" msprop:Generator_ColumnVarNameInTable="columnItemName" msprop:Generator_ColumnPropNameInRow="ItemName" msprop:Generator_ColumnPropNameInTable="ItemNameColumn" msprop:Generator_UserColumnName="ItemName" type="xs:string" minOccurs="0" />
+              <xs:element name="QcEmptyInNum" msprop:Generator_ColumnVarNameInTable="columnQcEmptyInNum" msprop:Generator_ColumnPropNameInRow="QcEmptyInNum" msprop:Generator_ColumnPropNameInTable="QcEmptyInNumColumn" msprop:Generator_UserColumnName="QcEmptyInNum" type="xs:string" minOccurs="0" />
+              <xs:element name="QcTime" msprop:Generator_ColumnVarNameInTable="columnQcTime" msprop:Generator_ColumnPropNameInRow="QcTime" msprop:Generator_ColumnPropNameInTable="QcTimeColumn" msprop:Generator_UserColumnName="QcTime" type="xs:string" minOccurs="0" />
+              <xs:element name="SampleCount" msprop:Generator_ColumnVarNameInTable="columnSampleCount" msprop:Generator_ColumnPropNameInRow="SampleCount" msprop:Generator_ColumnPropNameInTable="SampleCountColumn" msprop:Generator_UserColumnName="SampleCount" type="xs:string" minOccurs="0" />
+              <xs:element name="QcEmptyCount" msprop:Generator_ColumnVarNameInTable="columnQcEmptyCount" msprop:Generator_ColumnPropNameInRow="QcEmptyCount" msprop:Generator_ColumnPropNameInTable="QcEmptyCountColumn" msprop:Generator_UserColumnName="QcEmptyCount" type="xs:string" minOccurs="0" />
+              <xs:element name="EmptyResult1" msprop:Generator_ColumnVarNameInTable="columnEmptyResult1" msprop:Generator_ColumnPropNameInRow="EmptyResult1" msprop:Generator_ColumnPropNameInTable="EmptyResult1Column" msprop:Generator_UserColumnName="EmptyResult1" type="xs:string" minOccurs="0" />
+              <xs:element name="EmptyResult2" msprop:Generator_ColumnVarNameInTable="columnEmptyResult2" msprop:Generator_ColumnPropNameInRow="EmptyResult2" msprop:Generator_ColumnPropNameInTable="EmptyResult2Column" msprop:Generator_UserColumnName="EmptyResult2" type="xs:string" minOccurs="0" />
+              <xs:element name="EmptyResultRange" msprop:Generator_ColumnVarNameInTable="columnEmptyResultRange" msprop:Generator_ColumnPropNameInRow="EmptyResultRange" msprop:Generator_ColumnPropNameInTable="EmptyResultRangeColumn" msprop:Generator_UserColumnName="EmptyResultRange" type="xs:string" minOccurs="0" />
+              <xs:element name="EmptyCheckOut" msprop:Generator_ColumnVarNameInTable="columnEmptyCheckOut" msprop:Generator_ColumnPropNameInRow="EmptyCheckOut" msprop:Generator_ColumnPropNameInTable="EmptyCheckOutColumn" msprop:Generator_UserColumnName="EmptyCheckOut" type="xs:string" minOccurs="0" />
+              <xs:element name="SampleTotalCount" msprop:Generator_ColumnVarNameInTable="columnSampleTotalCount" msprop:Generator_ColumnPropNameInRow="SampleTotalCount" msprop:Generator_ColumnPropNameInTable="SampleTotalCountColumn" msprop:Generator_UserColumnName="SampleTotalCount" type="xs:string" minOccurs="0" />
+              <xs:element name="EmptyIsOKCount" msprop:Generator_ColumnVarNameInTable="columnEmptyIsOKCount" msprop:Generator_ColumnPropNameInRow="EmptyIsOKCount" msprop:Generator_ColumnPropNameInTable="EmptyIsOKCountColumn" msprop:Generator_UserColumnName="EmptyIsOKCount" type="xs:string" minOccurs="0" />
+              <xs:element name="EmptyIsOK" msprop:Generator_ColumnVarNameInTable="columnEmptyIsOK" msprop:Generator_ColumnPropNameInRow="EmptyIsOK" msprop:Generator_ColumnPropNameInTable="EmptyIsOKColumn" msprop:Generator_UserColumnName="EmptyIsOK" type="xs:string" minOccurs="0" />
+              <xs:element name="Standard" msprop:Generator_ColumnVarNameInTable="columnStandard" msprop:Generator_ColumnPropNameInRow="Standard" msprop:Generator_ColumnPropNameInTable="StandardColumn" msprop:Generator_UserColumnName="Standard" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

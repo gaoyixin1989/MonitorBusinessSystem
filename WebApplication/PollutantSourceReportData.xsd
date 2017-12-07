@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PollutantSourceReportData" targetNamespace="http://tempuri.org/PollutantSourceReportData.xsd" xmlns:mstns="http://tempuri.org/PollutantSourceReportData.xsd" xmlns="http://tempuri.org/PollutantSourceReportData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PollutantSourceReportData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="PollutantSourceReportData" msprop:Generator_UserDSName="PollutantSourceReportData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Tb_AnalysesFinishList" msprop:Generator_TableClassName="Tb_AnalysesFinishListDataTable" msprop:Generator_TableVarName="tableTb_AnalysesFinishList" msprop:Generator_RowChangedName="Tb_AnalysesFinishListRowChanged" msprop:Generator_TablePropName="Tb_AnalysesFinishList" msprop:Generator_RowDeletingName="Tb_AnalysesFinishListRowDeleting" msprop:Generator_RowChangingName="Tb_AnalysesFinishListRowChanging" msprop:Generator_RowEvHandlerName="Tb_AnalysesFinishListRowChangeEventHandler" msprop:Generator_RowDeletedName="Tb_AnalysesFinishListRowDeleted" msprop:Generator_RowClassName="Tb_AnalysesFinishListRow" msprop:Generator_UserTableName="Tb_AnalysesFinishList" msprop:Generator_RowEvArgName="Tb_AnalysesFinishListRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="CONTRACT_CODE" msprop:Generator_ColumnVarNameInTable="columnCONTRACT_CODE" msprop:Generator_ColumnPropNameInRow="CONTRACT_CODE" msprop:Generator_ColumnPropNameInTable="CONTRACT_CODEColumn" msprop:Generator_UserColumnName="CONTRACT_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="PROJECT_NAME" msprop:Generator_ColumnVarNameInTable="columnPROJECT_NAME" msprop:Generator_ColumnPropNameInRow="PROJECT_NAME" msprop:Generator_ColumnPropNameInTable="PROJECT_NAMEColumn" msprop:Generator_UserColumnName="PROJECT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="REPORT_CODE" msprop:Generator_ColumnVarNameInTable="columnREPORT_CODE" msprop:Generator_ColumnPropNameInRow="REPORT_CODE" msprop:Generator_ColumnPropNameInTable="REPORT_CODEColumn" msprop:Generator_UserColumnName="REPORT_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="RESULT_STATUS" msprop:Generator_ColumnVarNameInTable="columnRESULT_STATUS" msprop:Generator_ColumnPropNameInRow="RESULT_STATUS" msprop:Generator_ColumnPropNameInTable="RESULT_STATUSColumn" msprop:Generator_UserColumnName="RESULT_STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="SAMPLE_CODE" msprop:Generator_ColumnVarNameInTable="columnSAMPLE_CODE" msprop:Generator_ColumnPropNameInRow="SAMPLE_CODE" msprop:Generator_ColumnPropNameInTable="SAMPLE_CODEColumn" msprop:Generator_UserColumnName="SAMPLE_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME" msprop:Generator_ColumnPropNameInRow="ITEM_NAME" msprop:Generator_ColumnPropNameInTable="ITEM_NAMEColumn" msprop:Generator_UserColumnName="ITEM_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="REAL_NAME" msprop:Generator_ColumnVarNameInTable="columnREAL_NAME" msprop:Generator_ColumnPropNameInRow="REAL_NAME" msprop:Generator_ColumnPropNameInTable="REAL_NAMEColumn" msprop:Generator_UserColumnName="REAL_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="DEPT_NAME" msprop:Generator_ColumnVarNameInTable="columnDEPT_NAME" msprop:Generator_ColumnPropNameInRow="DEPT_NAME" msprop:Generator_ColumnPropNameInTable="DEPT_NAMEColumn" msprop:Generator_UserColumnName="DEPT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ROWNUM" msprop:Generator_ColumnVarNameInTable="columnROWNUM" msprop:Generator_ColumnPropNameInRow="ROWNUM" msprop:Generator_ColumnPropNameInTable="ROWNUMColumn" msprop:Generator_UserColumnName="ROWNUM" type="xs:string" minOccurs="0" />
+              <xs:element name="SAMPLE_FINISH_DATE" msprop:Generator_ColumnVarNameInTable="columnSAMPLE_FINISH_DATE" msprop:Generator_ColumnPropNameInRow="SAMPLE_FINISH_DATE" msprop:Generator_ColumnPropNameInTable="SAMPLE_FINISH_DATEColumn" msprop:Generator_UserColumnName="SAMPLE_FINISH_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_RESULT" msprop:Generator_ColumnVarNameInTable="columnITEM_RESULT" msprop:Generator_ColumnPropNameInRow="ITEM_RESULT" msprop:Generator_ColumnPropNameInTable="ITEM_RESULTColumn" msprop:Generator_UserColumnName="ITEM_RESULT" type="xs:string" minOccurs="0" />
+              <xs:element name="POINT_NAME" msprop:Generator_ColumnVarNameInTable="columnPOINT_NAME" msprop:Generator_ColumnPropNameInRow="POINT_NAME" msprop:Generator_ColumnPropNameInTable="POINT_NAMEColumn" msprop:Generator_UserColumnName="POINT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ST_UPPER" msprop:Generator_ColumnVarNameInTable="columnST_UPPER" msprop:Generator_ColumnPropNameInRow="ST_UPPER" msprop:Generator_ColumnPropNameInTable="ST_UPPERColumn" msprop:Generator_UserColumnName="ST_UPPER" type="xs:string" minOccurs="0" />
+              <xs:element name="ST_LOWER" msprop:Generator_ColumnVarNameInTable="columnST_LOWER" msprop:Generator_ColumnPropNameInRow="ST_LOWER" msprop:Generator_ColumnPropNameInTable="ST_LOWERColumn" msprop:Generator_UserColumnName="ST_LOWER" type="xs:string" minOccurs="0" />
+              <xs:element name="QJVALUE" msprop:Generator_ColumnVarNameInTable="columnQJVALUE" msprop:Generator_ColumnPropNameInRow="QJVALUE" msprop:Generator_ColumnPropNameInTable="QJVALUEColumn" msprop:Generator_UserColumnName="QJVALUE" type="xs:string" minOccurs="0" />
+              <xs:element name="UNITNAME" msprop:Generator_ColumnVarNameInTable="columnUNITNAME" msprop:Generator_ColumnPropNameInRow="UNITNAME" msprop:Generator_ColumnPropNameInTable="UNITNAMEColumn" msprop:Generator_UserColumnName="UNITNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="DISCHARGE_UPPER" msprop:Generator_ColumnVarNameInTable="columnDISCHARGE_UPPER" msprop:Generator_ColumnPropNameInRow="DISCHARGE_UPPER" msprop:Generator_ColumnPropNameInTable="DISCHARGE_UPPERColumn" msprop:Generator_UserColumnName="DISCHARGE_UPPER" type="xs:string" minOccurs="0" />
+              <xs:element name="DISCHARGE_LOWER" msprop:Generator_ColumnVarNameInTable="columnDISCHARGE_LOWER" msprop:Generator_ColumnPropNameInRow="DISCHARGE_LOWER" msprop:Generator_ColumnPropNameInTable="DISCHARGE_LOWERColumn" msprop:Generator_UserColumnName="DISCHARGE_LOWER" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Tb_AnalysesFinishChart" msprop:Generator_TableClassName="Tb_AnalysesFinishChartDataTable" msprop:Generator_TableVarName="tableTb_AnalysesFinishChart" msprop:Generator_RowChangedName="Tb_AnalysesFinishChartRowChanged" msprop:Generator_TablePropName="Tb_AnalysesFinishChart" msprop:Generator_RowDeletingName="Tb_AnalysesFinishChartRowDeleting" msprop:Generator_RowChangingName="Tb_AnalysesFinishChartRowChanging" msprop:Generator_RowEvHandlerName="Tb_AnalysesFinishChartRowChangeEventHandler" msprop:Generator_RowDeletedName="Tb_AnalysesFinishChartRowDeleted" msprop:Generator_RowClassName="Tb_AnalysesFinishChartRow" msprop:Generator_UserTableName="Tb_AnalysesFinishChart" msprop:Generator_RowEvArgName="Tb_AnalysesFinishChartRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FinishSum" msprop:Generator_ColumnVarNameInTable="columnFinishSum" msprop:Generator_ColumnPropNameInRow="FinishSum" msprop:Generator_ColumnPropNameInTable="FinishSumColumn" msprop:Generator_UserColumnName="FinishSum" type="xs:string" minOccurs="0" />
+              <xs:element name="FinishType" msprop:Generator_ColumnVarNameInTable="columnFinishType" msprop:Generator_ColumnPropNameInRow="FinishType" msprop:Generator_ColumnPropNameInTable="FinishTypeColumn" msprop:Generator_UserColumnName="FinishType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

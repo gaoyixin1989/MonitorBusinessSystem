@@ -1,0 +1,64 @@
+﻿/*头部背景 */
+#div_TopMenu .top
+{
+    background-image: url(images/thread/bg.jpg);
+    background-repeat: repeat-x;
+}
+/*头部Logo*/
+#div_TopMenu .logo
+{
+    background-image: url(images/thread/logo.jpg);
+}
+/*头部菜单右边*/
+#div_TopMenu .topRight
+{
+    background-image: url(images/thread/topRight.jpg);
+    background-repeat: no-repeat;
+    height: 74px;
+    width: 145px;
+    float: right;
+}
+/*头部工具栏*/
+#div_TopMenu .topTools
+{
+    color: White;
+    background-image: url(images/thread/menubg.jpg);
+    height: 30px;
+    background-repeat: repeat-x;
+}
+/*copyright背景*/
+.ui-layout-center .footer
+{
+    background-image: url(images/index/copyright.jpg);
+    font-size: 13px;
+    height: 25px;
+    line-height: 2.2;
+    color: #257BAF;
+}
+
+/*背景色*/
+.ui-layout-pane
+{
+    background-color: #1873AA;
+}
+.ui-layout-resizer
+{
+    background-color: #1873AA;
+}
+.centerMenu
+{
+    margin-left: 18px;
+}
+.centerMenu a.curr
+{
+    
+    background-image: url(images/thread/centerMenu.gif);
+
+}
+.topMenuCurr
+ { margin:53px 0 0 -54px;}
+ 
+ #div_center,.htmlBackground
+ {
+      background-color: #F1FFFF;
+     }

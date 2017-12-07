@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--城考导入配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="import">
+  <Point pointtable="T_ENV_P_RIVER_CITY" verticaltable="T_ENV_P_RIVER_CITY_V" itemtable="T_ENV_P_RIVER_CITY_V_ITEM">
+    <PointInfo>
+                <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">6</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="1"  column="6">尖岗水库</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+                <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">4</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="2"  column="6">花园口</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical> 
+      </SubPoint>
+                <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">10</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="3"  column="6">十八里河新郑路桥</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+                <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">2</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="4"  column="6">东风渠郑开大道桥</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+                <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">14</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="5"  column="6">西流湖</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_RIVER_CITY</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>SECTION_ID</FillTablePointColumnName>
+      <!--数据填报表对应的垂线字段名称【非必须】-->
+      <FillTableVerticalColumnName>POINT_ID</FillTableVerticalColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_RIVER_CITY_ITEM</FillItemTableName>
+      <!--数据填报表序列号名称【必须】-->
+      <FillTableSerialNum>river_city_fill_id</FillTableSerialNum>
+      <!--数据填报监测项目表序列号名称【必须】-->
+      <FillItemTableSerialNum>river_city_fill_item_id</FillItemTableSerialNum>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="0">年</FillData>
+      <FillData tablecolumn="MONTH" column="1">月</FillData>
+      <FillData tablecolumn="DAY" column="8">采样日期</FillData>
+      <FillData tablecolumn="KPF" column="9">水期代码</FillData>
+    </FillInfo>
+    <ItemInfo tablecolumn="ITEM_VALUE">
+
+      <Item column="10">PH值</Item>
+      <Item column="11">溶解氧</Item>
+      <Item column="12">高锰酸钾指数</Item>
+      <Item column="13">五日生化需氧量</Item>
+      <Item column="14">氨氮</Item>
+      
+      <!--<Item column="10">水温</Item>
+      <Item column="11">流量</Item>
+      <Item column="12">PH值</Item>
+      <Item column="13">电导率</Item>
+      <Item column="14">溶解氧</Item>
+      <Item column="15">高锰酸盐指数</Item>
+      <Item column="16">化学需氧量</Item>
+      <Item column="17">氨氮</Item>
+      <Item column="18">石油类</Item>
+      <Item column="19">挥发酚</Item>
+      <Item column="20">汞</Item>
+      <Item column="21">铅</Item>
+      <Item column="22">五日生化需氧量</Item>
+      <Item column="23">总氮</Item>
+      <Item column="24">总磷</Item>
+      <Item column="25">铜</Item>
+      <Item column="26">锌</Item>
+      <Item column="27">氟化物</Item>
+      <Item column="28">硒</Item>
+      <Item column="29">砷</Item>
+      <Item column="30">镉</Item>
+      <Item column="31">六价铬</Item>
+      <Item column="32">总氰化物</Item>
+      <Item column="33">阴离子表面活性剂</Item>
+      <Item column="34">硫化物</Item>
+      <Item column="35">粪大肠菌群类</Item>
+      <Item column="36">硫酸盐</Item>
+      <Item column="37">氯化物</Item>
+      <Item column="38">硝酸盐</Item>
+      <Item column="39">铁</Item>
+      <Item column="40">锰</Item>
+      <Item column="41">水位</Item>-->
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

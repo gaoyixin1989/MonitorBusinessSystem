@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--环境空气(小时)导出配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="export">
+  <Point pointtable="T_ENV_P_AIR" itemtable="T_ENV_P_AIR_ITEM" startrow="1">
+    <PointInfo>
+      <Column tablecolumn="POINT_NAME" column="1">监测点名称</Column>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_AIRHOUR</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>POINT_ID</FillTablePointColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_AIRHOUR_ITEM</FillItemTableName>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="0">年</FillData>
+      <FillData tablecolumn="MONTH" column="2">月</FillData>
+      <FillData tablecolumn="DAY"   column="3">日</FillData>
+      <FillData tablecolumn="HOUR" column="4">小时</FillData>
+      <FillData tablecolumn="TEMPERATRUE" column="5">气温</FillData>
+      <FillData tablecolumn="PRESSURE" column="6">气压</FillData>
+      <FillData tablecolumn="WIND_SPEED" column="7">风速</FillData>
+      <FillData tablecolumn="WIND_DIRECTION" column="8">风向</FillData>
+      <FillData tablecolumn="VISIBLITY" column="9">能见度</FillData>
+      <FillData tablecolumn="HUMIDITY" column="10">相对湿度</FillData>
+    </FillInfo>
+    <ItemInfo>
+      <Item column="11" ItemName="二氧化硫">  </Item>
+      <Item column="12"  ItemName="二氧化氮"> </Item>
+      <Item column="13"  ItemName="PM10">  </Item>
+      <Item column="14"  ItemName="一氧化碳"></Item>
+      <Item column="15"  ItemName="PM2.5"> </Item>
+      <Item column="16"  ItemName="臭氧最大1小时平均"> </Item>
+      <Item column="17"  ItemName="臭氧最大8小时滑动平均"></Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--道路交通噪声导出配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="export">
+  <Point pointtable="T_ENV_P_NOISE_ROAD" itemtable="T_ENV_P_NOISE_ROAD_ITEM" startrow="2">
+    <PointInfo>
+      <Column tablecolumn="POINT_CODE" column="3">路段代码</Column>
+      <Column tablecolumn="POINT_NAME" column="2">路段名称</Column> 
+      <Column tablecolumn="SATAIONS_ID" column="0">测站代码</Column>
+      <Column tablecolumn="ROAD_LENGTH" column="4">路段长度</Column>
+	  <Column tablecolumn="ROAD_WIDTH" column="5">路段宽度</Column>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_NOISE_ROAD</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>POINT_ID</FillTablePointColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_NOISE_ROAD_ITEM</FillItemTableName>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="1">年</FillData>
+      <FillData tablecolumn="MONTH" column="7">月</FillData>
+      <FillData tablecolumn="BEGIN_DAY"   column="8">日</FillData>
+      <FillData tablecolumn="BEGIN_HOUR"  column="9">小时</FillData>
+	  <FillData tablecolumn="BEGIN_MINUTE"  column="10">分钟</FillData>
+    </FillInfo>
+    <ItemInfo>
+      <Item column="11" ItemName ="LEQ"></Item>
+      <Item column="12" ItemName ="Leq10"></Item>
+      <Item column="13" ItemName ="Leq50"></Item> 
+      <Item column="14" ItemName ="Leq90"></Item>
+	  <Item column="6" ItemName ="车流量"></Item>	
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

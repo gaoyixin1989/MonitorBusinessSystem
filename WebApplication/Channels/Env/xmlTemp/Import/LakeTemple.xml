@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--湖库导入配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="import">
+  <!--设置监测监测点-->
+  <Point pointtable="T_ENV_P_LAKE" verticaltable="T_ENV_P_LAKE_V" itemtable="T_ENV_P_LAKE_V_ITEM">
+    <PointInfo>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">XK010</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="7"  column="1">里峪</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">XK009</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="9"  column="1">四道河</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">XK008</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="11"  column="1">大坝</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">XK014</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="13"  column="1">东入口</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">XK012</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="15"  column="1">西入口</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">XK011</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="17"  column="1">出口</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">XK013</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="19"  column="1">桃林口水库</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_LAKE</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>SECTION_ID</FillTablePointColumnName>
+      <!--数据填报表对应的垂线字段名称【非必须】-->
+      <FillTableVerticalColumnName>POINT_ID</FillTableVerticalColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_LAKE_ITEM</FillItemTableName>
+      <!--数据填报表序列号名称【必须】-->
+      <FillTableSerialNum>lake_fill_id</FillTableSerialNum>
+      <!--数据填报监测项目表序列号名称【必须】-->
+      <FillItemTableSerialNum>lake_fill_item_id</FillItemTableSerialNum>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="3">年</FillData>
+      <FillData tablecolumn="MONTH" column="4">月</FillData>
+      <FillData tablecolumn="DAY" column="5">日</FillData>
+    </FillInfo>
+    <ItemInfo tablecolumn="ITEM_VALUE">
+      <Item column="6">水温</Item>
+      <Item column="7">PH值</Item>
+      <Item column="8">溶解氧</Item>
+      <Item column="9">高锰酸盐指数</Item>
+      <Item column="10">化学需氧量</Item>
+      <Item column="11">五日生化需氧量</Item>
+      <Item column="12">氨氮（非离子氨）</Item>
+      <Item column="13">总磷</Item>
+      <Item column="14">总氮</Item>
+      <Item column="15">挥发酚</Item>
+      <Item column="16">石油类</Item>
+      <Item column="17">铜</Item>
+      <Item column="18">锌</Item>
+      <Item column="19">硒</Item>
+      <Item column="20">砷</Item>
+      <Item column="21">总汞</Item>
+      <Item column="22">镉</Item>
+      <Item column="23">氟化物</Item>
+      <Item column="24">总铬</Item>
+      <Item column="25">铅</Item>
+      <Item column="26">氰化物</Item>
+      <Item column="27">阴离子表面活性剂</Item>
+      <Item column="28">硫化物</Item>
+      <Item column="29">粪大肠菌群</Item>
+      <Item column="30">硫酸盐</Item>
+      <Item column="31">氯化物</Item>
+      <Item column="32">硝酸盐氮</Item>
+      <Item column="33">铁（Ⅱ、Ⅲ）氰络合物</Item>
+      <Item column="34">锰</Item>
+      <Item column="35">叶绿素</Item>
+      <Item column="36">透明度</Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

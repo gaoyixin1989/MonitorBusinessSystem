@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* author: tonytian */
+/* mail: kevin903@163.com */
+
+html { scrollbar-3d-light-color:#fff; scrollbar-arrow-color:#0069C2;
+scrollbar-base-color:#C3C3C3; scrollbar-darkshadow-color:#fff; scrollbar-face-color:#ddd;
+scrollbar-highlight-color:#fff; scrollbar-shadow-color:#B6B6B6; scrollbar-track-color:#F3F3F3;}
+body { width:100%; height:100%; font:12px Tahoma,Arial,"宋体"; text-align:center;}
+input,select,textarea { font-family:Tahoma,Arial,"宋体";}
+body,div{ margin:0;padding:0;border:0;}
+html { border:0;}
+img { border:0;} 
+.clearfloat{height:0;font-size:1px;clear:both;line-height:0;}
+
+html { background:#FFF url(../images/loginBg01.gif) repeat-x left top;}
+.logo { width:960px; height:70px; margin:60px auto 8px auto; background:url(../images/loginBg03.gif) no-repeat center top;}
+.login { width:960px; height:310px; margin:0 auto; background:url(../images/loginBg02.gif) no-repeat left top;}
+.loginInner { width:960px; height:260px; position:relative; background:url(../images/loginBg04.jpg) no-repeat center 60px;}
+.loginInner .form { width:250px; height:130px; position:absolute; left:260px; top:100px;}
+.loginInner .form span { display:block; height:40px; float:left;}
+.loginInner .form span.name { width:80px; line-height:30px; text-align:right; font-size:14px; color:#333;}
+.loginInner .form span.ipt,.loginInner .form span.btn { width:156px; margin-left:6px; *+margin-left:3px;}
+.loginInner .form span.ipt input { width:150px; height:20px; float:left; margin-top:3px; margin-left:5px; line-height:20px;
+ font-size:14px; font-weight:bold; background:transparent; border:none;}
+.loginInner .form span.btn input { width:95px; height:28px; float:left; margin-left:2px; margin-top:2px; border:none; 
+ background:url(../images/loginBg05.gif) no-repeat left top;}
+.copyright { color:#bcc9d6; font-size:12px;}
+
+.loginBtm { height:115px; width:100%; position:absolute; left:0; bottom:0; background:url(../images/loginBg06.jpg) no-repeat left bottom;}
+.loginBtm div { margin-left:800px; height:115px; background:url(../images/loginBg07.jpg) repeat-x 800px bottom;}

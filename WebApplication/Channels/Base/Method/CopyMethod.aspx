@@ -1,0 +1,21 @@
+﻿<%@ Page Language="C#" AutoEventWireup="True" Inherits="Channels_Base_Method_CopyMethod" Codebehind="CopyMethod.aspx.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        源类别<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+&nbsp;&nbsp; 目标类别<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
+            Text="分析方法COPY" />
+    
+    </div>
+    </form>
+</body>
+</html>

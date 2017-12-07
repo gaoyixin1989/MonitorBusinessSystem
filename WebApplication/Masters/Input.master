@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Masters_Input" Codebehind="Input.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link href="" rel="stylesheet" type="text/css" id="switchSkin" />
+    <link id="rightFrmCss" href="../App_Themes/default/styles/rightFrm.css" rel="stylesheet"
+        type="text/css" />
+    <link href="~/Scripts/Controls/dateTimepicker/dateTimepicker.css" rel="stylesheet"
+        type="text/css" />
+    <script type="text/javascript">
+        function changeSkin() {
+            var skin = $.cookie("skin");
+            try {
+                $("#switchSkin").attr("href", "../App_Themes/" + $.cookie("skin") + "/styles/rightFrm.css");
+            } catch (e) { }
+        }
+        //changeSkin();
+        $(document).ready(function () {
+
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server" id="form1">
+    <div class="rightInner">
+       <%-- <div class="nav">
+            <!-- 导航 -->
+            <a href="page05.html">系统首页</a> &gt; <a href="page07.html">第7个页面</a> &gt; <a href="page06.html">
+                第6个页面</a> &gt; <a href="page04.html">第4个页面</a> &gt; <a href="page03.html">第3个页面</a>
+            &gt; <a href="page02.html">第2个页面</a> &gt; 第1个页面
+        </div>--%>
+        <div class="rbox">
+
+            <div class="rContent">
+                <asp:ContentPlaceHolder ID="cphInput" runat="Server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

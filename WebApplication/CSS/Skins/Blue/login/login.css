@@ -1,0 +1,81 @@
+﻿.copyright{ position: absolute;
+    text-align: center;
+    top: 91%;
+    font-size:13px;
+    width: 100%; color:White;
+    }
+    input{font-size: 17px;
+    font-weight: bold;}
+body
+{
+    background-image: url(login_bg_01.gif);
+    margin: 0;
+    padding: 0;
+}
+.header
+{
+    background-image: url(login_header_bg.gif);
+    height: 194px;
+}
+.headerLogo
+{
+    background:url(header.png); 
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../CSS/skins/Blue/login/header.png' ,sizingMethod='crop'); /* IE6 */
+    _background-image: none; /* IE6 */
+
+    height: 194px;
+    width: 835px;
+    margin: 0 auto;
+}
+.content
+{
+    margin: 0 auto;
+    width: 650px;
+}
+.login
+{
+    background:url(container_bg.png); 
+    
+    
+    
+
+    height: 290px;
+    margin-top: -165px;
+    position: absolute;
+    top: 50%;
+    width: 650px;
+}
+.loginForm
+{
+    float: right;
+    margin-right: 76px;
+    margin-top: 89px;
+}
+.loginFormImg
+{
+    background-image: url(login_title.jpg);
+    height: 37px;
+    width: 204px;
+    margin-bottom: 12px;
+}
+.loginForm table
+{
+    line-height: 2;
+}
+.loginForm table .meta
+{
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+}
+#btnSubmit
+{
+    cursor:pointer;
+    background-image: url(login_btn.jpg);
+    background-position: left 0;
+    border: medium none;
+    display: block;
+    height: 29px;
+    overflow: hidden;
+    width: 100px;
+}

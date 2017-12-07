@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AlgaeReportDataSet" targetNamespace="http://tempuri.org/AlgaeReportDataSet.xsd" xmlns:mstns="http://tempuri.org/AlgaeReportDataSet.xsd" xmlns="http://tempuri.org/AlgaeReportDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AlgaeReportDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="AlgaeReportDataSet" msprop:Generator_DataSetName="AlgaeReportDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AlgaeTable" msprop:Generator_TableClassName="AlgaeTableDataTable" msprop:Generator_TableVarName="tableAlgaeTable" msprop:Generator_TablePropName="AlgaeTable" msprop:Generator_RowDeletingName="AlgaeTableRowDeleting" msprop:Generator_UserTableName="AlgaeTable" msprop:Generator_RowChangingName="AlgaeTableRowChanging" msprop:Generator_RowEvHandlerName="AlgaeTableRowChangeEventHandler" msprop:Generator_RowDeletedName="AlgaeTableRowDeleted" msprop:Generator_RowEvArgName="AlgaeTableRowChangeEvent" msprop:Generator_RowChangedName="AlgaeTableRowChanged" msprop:Generator_RowClassName="AlgaeTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="area" msdata:Caption="point_name" msprop:Generator_ColumnVarNameInTable="columnarea" msprop:Generator_ColumnPropNameInRow="area" msprop:Generator_ColumnPropNameInTable="areaColumn" msprop:Generator_UserColumnName="area" type="xs:string" minOccurs="0" />
+              <xs:element name="point_name" msdata:Caption="begin_date" msprop:Generator_ColumnVarNameInTable="columnpoint_name" msprop:Generator_ColumnPropNameInRow="point_name" msprop:Generator_ColumnPropNameInTable="point_nameColumn" msprop:Generator_UserColumnName="point_name" type="xs:string" minOccurs="0" />
+              <xs:element name="function_attr" msdata:Caption="end_date" msprop:Generator_ColumnVarNameInTable="columnfunction_attr" msprop:Generator_ColumnPropNameInRow="function_attr" msprop:Generator_ColumnPropNameInTable="function_attrColumn" msprop:Generator_UserColumnName="function_attr" type="xs:string" minOccurs="0" />
+              <xs:element name="rec_time" msdata:Caption="rain_type" msprop:Generator_ColumnVarNameInTable="columnrec_time" msprop:Generator_ColumnPropNameInRow="rec_time" msprop:Generator_ColumnPropNameInTable="rec_timeColumn" msprop:Generator_UserColumnName="rec_time" type="xs:string" minOccurs="0" />
+              <xs:element name="item_name" msdata:Caption="precipitation" msprop:Generator_ColumnVarNameInTable="columnitem_name" msprop:Generator_ColumnPropNameInRow="item_name" msprop:Generator_ColumnPropNameInTable="item_nameColumn" msprop:Generator_UserColumnName="item_name" type="xs:string" minOccurs="0" />
+              <xs:element name="item_value" msdata:Caption="num" msprop:Generator_ColumnVarNameInTable="columnitem_value" msprop:Generator_ColumnPropNameInRow="item_value" msprop:Generator_ColumnPropNameInTable="item_valueColumn" msprop:Generator_UserColumnName="item_value" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

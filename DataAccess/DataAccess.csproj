@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B93F0FBE-40D9-48A8-8F97-7197082BB842}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>i3.DataAccess</RootNamespace>
+    <AssemblyName>i3.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NPOI">
+      <HintPath>..\Lib\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Channels\Base\Apparatus\TBaseApparatusCertificAccess.cs" />
+    <Compile Include="Channels\Base\Apparatus\TBaseApparatusFilebakAccess.cs" />
+    <Compile Include="Channels\Base\Apparatus\TBaseApparatusInfoAccess.cs" />
+    <Compile Include="Channels\Base\Apparatus\TBaseApparatusMsgAccess.cs" />
+    <Compile Include="Channels\Base\Apparatus\TBaseApparatusMsgUserAccess.cs" />
+    <Compile Include="Channels\Base\CodeRule\TBaseSerialruleAccess.cs" />
+    <Compile Include="Channels\Base\Company\TBaseCompanyInfoAccess.cs" />
+    <Compile Include="Channels\Base\DynamicAttribute\TBaseAttrbuteValue3Access.cs" />
+    <Compile Include="Channels\Base\DynamicAttribute\TBaseAttrbuteValueAccess.cs" />
+    <Compile Include="Channels\Base\DynamicAttribute\TBaseAttributeInfoAccess.cs" />
+    <Compile Include="Channels\Base\DynamicAttribute\TBaseAttributeTypeAccess.cs" />
+    <Compile Include="Channels\Base\DynamicAttribute\TBaseAttributeTypeValueAccess.cs" />
+    <Compile Include="Channels\Base\Evaluation\TBaseEvaluationConInfoAccess.cs" />
+    <Compile Include="Channels\Base\Evaluation\TBaseEvaluationConItemAccess.cs" />
+    <Compile Include="Channels\Base\Evaluation\TBaseEvaluationInfoAccess.cs" />
+    <Compile Include="Channels\Base\Industry\TBaseIndustryInfoAccess.cs" />
+    <Compile Include="Channels\Base\Industry\TBaseIndustryItemAccess.cs" />
+    <Compile Include="Channels\Base\Item\TBaseItemAnalysisAccess.cs" />
+    <Compile Include="Channels\Base\Item\TBaseItemInfoAccess.cs" />
+    <Compile Include="Channels\Base\Item\TBaseItemSamplingInstrumentAccess.cs" />
+    <Compile Include="Channels\Base\Item\TBaseItemSubItemAccess.cs" />
+    <Compile Include="Channels\Base\Method\TBaseMethodAnalysisAccess.cs" />
+    <Compile Include="Channels\Base\Method\TBaseMethodInfoAccess.cs" />
+    <Compile Include="Channels\Base\MonitorType\TBaseMonitorTypeInfoAccess.cs" />
+    <Compile Include="Channels\Base\Outcompany\TBaseOutcompanyAllowAccess.cs" />
+    <Compile Include="Channels\Base\Outcompany\TBaseOutcompanyInfoAccess.cs" />
+    <Compile Include="Channels\Base\Point\TBaseCompanyPointAccess.cs" />
+    <Compile Include="Channels\Base\Point\TBaseCompanyPointItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Air30\TEnvFillAir30Access.cs" />
+    <Compile Include="Channels\Env\Fill\Air30\TEnvFillAir30_ITEMAccess.cs" />
+    <Compile Include="Channels\Env\Fill\AirHour\TEnvFillAirHourAccess.cs" />
+    <Compile Include="Channels\Env\Fill\AirHour\TEnvFillAirHourItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\AirKS\TEnvFillAirksAccess.cs" />
+    <Compile Include="Channels\Env\Fill\AirKS\TEnvFillAirksItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Air\TEnvFillAirAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Air\TEnvFillAirHourAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Algae\TEnvFillAlgaeAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Algae\TEnvFillAlgaeItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Alkali\TEnvFillAlkaliAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Alkali\TENVFILLALKALIITEMAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Bottom\TEnvFillRiverBottomAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Bottom\TEnvFillRiverBottomItemAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Channels\Env\Fill\DrinkSource\TEnvFillDrinkSrcAccess.cs" />
+    <Compile Include="Channels\Env\Fill\DrinkSource\TEnvFillDrinkSrcItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\DrinkUnder\TEnvFillDrinkUnderAccess.cs" />
+    <Compile Include="Channels\Env\Fill\DrinkUnder\TEnvFillDrinkUnderItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Dust\TEnvFillDustAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Dust\TEnvFillDustItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Estuaries\TEnvFillEstuariesAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Estuaries\TEnvFillEstuariesItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\FillQry\FillQryAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Lake\TEnvFillLakeAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Lake\TEnvFillLakeItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Metal\TEnvFillMetalAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Metal\TEnvFillMetalItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Metal\TEnvFillRMetalItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\MudRiver\TEnvFillMudRiverAccess.cs" />
+    <Compile Include="Channels\Env\Fill\MudRiver\TEnvFillMudRiverItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\MudSea\TEnvFillMudSeaAccess.cs" />
+    <Compile Include="Channels\Env\Fill\MudSea\TEnvFillMudSeaItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseArea\TEnvFillNoiseAreaAccess.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseArea\TEnvFillNoiseAreaItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseArea\TEnvFillNoiseAreaSummaryAccess.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseFun\TEnvFillNoiseFunctionAccess.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseFun\TEnvFillNoiseFunctionItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseFun\TEnvFillNoiseFunctionSummaryAccess.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseRoad\TEnvFillNoiseRoadAccess.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseRoad\TEnvFillNoiseRoadItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\NoiseRoad\TEnvFillNoiseRoadSummaryAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Offshore\TEnvFillOffshoreAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Offshore\TEnvFillOffshoreItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\PayFor\TEnvFillPayforAccess.cs" />
+    <Compile Include="Channels\Env\Fill\PayFor\TEnvFillPayforItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\PolluteAir\TEnvFillPolluteAirAccess.cs" />
+    <Compile Include="Channels\Env\Fill\PolluteAir\TEnvFillPolluteAirItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\PolluteWater\TEnvFillPolluteWaterAccess.cs" />
+    <Compile Include="Channels\Env\Fill\PolluteWater\TEnvFillPolluteWaterItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Rain\TEnvFillRainAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Rain\TEnvFillRainItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\River30\TEnvFillRiver30Access.cs" />
+    <Compile Include="Channels\Env\Fill\River30\TEnvFillRiver30ItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\RiverCity\TEnvFillRiverCityAccess.cs" />
+    <Compile Include="Channels\Env\Fill\RiverCity\TEnvFillRiverCityItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\RiverPlan\TEnvFillRiverPlanAccess.cs" />
+    <Compile Include="Channels\Env\Fill\RiverPlan\TEnvFillRiverPlanItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\RiverTarget\TEnvFillRiverTargetAccess.cs" />
+    <Compile Include="Channels\Env\Fill\RiverTarget\TEnvFillRiverTargetItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\River\TEnvFillRiverAccess.cs" />
+    <Compile Include="Channels\Env\Fill\River\TEnvFillRiverItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Rmetal\TEnvFillRMetalAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Rmetal\TEnvFillRMetalItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Seabath\TEnvFillSeabathAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Seabath\TEnvFillSeabathItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Sea\TEnvFillSeaAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Sea\TEnvFillSeaItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Sediment\TEnvFillSedimentAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Sediment\TEnvFillSedimentItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Soil\TEnvFillSoilAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Soil\TEnvFillSoilItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Solid\TEnvFillSolidAccess.cs" />
+    <Compile Include="Channels\Env\Fill\Solid\TEnvFillSolidItemAccess.cs" />
+    <Compile Include="Channels\Env\Fill\TEnvFillAttAccess.cs" />
+    <Compile Include="Channels\Env\Fill\UnderDrinkSource\TEnvFillUnderDrinkSourceAccess.cs" />
+    <Compile Include="Channels\Env\Fill\UnderDrinkSource\TEnvFillUnderDrinkSourceItemAccess.cs" />
+    <Compile Include="Channels\Env\Import\ImportExcel.cs" />
+    <Compile Include="Channels\Env\Import\XmlQuery.cs" />
+    <Compile Include="Channels\Env\Point\Air30\TEnvPAir30Access.cs" />
+    <Compile Include="Channels\Env\Point\Air30\TEnvPAir30ItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\Common\CommonAccess.cs" />
+    <Compile Include="Channels\Env\Point\DrinkSource\TEnvPDrinkSrcAccess.cs" />
+    <Compile Include="Channels\Env\Point\DrinkSource\TEnvPDrinkSrcVAccess.cs" />
+    <Compile Include="Channels\Env\Point\DrinkSource\TEnvPDrinkSrcVItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\DrinkUnder\TEnvPDrinkUnderAccess.cs" />
+    <Compile Include="Channels\Env\Point\DrinkUnder\TEnvPDrinkUnderItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\Dust\TEnvPointDustAccess.cs" />
+    <Compile Include="Channels\Env\Point\Dust\TEnvPointDustItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\Environment\TENVPAIRAccess.cs" />
+    <Compile Include="Channels\Env\Point\Environment\TEnvPNoiseFunctionItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\Estuaries\TEnvPointEstuariesAccess.cs" />
+    <Compile Include="Channels\Env\Point\Estuaries\TEnvPointEstuariesVerticalAccess.cs" />
+    <Compile Include="Channels\Env\Point\Estuaries\TEnvPointEstuariesVItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\Lake\TEnvPLakeAccess.cs" />
+    <Compile Include="Channels\Env\Point\Lake\TEnvPLakeVAccess.cs" />
+    <Compile Include="Channels\Env\Point\Lake\TEnvPLakeVItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\MudRiver\TEnvPMudRiverAccess.cs" />
+    <Compile Include="Channels\Env\Point\MudRiver\TEnvPMudRiverVAccess.cs" />
+    <Compile Include="Channels\Env\Point\MudRiver\TEnvPMudRiverVItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\MudSea\TEnvPMudSeaAccess.cs" />
+    <Compile Include="Channels\Env\Point\MudSea\TEnvPMudSeaVAccess.cs" />
+    <Compile Include="Channels\Env\Point\MudSea\TEnvPMudSeaVItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\NoiseArea\TEnvPNoiseAreaAccess.cs" />
+    <Compile Include="Channels\Env\Point\NoiseArea\TEnvPNoiseAreaItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\NoiseFun\TEnvPNoiseFunctionAccess.cs" />
+    <Compile Include="Channels\Env\Point\NoiseFun\TEnvPNoiseFunctionItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\NoiseRoad\TEnvPNoiseRoadAccess.cs" />
+    <Compile Include="Channels\Env\Point\NoiseRoad\TEnvPNoiseRoadItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\Offshore\TEnvPointOffshoreAccess.cs" />
+    <Compile Include="Channels\Env\Point\Offshore\TEnvPointOffshoreItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\PayFor\TEnvPPayforAccess.cs" />
+    <Compile Include="Channels\Env\Point\PayFor\TEnvPPayforItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\PolluteRule\TEnvPEnterinfoAccess.cs" />
+    <Compile Include="Channels\Env\Point\PolluteRule\TEnvPPolluteAccess.cs" />
+    <Compile Include="Channels\Env\Point\PolluteRule\TEnvPPolluteItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\PolluteRule\TEnvPPolluteTypeAccess.cs" />
+    <Compile Include="Channels\Env\Point\Rain\TEnvPointRainAccess.cs" />
+    <Compile Include="Channels\Env\Point\Rain\TEnvPointRainItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\River30\TEnvPRiver30Access.cs" />
+    <Compile Include="Channels\Env\Point\River30\TEnvPRiver30VAccess.cs" />
+    <Compile Include="Channels\Env\Point\River30\TEnvPRiver30VItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\RiverCity\TEnvPRiverCityAccess.cs" />
+    <Compile Include="Channels\Env\Point\RiverCity\TEnvPRiverCityVAccess.cs" />
+    <Compile Include="Channels\Env\Point\RiverCity\TEnvPRiverCityVItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\RiverPlan\TEnvPRiverPlanAccess.cs" />
+    <Compile Include="Channels\Env\Point\RiverPlan\TEnvPRiverPlanVAccess.cs" />
+    <Compile Include="Channels\Env\Point\RiverPlan\TEnvPRiverPlanVItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\RiverTarget\TEnvPRiverTargetAccess.cs" />
+    <Compile Include="Channels\Env\Point\RiverTarget\TEnvPRiverTargetVAccess.cs" />
+    <Compile Include="Channels\Env\Point\RiverTarget\TEnvPRiverTargetVItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\River\TEnvPRiverAccess.cs" />
+    <Compile Include="Channels\Env\Point\River\TEnvPRiverVAccess.cs" />
+    <Compile Include="Channels\Env\Point\River\TEnvPRiverVItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\Seabath\TENVPSEABATHAccess.cs" />
+    <Compile Include="Channels\Env\Point\Seabath\TENVPSEABATHITEMAccess.cs" />
+    <Compile Include="Channels\Env\Point\Sea\TEnvPointSeaAccess.cs" />
+    <Compile Include="Channels\Env\Point\Sea\TEnvPointSeaItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\Sediment\TEnvPSedimentAccess.cs" />
+    <Compile Include="Channels\Env\Point\Sediment\TEnvPSedimentItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\Soil\TEnvPSoilAccess.cs" />
+    <Compile Include="Channels\Env\Point\Soil\TEnvPSoilItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\Solid\TEnvPSolidAccess.cs" />
+    <Compile Include="Channels\Env\Point\Solid\TEnvPSolidItemAccess.cs" />
+    <Compile Include="Channels\Env\Point\Sulfate\TEnvPAlkaliAccess.cs" />
+    <Compile Include="Channels\Env\Point\Sulfate\TEnvPAlkaliItemAccess.cs" />
+    <Compile Include="Channels\Env\Report\Air\TEnvReportAirAccess.cs" />
+    <Compile Include="Channels\Env\Report\Algae\TEnvAlgaeReportAccess.cs" />
+    <Compile Include="Channels\Env\Report\Bottom\TEnvReportBottomAccess.cs" />
+    <Compile Include="Channels\Env\Report\Drinking\TEnvReportDrinkingAccess.cs" />
+    <Compile Include="Channels\Env\Report\Estuaries\TEnvReportEstuariesAccess.cs" />
+    <Compile Include="Channels\Env\Report\Metal\TEnvMetalReportAccess.cs" />
+    <Compile Include="Channels\Env\Report\Noise\TEnvReportAreaEnvAccess.cs" />
+    <Compile Include="Channels\Env\Report\Dust\TEnvReportDustReportAccess.cs" />
+    <Compile Include="Channels\Env\Report\Noise\TEnvReportNoiseFunctionAccess.cs" />
+    <Compile Include="Channels\Env\Report\Noise\TEnvReportRoadTraficAccess.cs" />
+    <Compile Include="Channels\Env\Report\OffShore\TEnvReportOffShoreAccess.cs" />
+    <Compile Include="Channels\Env\Report\Rain\TEnvReportRainAccess.cs" />
+    <Compile Include="Channels\Env\Report\River\TEnvReportRiverAccess.cs" />
+    <Compile Include="Channels\Env\Report\Rmetal\TEnvRMetalReportAccess.cs" />
+    <Compile Include="Channels\Env\Report\Sea\TEnvSeaReportAccess.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractAccess.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractAttfeeAccess.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractAttfeeitemAccess.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractCompanyAccess.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractFeeAccess.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractPlanAccess.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractPlanPointAccess.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractPlanPointstopAccess.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractPointAccess.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractPointFreqAccess.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractPointitemAccess.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractSampleAccess.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractSampleitemAccess.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractSamplePlanAccess.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractTestfeeAccess.cs" />
+    <Compile Include="Channels\Mis\Contract\TMisContractUserdutyAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisMonitorQcAddAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisMonitorQcAddQhdAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisMonitorQcBlindZzAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisMonitorQcEmptyBatAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisMonitorQcEmptyOutAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisMonitorQcStAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisMonitorQcTwinAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisMonitorQcTwinQhdAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisPointitemQcsettingAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\QC\TMisPointQcsettingAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Report\TMisMonitorReportAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Result\TMisMonitorResultAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Result\TMisMonitorResultAccess_XWH.cs" />
+    <Compile Include="Channels\Mis\Monitor\Result\TMisMonitorResultAppAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Result\TMisMonitorResultAttAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Result\TMisMonitorResultLogAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Result\TMisResultModifyInfoAccess .cs" />
+    <Compile Include="Channels\Mis\Monitor\Return\TMisReturnInfoAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorDustattributePmAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorDustattributeSo2ornoxAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorDustinforAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorDustattributeAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorSampleAttAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorSampleHandAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorSampleHandsAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorSampleInfoAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorSampleLocaleAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorSampleSkyAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Sample\TMisMonitorSubsampleInfoAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\SubTask\TMisMonitorSubtaskAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\SubTask\TMisMonitorSubtaskAppAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Task\TMisMonitorTaskAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Task\TMisMonitorTaskAttrbuteAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Task\TMisMonitorTaskCompanyAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Task\TMisMonitorTaskItemAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Task\TMisMonitorTaskOutAccess.cs" />
+    <Compile Include="Channels\Mis\Monitor\Task\TMisMonitorTaskPointAccess.cs" />
+    <Compile Include="Channels\Mis\ProcessMgm\TMisProcessMgmAccess.cs" />
+    <Compile Include="Channels\Mis\Report\ReportTestInfoAccess.cs" />
+    <Compile Include="Channels\Mis\Report\ReportTestResultAccess.cs" />
+    <Compile Include="Channels\OA\ARCHIVES\TOaArchivesBorrowAccess.cs" />
+    <Compile Include="Channels\OA\ARCHIVES\TOaArchivesCheckAccess.cs" />
+    <Compile Include="Channels\OA\ARCHIVES\TOaArchivesDirectoryAccess.cs" />
+    <Compile Include="Channels\OA\ARCHIVES\TOaArchivesDocumentAccess.cs" />
+    <Compile Include="Channels\OA\ARCHIVES\TOaArchivesSendAccess.cs" />
+    <Compile Include="Channels\OA\ARCHIVES\TOaArchivesUpdateAccess.cs" />
+    <Compile Include="Channels\OA\ATT\TOaAttAccess.cs" />
+    <Compile Include="Channels\OA\ATT\TOaAttForsysAccess.cs" />
+    <Compile Include="Channels\OA\EMPLOYE\TOaEmployeExaminehistoryAccess.cs" />
+    <Compile Include="Channels\OA\EMPLOYE\TOaEmployeInfoAccess.cs" />
+    <Compile Include="Channels\OA\EMPLOYE\TOaEmployeQualificationAccess.cs" />
+    <Compile Include="Channels\OA\EMPLOYE\TOaEmployeResultorfaultAccess.cs" />
+    <Compile Include="Channels\OA\EMPLOYE\TOaEmployeTrainhistoryAccess.cs" />
+    <Compile Include="Channels\OA\EMPLOYE\TOaEmployeWorkhistoryAccess.cs" />
+    <Compile Include="Channels\OA\EXAMINE\TOaExamineFileAccess.cs" />
+    <Compile Include="Channels\OA\EXAMINE\TOaExamineInfoAccess.cs" />
+    <Compile Include="Channels\OA\FW\TOaFwInfoAccess.cs" />
+    <Compile Include="Channels\OA\Message\TOaMessageInfoAccess.cs" />
+    <Compile Include="Channels\OA\Message\TOaMessageInfoDelAccess.cs" />
+    <Compile Include="Channels\OA\Message\TOaMessageInfoDeptAccess.cs" />
+    <Compile Include="Channels\OA\Message\TOaMessageInfoManAccess.cs" />
+    <Compile Include="Channels\OA\Message\TOaMessageInfoReceiveAccess.cs" />
+    <Compile Include="Channels\OA\Message\TOaMessageMobilSetupAccess.cs" />
+    <Compile Include="Channels\OA\Message\TOaMessageSetupAccess.cs" />
+    <Compile Include="Channels\OA\Notice\TOaNoticeAccess.cs" />
+    <Compile Include="Channels\OA\PART\SAMPLE\TOaPartstandCollarAccess.cs" />
+    <Compile Include="Channels\OA\PART\SAMPLE\TOaPartstandInfoAccess.cs" />
+    <Compile Include="Channels\OA\PART\TOaPartAcceptedAccess.cs" />
+    <Compile Include="Channels\OA\PART\TOaPartAcceptedlistAccess.cs" />
+    <Compile Include="Channels\OA\PART\TOaPartBuyRequstAccess.cs" />
+    <Compile Include="Channels\OA\PART\TOaPartBuyRequstLstAccess.cs" />
+    <Compile Include="Channels\OA\PART\TOaPartCollarAccess.cs" />
+    <Compile Include="Channels\OA\PART\TOaPartInfoAccess.cs" />
+    <Compile Include="Channels\OA\SUPPLIER\TOaSupplierInfoAccess.cs" />
+    <Compile Include="Channels\OA\SUPPLIER\TOaSupplierJudgeAccess.cs" />
+    <Compile Include="Channels\OA\SW\TOaSwHandleAccess.cs" />
+    <Compile Include="Channels\OA\SW\TOaSwInfoAccess.cs" />
+    <Compile Include="Channels\OA\SW\TOaSwReadAccess.cs" />
+    <Compile Include="Channels\OA\TRAIN\TOaTrainApplyAccess.cs" />
+    <Compile Include="Channels\OA\TRAIN\TOaTrainFileAccess.cs" />
+    <Compile Include="Channels\OA\TRAIN\TOaTrainInfoAccess.cs" />
+    <Compile Include="Channels\OA\TRAIN\TOaTrainPlanAccess.cs" />
+    <Compile Include="Channels\RPT\TRptFileAccess.cs" />
+    <Compile Include="Channels\RPT\TRptFileSignatureAccess.cs" />
+    <Compile Include="Channels\RPT\TRptMarkAccess.cs" />
+    <Compile Include="Channels\RPT\TRptSignatureAccess.cs" />
+    <Compile Include="Channels\RPT\TRptTemplateAccess.cs" />
+    <Compile Include="Channels\RPT\TRptTemplateMarkAccess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="Sys\Duty\TSysDutyAccess.cs" />
+    <Compile Include="Sys\Duty\TSysUserDutyAccess.cs" />
+    <Compile Include="Sys\General\TSysBaseRolePointAccess.cs" />
+    <Compile Include="Sys\General\TSysEngineerAccess.cs" />
+    <Compile Include="Sys\General\TSysMenuAccess.cs" />
+    <Compile Include="Sys\General\TSysMenuPostAccess.cs" />
+    <Compile Include="Sys\General\TSysMenuRoleAccess.cs" />
+    <Compile Include="Sys\General\TSysPostAccess.cs" />
+    <Compile Include="Sys\General\TSysRoleAccess.cs" />
+    <Compile Include="Sys\General\TSysUserAccess.cs" />
+    <Compile Include="Sys\General\TSysUserPostAccess.cs" />
+    <Compile Include="Sys\General\TSysUserProxyAccess.cs" />
+    <Compile Include="Sys\General\TSysUserRoleAccess.cs" />
+    <Compile Include="Sys\General\TSysUserStatusAccess.cs" />
+    <Compile Include="Sys\Log\TSysLogAccess.cs" />
+    <Compile Include="Sys\Log\TSysLogPageAccess.cs" />
+    <Compile Include="Sys\Resource\TSysConfigAccess.cs" />
+    <Compile Include="Sys\Resource\TSysConfigFlowNumAccess.cs" />
+    <Compile Include="Sys\Resource\TSysDictAccess.cs" />
+    <Compile Include="Sys\Resource\TSysSerialAccess.cs" />
+    <Compile Include="Sys\WF\TWfInstControlAccess.cs" />
+    <Compile Include="Sys\WF\TWfInstFileListAccess.cs" />
+    <Compile Include="Sys\WF\TWfInstOpLogAccess.cs" />
+    <Compile Include="Sys\WF\TWfInstTaskDetailAccess.cs" />
+    <Compile Include="Sys\WF\TWfInstTaskOpinionsAccess.cs" />
+    <Compile Include="Sys\WF\TWfInstTaskServiceAccess.cs" />
+    <Compile Include="Sys\WF\TWfSettingBelongsAccess.cs" />
+    <Compile Include="Sys\WF\TWfSettingFlowAccess.cs" />
+    <Compile Include="Sys\WF\TWfSettingFormListAccess.cs" />
+    <Compile Include="Sys\WF\TWfSettingFormMainAccess.cs" />
+    <Compile Include="Sys\WF\TWfSettingFormSubAccess.cs" />
+    <Compile Include="Sys\WF\TWfSettingLinksAccess.cs" />
+    <Compile Include="Sys\WF\TWfSettingTaskAccess.cs" />
+    <Compile Include="Sys\WF\TWfSettingTaskCmdAccess.cs" />
+    <Compile Include="Sys\WF\TWfSettingTaskFormAccess.cs" />
+    <Compile Include="Sys\WF\TWfSettingTaskHasappAccess.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{28A3C76D-D766-42D9-B849-F0A8C1BB4FC4}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ValueObject\ValueObject.csproj">
+      <Project>{55E5F8BA-C5EB-498C-8BBE-6D0A65D1B8C8}</Project>
+      <Name>ValueObject</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Channels\Base\ProcessMgm\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

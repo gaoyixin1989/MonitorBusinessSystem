@@ -1,0 +1,381 @@
+﻿
+/* webform gridview */
+table.grid
+{
+    font-size: 12px;
+    border-collapse: collapse;
+    width: 100%;
+    border-width: 1px;
+}
+table.grid th
+{
+    font-weight: bold;
+    padding: 7px 14px;
+    text-align: center;
+    white-space: nowrap;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+}
+table.grid td a, .data .datagrid-body td a
+{
+    text-decoration: none;
+}
+table.grid td a.add, .data .datagrid-body td a.add
+{
+    background-image: url(images/grid/add.gif);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+}
+table.grid td a.pwd, .data .datagrid-body td a.pwd
+{
+    background-image: url(images/grid/pwd.gif);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 14px;
+    text-align: center;
+}
+
+table.grid td a.user, .data .datagrid-body td a.user
+{
+    background-image: url(images/grid/user.gif);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+}
+table.grid td a.edit, .data .datagrid-body td a.edit
+{
+    background-image: url(images/grid/edit.gif);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+}
+table.grid td a.map, .data .datagrid-body td a.map
+{
+    background-image: url(images/grid/map.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+}
+table.grid td a.view2, .data .datagrid-body td a.view2
+{
+    background-image: url(images/grid/view2.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+}
+table.grid td a.view, .data .datagrid-body td a.view
+{
+    background-image: url(images/grid/view.gif);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+}
+table.grid td a.online, .data .datagrid-body td a.online
+{
+    background-image: url(images/grid/online.gif);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+}
+table.grid td a.offline, .data .datagrid-body td a.offline
+{
+    background-image: url(images/grid/offline.gif);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+}
+table.grid td a.del, .data .datagrid-body td a.del
+{
+    background-image: url(images/grid/del.gif);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+}
+/* 增加录音图标 add by 吕晓林 2011-7-27 */
+table.grid td a.speaker, .data .datagrid-body td a.speaker
+{
+    background-image: url(images/grid/speaker.gif);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+}
+/* 增加远程控制图标 add by 吕晓林 2011-7-27 */
+table.grid td a.runcontrol, .data .datagrid-body td a.runcontrol
+{
+    background-image: url(images/grid/runcontrol.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+}
+
+/* 增加录音文件导出图标 add by 吕晓林 2011-7-27 */
+/* 修改单元格的内容可以换行 Modify by 吕晓林 2012-2-27 */
+table.grid td a.import, .data .datagrid-body td a.import
+{
+    background-image: url(images/grid/import.gif);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+}
+
+table.grid td
+{
+    padding: 5px 0px 5px 6px;
+    /* white-space: nowrap;*/
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+}
+
+/* easy-ui datagrid */
+.data .datagrid-header
+{
+    border-bottom-width: 1px;
+}
+.data .datagrid-pager
+{
+    border-top-width: 1px;
+}
+.data .datagrid-body td, .data .datagrid-footer td
+{
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+}
+.data .datagrid-header td
+{
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+}
+.datagrid-body td, .data .datagrid-footer td
+{
+    padding: 1px 3px;
+    text-align: right;
+}
+.datagrid-header td
+{
+    padding: 1px 3px;
+    font-weight: normal;
+}
+.datagrid, .data table.grid
+{
+    font-family: Arial;
+    font-size: 12px;
+}
+.datagrid-header td
+{
+    font-weight: bold;
+    border-top: none;
+}
+
+
+.metaData
+{
+    width: 100%;
+    line-height: 1.6;
+    border-width: 1px;
+}
+.metaData .meta
+{
+    font-size: 13px;
+    text-align: right;
+    font-weight: normal;
+    padding: 3px 5px 3px 10px;
+}
+.metaData .data
+{
+    text-align: left;
+    padding: 3px 3px 3px 6px;
+    font-size: 12px;
+}
+.controlBorder
+{
+    border-width: 1px;
+}
+div.AnyTime-win
+{
+    border: 0;
+    border-radius: 0 0 0 0;
+    background: none;
+}
+.div.AnyTime-win .AnyTime-hdr
+{
+    border-width: 1px;
+    border-radius: 0 0 0 0;
+    font-size: 13px;
+    padding: 5px 0;
+}
+h6.AnyTime-lbl
+{
+    font-size: 12px;
+}
+.AnyTime-pkr div.AnyTime-x-btn
+{
+    height: 17px;
+    width: 17px;
+    margin: 0 5px 0 0;
+    border-radius: 0 0 0 0;
+}
+li.AnyTime-pkr .AnyTime-btn
+{
+    border-radius: 0 0 0 0;
+}
+.AnyTime-pkr div.AnyTime-body
+{
+    padding: 7px;
+    border-width: 1px;
+}
+div.ui-datepicker
+{
+    border-radius: 0 0 0 0;
+    padding: 0;
+}
+div.ui-datepicker-header
+{
+    border-width: 1px;
+    border-radius: 0 0 0 0;
+    font-size: 13px;
+    padding: 5px 0;
+}
+div.window
+{
+    border-radius: 0 0 0 0;
+    padding: 1px;
+    border-width: 1px;
+}
+div.window .panel-header
+{
+    height: 18px;
+    border-width: 1px;
+}
+div.window .panel-tool-close
+{
+    margin-right: 4px;
+    margin-top: 4px;
+    height: 17px;
+    width: 17px;
+}
+div.window .panel-header .panel-title
+{
+    padding-top: 3px;
+    padding-left: 8px;
+}
+div.window .panel-body
+{
+    border: 0;
+}
+input.search
+{
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 65px;
+    border: 0;
+}
+.btnDefault
+{
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 65px;
+    border: 0;
+}
+.btnPointDefault
+{
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 100px;
+    border: 0;
+}
+.btnDgiDefault
+{
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 120px;
+    border: 0;
+}
+input.add
+{
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 65px;
+    border: 0;
+}
+input.statistics
+{
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 65px;
+    border: 0;
+}
+
+input.export
+{
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 65px;
+    border: 0;
+}
+input.refresh
+{
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 65px;
+    border: 0;
+}
+input.default
+{
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 65px;
+    border: 0;
+}
+input.default5
+{
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 79px;
+    border: 0;
+}

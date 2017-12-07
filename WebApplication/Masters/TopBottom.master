@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Masters_TopBottom" Codebehind="TopBottom.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="~/CSS/Skins/global/index.css" id="globalSkin" rel="stylesheet" type="text/css" />
+       
+    <link href="" rel="stylesheet" type="text/css" id="switchSkin" />
+    
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#div_logout").click(function () {
+                if (confirm("是否要退出系统？")) {
+                    $.get("../login.aspx?logout=1", function () {
+                        window.location = "../login.aspx";
+                    });
+                }
+            });
+
+        
+        if ($.cookie("skin") == null) {
+            $.cookie("skin", "blue", { path: '/' });
+        }
+        var baseURI = $("#globalSkin").attr("href");
+        var baseURIIndex = baseURI.indexOf("/Scripts");
+        var baseURI = baseURI.substring(0, baseURIIndex)
+
+        $(".aSwitchSkin").click(function () {
+            if (!$(this).attr("checked")) {
+                var skin = $(this).attr("skin");
+                $.cookie("skin", skin, { path: '/' });
+                changeSkin();
+                $("#switchSkin").attr("href", baseURI+"/CSS/Skins/" + skin + "/index.css");
+                $("#iFrameLeftMenu").contents().find("#switchSkin").attr("href", baseURI+"/CSS/Skins/" + skin + "/leftMenu.css");
+                $("#iFrameContent").contents().find("#switchSkin").attr("href", baseURI + "/CSS/Skins/" + skin + "/search.css");
+
+                $(".aSwitchSkin").each(function () {
+                    if ($(this).attr("skin") == skin) {
+                        $(this).attr("checked", "true");
+                        $(this).css("background-image", "url(" + baseURI + "/css/skins/global/images/skin/" + skin + "Checked.gif)");
+                    } else {
+                        $(this).css("background-image", "url(" + baseURI + "/css/skins/global/images/skin/" + $(this).attr("skin") + ".gif)");
+                        $(this).removeAttr("checked");
+                    }
+                });
+
+            }
+        });
+        $(".aSwitchSkin[skin='" + $.cookie("skin") + "']").click();
+    });
+    </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="margin:0;">
+    <form id="form1" runat="server">
+    <div id="div_TopMenu" class="ui-layout-north">
+        <!-- 顶部菜单 -->
+        <div class="top">
+            <div class="logo">
+            </div>
+            <div class="topMenu">
+         
+            </div>
+            <div class="topRight">
+            </div>
+            <div style="clear: both;">
+            </div>
+        </div>
+        <div class="topTools">
+            <div style="background-image: url(/view/css/skins/global/images/user.gif); background-repeat: no-repeat;
+                float: left; height: 18px; margin-left: 30px; margin-top: 3px; padding-top: 4px;">
+                <span style="margin-left: 26px;">欢迎您，<%=_PageBase.LogInfo.UserInfo.REAL_NAME%></span>
+            </div>
+            <div class="altButton">
+                <div class="siteCommon" style="float: left;">
+                    
+                    <div class="common" id="div_logout" style="background-image: url(/view/css/skins/global/images/logout.png);">
+                        <span>退出</span>
+                    </div>
+                    <div style="clear: both;">
+                    </div>
+                </div>
+                <div style="float: left; margin-left: 15px;">
+                    <a class="aSwitchSkin" style="background: url(/view/css/skins/global/images/skin/blue.gif);
+                        background-repeat: no-repeat;" skin="blue"></a><a class="aSwitchSkin" style="background: url(/view/css/skins/global/images/skin/green.gif);
+                            background-repeat: no-repeat;" skin="green"></a><a style="clear: both;">
+                    </a>
+                </div>
+                <div style="clear: both;">
+                </div>
+            </div>
+            <div style="clear: both;">
+            </div>
+        </div>
+    </div>
+
+    <div class="ui-layout-center">
+        <!-- 中间内容 -->
+        <div class="ui-layout-content" style="padding: 0;">
+            <div style="width: 100%; height: 100%; background-color: white;">
+               <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <p class="footer" style="margin: 0; text-align: center;">
+            版权：CopyRight@珠海高凌信息科技有限公司</p>
+    </div>
+     
+
+    </form>
+</body>
+</html>

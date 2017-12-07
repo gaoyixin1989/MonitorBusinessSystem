@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--地下饮用水导出配置信息--> 
+
+<!--模板设置-->
+<GlobalSettings type="export">
+  <!--设置监测监测点-->
+  <Point pointtable="T_ENV_P_DRINK_UNDER" verticaltable="" itemtable="T_ENV_P_DRINK_UNDER_ITEM">
+    <PointInfo>
+      <SubPoint>
+        <SubPointCode tablecolumn="POINT_CODE">1</SubPointCode>
+        <SubPointName tablecolumn="POINT_NAME" row="1"  column="0">井水厂</SubPointName>
+      </SubPoint>
+	  <SubPoint>
+        <SubPointCode tablecolumn="POINT_CODE">2</SubPointCode>
+        <SubPointName tablecolumn="POINT_NAME" row="2"  column="0">东周水厂</SubPointName>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="POINT_CODE">3</SubPointCode>
+        <SubPointName tablecolumn="POINT_NAME" row="3"  column="0">石佛水厂</SubPointName>
+      </SubPoint>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->  
+      <FillTableName>T_ENV_FILL_DRINK_UNDER</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>POINT_ID</FillTablePointColumnName>
+      <!--数据填报表对应的垂线字段名称【非必须】-->
+      <FillTableVerticalColumnName></FillTableVerticalColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_DRINK_UNDER_ITEM</FillItemTableName>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="0">年</FillData>
+      <FillData tablecolumn="MONTH" column="5">月</FillData>
+      <FillData tablecolumn="DAY" column="6">日</FillData>
+      <FillData tablecolumn="REMARK1" column="27">备注</FillData>
+    </FillInfo>
+    <ItemInfo>
+    <Item column="7" ItemName="pH值"></Item>
+		<Item column="8" ItemName="总硬度"></Item>
+		<Item column="9" ItemName="硫酸盐">	</Item>
+		<Item column="10" ItemName="氯化物"></Item>
+		<Item column="11" ItemName="高锰酸盐指数"></Item> 
+		<Item column="12" ItemName="氨氮"></Item>
+		<Item column="13" ItemName="氟化物"></Item>
+		<Item column="14" ItemName="总大肠菌群"></Item>
+     <Item column="15" ItemName="亚硝酸盐"></Item>
+		<Item column="16" ItemName="硝酸盐"></Item>
+		<Item column="17" ItemName="挥发酚">	</Item>
+		<Item column="18" ItemName="总氰化物"></Item>
+		<Item column="19" ItemName="砷">	</Item>
+		<Item column="20" ItemName="汞"></Item>
+		<Item column="21" ItemName="六价铬"></Item>
+		<Item column="22" ItemName="铅"></Item>
+		<Item column="23" ItemName="镉">	</Item>
+		<Item column="24" ItemName="铁"></Item>
+		<Item column="25" ItemName="锰"></Item>
+     <Item column="26" ItemName="溶解性总固体"></Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

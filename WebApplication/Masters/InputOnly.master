@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Masters_InputOnly" Codebehind="InputOnly.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <link href="~/CSS/Skins/global/control.css" rel="stylesheet" type="text/css" />
+    <link href="~/CSS/Skins/global/input.css" rel="stylesheet" type="text/css" />
+    <link href="~/Scripts/Controls/dateTimepicker/dateTimepicker.css" rel="stylesheet"
+        type="text/css" />
+    <link href="" rel="stylesheet" type="text/css" id="switchSkin" />
+    <link href="" rel="stylesheet" type="text/css" id="switchSkinControl" />
+    <style>
+        .content
+        {
+            padding: 0;
+        }
+        html
+        {
+            background-color: #EFEBEF;
+        }
+    </style>
+    <script>
+        function changeSkin() {
+            var baseURI = $("#easyuicss").attr("href");
+
+            var baseURIIndex = baseURI.indexOf("/Scripts");
+            var baseURI = baseURI.substring(0, baseURIIndex)
+
+            var skin = $.cookie("skin");
+            $("#switchSkin").attr("href", baseURI + "/CSS/Skins/" + skin + "/input.css");
+            $("#switchSkinControl").attr("href", baseURI + "/CSS/Skins/" + skin + "/control.css");
+
+        }
+        //changeSkin();
+        $(document).ready(function () {
+            $(".metaData > tbody > tr > th").addClass("meta");
+            $(".metaData > tbody > tr > td").addClass("data");
+
+            $("table.metaData").attr("cellspacing", "0").attr("cellpadding", "0");
+            var trs = $(".metaData > tbody > tr");
+            trs.each(function (e) {
+                $(this).children().css("border-bottom", "1px solid #BEBEBE");
+                var meta = $(this).find(".meta").css("border-right", "1px solid #BEBEBE");
+
+                meta.each(function () {
+                    if ($(this).prev().hasClass("data")) {
+                        $(this).css("border-left", "1px solid #BEBEBE");
+                    }
+                });
+
+
+            });
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="margin: 0; padding: 0;">
+    <form id="form1" runat="server">
+    <div class="content">
+        <div class="input">
+            <%--引用该模板时 Table布局编辑页面，必须为表格设置CLASS为metaData，字段名设为TH--%>
+            <asp:ContentPlaceHolder ID="cphInput" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="common">
+            <%-- 事件按钮 --%>
+            <asp:ContentPlaceHolder ID="cphInputCommon" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

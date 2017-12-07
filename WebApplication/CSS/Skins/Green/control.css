@@ -1,0 +1,312 @@
+﻿.clickRow
+{
+    background-color: #FBEC88;
+}
+.hoverRow
+{
+    background-color: #D0E5F5;
+}
+.splitRow
+{
+    background-color: #F0F0F0;
+}
+
+
+.metaData .meta
+{
+    background-color: #E7E3E7;
+}
+.metaData .data
+{
+    background-color: #FFFFFF;
+}
+.metaData
+{
+    border: 1px solid #BEBEBE;
+}
+
+
+/* webform gridview */
+table.grid
+{
+    border: 1px solid #99c773;
+}
+table.grid th
+{
+    background: none repeat scroll 0 0 #cce8ab;
+    border-bottom: 1px solid #99c773;
+    border-right: 1px solid #99c773;
+    color: #666666;
+}
+table.grid td
+{
+    border-bottom: 1px solid #D6D6D6;
+    border-right: 1px solid #D6D6D6;
+}
+table.grid td a:hover, .data .datagrid-body td a:hover
+{
+    color: #EB6D28;
+}
+
+/* easy-ui datagrid */
+.data .datagrid-header
+{
+    background-color: #cce8ab;
+    border-bottom: 1px solid #99c773;
+}
+.data .datagrid-header-inner
+{
+    background-color: #cce8ab;
+}
+.data .datagrid-header td
+{
+    background: none;
+    background-color: #cce8ab;
+    border-bottom: 1px solid #99c773;
+    border-right: 1px solid #99c773;
+    color: #666666;
+}
+.data .datagrid-pager
+{
+    border-top: 1px solid #99c773;
+}
+.data .datagrid-body td, .data .datagrid-footer td
+{
+    border-bottom: 1px solid #D6D6D6;
+    border-right: 1px solid #D6D6D6;
+}
+.data .panel-header
+{
+    background-color: #E0F2FF;
+    border-color: #D6D5D5;
+    color: #484747;
+}
+.data .panel-body
+{
+    border-color: #99c773;
+}
+
+
+
+
+
+.controlBorder
+{
+    border: 1px solid #D6D5D5;
+}
+
+/* AnyTime */
+div.AnyTime-win
+{
+
+    background: none;
+}
+div.AnyTime-body
+{
+    background-color: #FFFFFF;
+}
+div.AnyTime-date, div.AnyTime-time
+{
+    background-color: #EEEEEE;
+}
+div.AnyTime-win .AnyTime-hdr
+{
+    background-image: url(images/datepick/title.gif);
+    border: 1px solid #317518;
+
+}
+li.AnyTime-yrs-past-btn, li.AnyTime-yrs-ahead-btn
+{
+    background-image: url(images/datepick/nextprev.gif);
+}
+tr.AnyTime-dow th
+{
+    background-image: url(images/datepick/daytitle.gif);
+    color: #454444;
+}
+.AnyTime-pkr div.AnyTime-x-btn
+{
+    background-image: url(images/datepick/close.gif);
+}
+.AnyTime-pkr div.AnyTime-body
+{
+    border: 1px solid #6bac50;
+}
+.AnyTime-btn .ui-state-highlight
+{
+    background: none;
+}
+li.ui-state-default
+{
+    background: none;
+}
+li.anyTimeSel-highlight
+{
+    background-color: #B1B1B1;
+    color: White;
+}
+
+/* jquery-ui datepick */
+div.ui-datepicker
+{
+    border-radius: 0 0 0 0;
+    padding: 0;
+}
+div.ui-datepicker-header
+{
+    background-image: url(images/datepick/title.gif);
+    border: 1px solid #3194CD;
+
+    color: white;
+}
+div.ui-datepicker .ui-corner-all
+{
+    background-image: background-image:url(images/datepick/title.gif);
+}
+div.ui-datepicker .ui-widget-header
+{
+    background-image: background-image:url(images/datepick/title.gif);
+}
+/* easy-ui combotree */
+input.combo-text
+{
+    border: none;
+}
+.combo, .panel .combo-panel
+{
+    border-color: #B5B8C9;
+}
+.combo input
+{
+    border: 0;
+}
+
+
+/* easy-ui dialog */
+div.window
+{
+    background: none;
+    border: 1px solid #abcba1;
+}
+
+div.window .panel-header
+{
+    background-image: url(images/dialog/title_bg.gif);
+    border: 1px solid #4da040;
+    color: White;
+}
+div.window .panel-tool-close
+{
+    background: url(images/datepick/close.gif) no-repeat scroll 0 0 transparent;
+}
+
+input.search
+{
+    background-image: url(images/master/search.gif);
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 65px;
+    border: 0;
+}
+.btnDefault
+{
+    background-image: url(images/master/default.jpg);
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 65px;
+    border: 0;
+    color: #075587;
+}
+
+.btnPointDefault
+{
+    background-image: url(images/master/pointDefault.jpg);
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 100px;
+    border: 0;
+    color: #075587;
+}
+
+.btnDgiDefault
+{
+    background-image: url(images/master/dgiDefault.jpg);
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 120px;
+    border: 0;
+    color: #075587;
+}
+
+input.add
+{
+    background-image: url(images/master/add.gif);
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 65px;
+    border: 0;
+}
+input.statistics
+{
+    background-image: url(images/master/statistics.gif);
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 65px;
+    border: 0;
+}
+input.export
+{
+    background-image: url(images/master/export.gif);
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 65px;
+    border: 0;
+}
+input.refresh
+{
+    background-image: url(images/master/refresh.gif);
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 65px;
+    border: 0;
+}
+input.default
+{
+    background-image: url(images/master/default.jpg);
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 65px;
+    border: 0;
+}
+input.default5
+{
+    background-image: url(images/master/default5.jpg);
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 79px;
+    border: 0;
+}
+html
+ {
+      background-color: #F1FFFF;
+     }

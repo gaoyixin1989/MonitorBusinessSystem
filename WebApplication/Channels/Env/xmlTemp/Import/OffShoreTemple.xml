@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--近岸直排导入配置信息-->
+<!--模板设置-->
+<GlobalSettings type="import">
+  <!--pointtable:近岸直排；itemtable:近岸直排监测项目；startrow:Excel的开始行；endrow:Excel的结束行号-->
+  <Point pointtable="T_ENV_P_OFFSHORE" itemtable="T_ENV_P_OFFSHORE_ITEM" startrow="1" endrow="200"> 
+    <PointInfo>
+      <Column tablecolumn="POINT_CODE" column="1" primary="true">排污口编码</Column>
+      <FillData tablecolumn="POINT_NAME"  column="5">排污口名称</FillData>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_OFFSHORE</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>POINT_ID</FillTablePointColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_OFFSHORE_ITEM</FillItemTableName>
+      <!--数据填报表序列号名称【必须】-->
+      <FillTableSerialNum>offshore_fill_id</FillTableSerialNum>
+      <!--数据填报监测项目表序列号名称【必须】-->
+      <FillItemTableSerialNum>offshore_fill_item_id</FillItemTableSerialNum>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="0">年</FillData>
+      <FillData tablecolumn="MONTH"   column="2">月</FillData> 
+      <FillData tablecolumn="DAY" column="3">日</FillData>
+      <FillData tablecolumn="COMPANY_NAME"  column="4">企业名称</FillData>
+      <FillData tablecolumn="JUDGE"  column="6">是否达标</FillData>
+      <FillData tablecolumn="OVERPROOF"  column="7">不达标项目</FillData>
+      <FillData tablecolumn="FLUX"  column="8">污水流量</FillData>
+      <FillData tablecolumn="LET_TIME"  column="9">污水排放时间</FillData>
+      <FillData tablecolumn="WATER_TOTAL"  column="10">污水量</FillData>
+    </FillInfo>
+    <ItemInfo tablecolumn="ITEM_VALUE">
+      <Item column="11">化学需氧量</Item>
+      <Item column="12">五日生化需氧量</Item>
+      <Item column="13">悬浮物</Item>
+      <Item column="14">pH</Item>
+      <Item column="15">石油类</Item>
+      <Item column="16">挥发酚</Item>
+      <Item column="17">氟化物</Item>
+      <Item column="18">动植物油</Item>
+      <Item column="19">六价铬</Item>
+      <Item column="20">硫化物</Item>
+      
+      <Item column="21">氨氮</Item>
+      <Item column="22">总锌</Item>
+      <Item column="23">总硒</Item>
+      <Item column="24">总铜</Item>
+      <Item column="25">总砷</Item>
+      <Item column="26">总铅</Item>
+      <Item column="27">总铍</Item>
+      <Item column="28">总镍</Item>
+      <Item column="29">总锰</Item>
+      <Item column="30">总汞</Item>
+      
+      <Item column="31">总铬</Item>
+      <Item column="32">总镉</Item>
+      <Item column="33">总余氯</Item>
+      <Item column="34">总有机碳</Item>
+      <Item column="35">色度</Item>
+      <Item column="36">阴离子表面活性剂</Item>
+      <Item column="37">氰化物</Item>
+      <Item column="38">粪大肠菌群数</Item>
+      <Item column="39">苯</Item>
+      <Item column="40">甲苯</Item>
+      
+      <Item column="41">乙苯</Item>
+      <Item column="42">元素磷</Item>
+      <Item column="43">有机磷农药</Item>
+      <Item column="44">硝基苯类</Item>
+      <Item column="45">显影剂及氧化物总量</Item>
+      <Item column="46">五氯酚及五氯酚钠</Item>
+      <Item column="47">烷基汞</Item>
+      <Item column="48">四氯乙烯</Item>
+      <Item column="49">四氯化碳</Item>
+      <Item column="50">色度(稀释倍数)</Item>
+      
+      <Item column="51">三氯乙烯</Item>
+      <Item column="52">三氯甲烷</Item>
+      <Item column="53">马拉硫磷</Item>
+      <Item column="54">氯苯</Item>
+      <Item column="55">磷酸盐(以P计)</Item>
+      <Item column="56">邻-二氯苯</Item>
+      <Item column="57">邻-二甲苯</Item>
+      <Item column="58">邻苯二甲酸二辛脂</Item>
+      <Item column="59">邻苯二甲酸二丁脂</Item>
+      <Item column="60">乐果</Item>
+      
+      <Item column="61">可吸附有机卤化物(AOX)</Item>
+      <Item column="62">间-甲酚</Item>
+      <Item column="63">间-二甲苯</Item>
+      <Item column="64">甲醛</Item>
+      <Item column="65">甲基对硫磷</Item>
+      <Item column="66">对-硝基氯苯</Item>
+      <Item column="67">对硫磷</Item>
+      <Item column="68">对-二氯苯</Item>
+      <Item column="69">对-二甲苯</Item>
+      <Item column="70">彩色显影剂</Item>
+      
+      <Item column="71">丙烯腈</Item>
+      <Item column="72">苯酚</Item>
+      <Item column="73">苯并(a)芘</Item>
+      <Item column="74">苯胺类</Item>
+      <Item column="75">2，4-二硝基氯苯</Item>
+      <Item column="76">2,4-二氯酚</Item>
+      <Item column="77">2,4,6-三氯酚</Item>
+      <Item column="78">总氮</Item>
+      <Item column="79">总磷</Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

@@ -1,0 +1,23 @@
+﻿
+.deviceTitle
+{
+    background-image: url(images/custom/title.gif);
+    border-top: 1px solid #2D93CD;
+    border-bottom: 1px solid #2D93CD;
+    color: White;
+    height: 19px;
+    padding: 5px 0 0 13px;
+}
+
+.deviceRight
+{
+    border: 1px solid #2D93CD;
+    font-size: 12px;
+    margin-left: 8px;
+}
+.deviceRightTitle
+{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0 3px 8px;
+}

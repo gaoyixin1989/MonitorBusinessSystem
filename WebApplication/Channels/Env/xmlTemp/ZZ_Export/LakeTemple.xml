@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--河流导出配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="export">
+  <!--设置监测监测点-->
+  <!--设置监测监测点-->
+  <Point pointtable="T_ENV_P_LAKE" verticaltable="T_ENV_P_LAKE_V" itemtable="T_ENV_P_LAKE_V_ITEM">
+    <PointInfo>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">352</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="1"  column="6">库中</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+      <SubPoint>
+        <SubPointCode tablecolumn="SECTION_CODE">461</SubPointCode>
+        <SubPointName tablecolumn="SECTION_NAME" row="2"  column="6">白沙水库</SubPointName>
+        <Vertical pointcolumn="SECTION_ID" tablecolumn="VERTICAL_NAME">监测点</Vertical>
+      </SubPoint>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_LAKE</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>SECTION_ID</FillTablePointColumnName>
+      <!--数据填报表对应的垂线字段名称【非必须】-->
+      <FillTableVerticalColumnName>POINT_ID</FillTableVerticalColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_LAKE_ITEM</FillItemTableName>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="0">年</FillData>
+      <FillData tablecolumn="MONTH" column="1">月</FillData>
+      <FillData tablecolumn="DAY" column="8">采样日期</FillData>
+      <FillData tablecolumn="KPF" column="9">水期代码</FillData>
+      <FillData tablecolumn="JUDGE" column="43">标识符行</FillData>  
+    </FillInfo>
+    <ItemInfo >
+      <Item column="10" ItemName="水温">     </Item>
+      <Item column="11" ItemName="水位">      </Item>
+      <Item column="12" ItemName="pH值"></Item>
+      <Item column="13" ItemName="电导率"></Item> 
+      <Item column="14" ItemName="透明度"></Item>
+      <Item column="15" ItemName="溶解氧"></Item>
+      <Item column="16" ItemName="高锰酸盐指数"></Item>
+      <Item column="17" ItemName="五日生化需氧量"></Item>
+      <Item column="18" ItemName="氨氮"></Item>
+      <Item column="19" ItemName="石油类"></Item>
+      <Item column="20" ItemName="总氮"></Item>
+      <Item column="21" ItemName="总磷"></Item>
+      <Item column="22" ItemName="叶绿素α"></Item>
+      <Item column="23" ItemName="挥发酚"></Item>
+      <Item column="24" ItemName="汞"></Item>
+      <Item column="25" ItemName="铅"></Item>
+      <Item column="26" ItemName="化学需氧量"></Item>
+      <Item column="27" ItemName="铜"></Item>
+      <Item column="28" ItemName="锌"></Item>
+      <Item column="29" ItemName="氟化物"></Item>
+      <Item column="30" ItemName="硒"></Item>
+      <Item column="31" ItemName="砷"></Item>
+      <Item column="32" ItemName="镉"></Item>
+      <Item column="33" ItemName="六价铬"></Item>
+      <Item column="34" ItemName="总氰化物"></Item>
+      <Item column="35" ItemName="阴离子表面活性剂"></Item>
+      <Item column="36" ItemName="硫化物"></Item>
+      <Item column="37" ItemName="粪大肠菌群类"></Item>
+      <Item column="38" ItemName="硫酸盐"></Item>
+      <Item column="39" ItemName="氯化物"></Item>
+      <Item column="40" ItemName="硝酸盐"></Item>
+      <Item column="41" ItemName="铁"></Item>
+      <Item column="42" ItemName="锰"></Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

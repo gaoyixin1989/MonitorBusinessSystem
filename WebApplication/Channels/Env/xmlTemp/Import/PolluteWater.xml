@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--污染源常规废水导入配置信息-->
+<!--模板设置-->
+<GlobalSettings type="import">
+  <Point pointtable="T_ENV_P_POLLUTE" itemtable="T_ENV_P_POLLUTE_ITEM" startrow="1" endrow="200">  
+    <PointInfo>
+      <Column tablecolumn="POINT_NAME" column="6" primary="true">监测点名称</Column>
+    </PointInfo>
+  </Point>
+  
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_POLLUTE_WATER</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>POINT_ID</FillTablePointColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_POLLUTE_WATER_ITEM</FillItemTableName>
+      <!--数据填报表序列号名称【必须】-->
+      <FillTableSerialNum>PolluteWater_fill_id</FillTableSerialNum>
+      <!--数据填报监测项目表序列号名称【必须】-->
+      <FillItemTableSerialNum>PolluteWater_fill_item_id</FillItemTableSerialNum>
+    </Config>
+
+    <!--数据填报表字段-->
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="0">年</FillData>
+      <FillData tablecolumn="EnterPrise_Name" primary="true" column="1">企业名称</FillData>
+      <FillData tablecolumn="Season" column="2">季度</FillData>
+      <FillData tablecolumn="Times" column="3">次数</FillData>
+      <FillData tablecolumn="MONTH"  column="4">月</FillData>
+      <FillData tablecolumn="DAY"   column="5">日</FillData>
+      <FillData tablecolumn="Water_Code"  column="7">受纳水体代码</FillData>
+      <FillData tablecolumn="Water_Name"   column="8">受纳水体名称</FillData>
+      <FillData tablecolumn="WaterQty"   column="9">废水排放量</FillData>
+      <FillData tablecolumn="Is_Run"   column="10">治理设施是否正常运行</FillData>
+      <FillData tablecolumn="Load_Mode"  column="11">工况负荷</FillData>
+      <FillData tablecolumn="In_Water_Qty"  column="12">进口水量</FillData>
+      <FillData tablecolumn="Is_Evaluate"  column="13">是否参与评价</FillData>
+    </FillInfo>
+
+    <!--数据填报监测项目表字段-->
+    <ItemInfo tablecolumn="ITEM_VALUE">
+      <Item column="14">PH值</Item>
+      <Item column="15">五日生化需氧量</Item>
+      <Item column="16">化学需氧量</Item>
+      <Item column="17">挥发酚</Item>
+      <Item column="18">悬浮物</Item> 
+      <Item column="19">氨氮(非离子氨)</Item>
+      <Item column="20">硫化物</Item>
+      <Item column="21">总磷</Item>
+      <Item column="22">色度</Item>
+      <Item column="23">石油类</Item>
+      <Item column="24">总铬</Item>
+      <Item column="25">六价铬</Item>
+      <Item column="26">总铜</Item>
+      <Item column="27">总汞</Item>
+      <Item column="28">氰化物</Item>
+      <Item column="29">磷酸盐</Item>
+      <Item column="30">总镍</Item>
+      <Item column="31">总银</Item>
+      <Item column="32">总氮</Item>
+      <Item column="33">总锌 </Item>
+    </ItemInfo>
+    
+  </FillData>
+
+
+</GlobalSettings>

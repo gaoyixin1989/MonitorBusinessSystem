@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* author: tonytian */
+/* mail: kevin903@163.com */
+
+/* reset */
+html { scrollbar-3d-light-color:#fff; scrollbar-arrow-color:#0069C2;
+scrollbar-base-color:#C3C3C3; scrollbar-darkshadow-color:#fff; scrollbar-face-color:#ddd;
+scrollbar-highlight-color:#fff; scrollbar-shadow-color:#B6B6B6; scrollbar-track-color:#F3F3F3;}
+body { width:100%; height:100%; font:12px Arial,Tahoma,"宋体"; text-align:center;}
+input,select,textarea { font-family:Arial,Tahoma,"宋体";}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,blockquote,fieldset,div,strong,label,em{ margin:0;padding:0;border:0;}
+input,textarea,blockquote { padding:0; margin:0;} 
+html { background:#FFF; border:0;}
+fieldset,img,abbr,acronym { border:0;} 
+address,caption,cite,code,dfn,em,th,var { font-weight:normal; font-style:normal;} 
+ol,ul { list-style:none;} 
+caption { text-align:left;} 
+h1,h2,h3,h4,h5,h6 { font-weight:normal; font-size:100%;} 
+hr { display:block;margin:0.5em auto; border-style:inset; border-width:1px;}
+map { display:inline;}
+label { cursor:default;}
+.clearfloat{height:0;font-size:1px;clear:both;line-height:0;}
+
+/* structure */
+html { background:#FFF;}
+
+/* header */
+.header { width:100%; height:60px; background:url(../images/bodyBg01.gif) repeat-x left top;}
+.headerInner {}
+.headerInner span { height:60px; display:block; background:url(../images/logo.gif) no-repeat 8px 6px;}
+.headerInner span p { height:26px; display:block; float:right; line-height:26px; margin-top:16px; padding-right:10px; color:#333; }
+.headerInner span p em { color:#235799; padding-right:6px;}
+.headerInner span p a { color:#235799; text-decoration:none; padding:0 4px;}
+.headerInner span p a:hover { color:#333; text-decoration:underline;}
+
+/* wrapper */
+.wrapper { margin:0 5px;} 
+
+.menu { width:100%; float:left; height:40px; font-size:12px; background:url(../images/bg01.gif) repeat-x left -80px;}
+.menu .mcleft,.menu .mcright { display:block; width:6px; height:36px; font-size:0;}
+.menu .mcleft { float:left; background:url(../images/bg01.gif) no-repeat left top;}
+.menu .mcright { float:right; background:url(../images/bg01.gif) no-repeat right -40px;}
+.menu ul { list-style:none; height:36px; float:left;}  
+.menu ul li { display:inline; height:36px; float:left; line-height:36px; background:url(../images/bg01.gif) no-repeat right -120px;}
+.menu ul li a { color:#FFF; float:left; display:block; padding:0 18px 0 14px; _padding:0 16px 0 13px; text-decoration:none; cursor:pointer;}
+.menu ul li em { display:block; width:20px; height:18px; float:left; background-repeat:no-repeat; margin-top:9px; font-size:0;}
+em.ic01 { background:url(../images/iconBg01.gif) left -1px;}
+em.ic02 { background:url(../images/iconBg01.gif) left -50px;}
+em.ic03 { background:url(../images/iconBg01.gif) left -100px;}
+em.ic04 { background:url(../images/iconBg01.gif) left -150px;}
+em.ic05 { background:url(../images/iconBg01.gif) left -200px;}
+em.ic06 { background:url(../images/iconBg01.gif) left -250px;}
+
+/* left */
+.left { width:183px; float:left; background:#FFF;}
+.leftInner { width:175px; background:#F3F6FA; float:left; border-left:1px #92c6e6 solid; overflow:hidden; /*overflow-x:hidden;*/}
+.leftInner ul { width:175px; list-style:none; position:relative; }
+/* By 胡方扬 2012-10-25
+.leftInner ul li { width:232px; float:left; text-align:left; background:url(../images/bg01.gif) repeat-x left -160px;}
+
+.leftInner ul li p { width:232px; height:28px; display:block; background:url(../images/bg05.gif) no-repeat 8px 6px; cursor:pointer;}*/
+
+
+.leftInner ul li { width:175px; float:left; text-align:left;}
+.leftInner ul li p { width:175px; height:28px; display:block;background:url(../images/bg01.gif) repeat-x left -160px; cursor:pointer; background-position:bottom;}
+.leftInner ul li p b,.leftInner ul li.open p b
+{ display:block; width:170px; height:28px;line-height:28px; float:left; font-weight:normal; color:#4a6884; text-indent:28px; font-weight:bold; cursor:pointer; }
+.leftInner ul li p b { background:url(../images/bg05.gif) no-repeat right -55px;}
+.leftInner ul li.open p b { background:url(../images/bg05.gif) no-repeat right -25px;}
+
+
+.leftInner ul li div.leftCo { width:168px; display:none; padding:2px 0; margin:0 auto;  height:235px; /*height:150px;在1024乘768分辨率情况下请用这个高度*/ overflow-x:hidden;  overflow-y:auto; position:relative; zoom:1;  }
+.leftInner ul li div.leftCo ul li { line-height:normal;}
+
+.arrow { width:6px; float:left; border-left:1px #92c6e6 solid; background:#bcdff2; font-size:0; position:relative; left:0; cursor:pointer;}
+.arrow span { display:block; width:6px; height:40px; position:absolute; top:44%; left:0; font-size:0;}
+.left .arrow span { background:url(../images/bg02.gif) no-repeat left top;}
+.leftClose .arrow span { background:url(../images/bg02.gif) no-repeat -30px top;}
+.leftClose { width:6px; float:left; background:#FFF;}
+.leftClose .leftInner { display:none;}
+/* left dtree */
+.dtree { text-align:left;}
+
+
+/* right */
+.right { margin-left:183px; _float:left; _margin-left:0; _margin-right:5px;}
+.right iframe {overflow-x:hidden; width:100%;}
+.rightOpen { margin-left:10px; _float:left; _margin-left:0;}
+#mainFrm { border-right:1px #92c6e6 solid; margin-left:-1px;}
+
+body
+{
+scrollBar-face-color: #e9f1f6; 
+scrollBar-hightLight-color: #8fa6c3; 
+scrollBar-3dLight-color: #e0ecf5; 
+scrollBar-darkshadow-color:#80a5c4; 
+scrollBar-shadow-color:aabdcb; 
+scrollBar-arrow-color:#6898bd; 
+scrollBar-track-color:#eaf3f9; 
+scrollBar-base-color:#8fa6c3; }
+

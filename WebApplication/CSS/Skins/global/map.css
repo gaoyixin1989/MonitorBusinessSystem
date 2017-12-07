@@ -1,0 +1,125 @@
+﻿#dijit_layout_ContentPane_1_button
+{
+    text-align: center;
+    font-family: 宋体;
+    font-size: 12px;
+    padding: 10px 0;
+    background-color: #F4F9F9;
+}
+#dijit_layout_ContentPane_1
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#div_MapReport
+{
+
+    height: 17px;
+    padding-top: 4px;
+}
+#div_MapReportContent
+{
+    text-align:center;
+    padding: 3px 0 8px 0;
+}
+.btnPopReport
+{background-repeat:no-repeat;
+    display:   inline-block;
+    height: 24px;
+    line-height: 1.6;
+    padding-left: 0px;
+    width: 65px;
+    margin-top:3px;
+    margin-left:3px;
+    text-align: center;
+}
+.btnReport
+{
+    display:   inline-block;
+    height: 24px;
+    line-height: 1.6;
+    padding-left: 6px;
+    width: 59px;
+    margin-top:3px;
+    text-align: center;
+}
+#PIF_PointInfo
+{
+    font-size: 12px;
+    font-family: 宋体;
+}
+#PIF_PointInfo .title
+{
+    text-align: center;
+    height: 17px;
+    padding-top: 4px;
+}
+#PIF_PointRealDataPanel
+{
+    padding:8px 0;
+     text-align:center;
+}
+#PIF_NoiseRealData
+{
+     font-weight:bold;
+     font-size:50px;
+}
+#PIF_TrafficRealData
+{
+     font-weight:bold;
+     font-size:50px;
+}
+#PIF_PollutionRealData
+{
+     font-weight:bold;
+     font-size:50px;
+}
+
+        
+         .metaData
+{
+    width: 100%;
+    line-height: 1.6;
+    border-collapse:collapse;
+}
+ .meta
+{
+    font-size: 13px;
+    text-align: right;
+    font-weight: normal;
+    padding: 3px 5px 3px 10px;
+}
+ .data
+{
+    text-align: left;
+    padding: 3px 3px 3px 6px;
+    font-size:12px;
+}
+
+
+
+.metaPopData
+{   float: left;
+    left:5px;
+    width: 205px;
+    line-height: 1.6;
+    margin:0px 0px 0px 5px;
+    border-collapse:collapse;
+}
+.metaPopData tbody tr  th
+{  font-size: 12px;
+    text-align: right;
+    font-weight: normal;
+    border-bottom:1px solid #BEBEBE;
+    padding: 0px 3px 0px 3px;
+    border-collapse:collapse;
+}
+.metaPopData  tbody tr td
+{  text-align: left;
+    padding: 0px 3px 0px 3px;
+    border-bottom:1px solid #BEBEBE;
+    border-left:1px solid #BEBEBE;
+    font-size:12px;
+    border-collapse:collapse;
+}

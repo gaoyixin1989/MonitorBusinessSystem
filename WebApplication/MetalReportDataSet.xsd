@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TEnvMetalReportDataSet" targetNamespace="http://tempuri.org/TEnvMetalReportDataSet.xsd" xmlns:mstns="http://tempuri.org/TEnvMetalReportDataSet.xsd" xmlns="http://tempuri.org/TEnvMetalReportDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TEnvMetalReportDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="TEnvMetalReportDataSet" msprop:Generator_UserDSName="TEnvMetalReportDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MetalTable" msprop:Generator_TableClassName="MetalTableDataTable" msprop:Generator_TableVarName="tableMetalTable" msprop:Generator_TablePropName="MetalTable" msprop:Generator_RowDeletingName="MetalTableRowDeleting" msprop:Generator_UserTableName="MetalTable" msprop:Generator_RowChangingName="MetalTableRowChanging" msprop:Generator_RowEvHandlerName="MetalTableRowChangeEventHandler" msprop:Generator_RowDeletedName="MetalTableRowDeleted" msprop:Generator_RowEvArgName="MetalTableRowChangeEvent" msprop:Generator_RowChangedName="MetalTableRowChanged" msprop:Generator_RowClassName="MetalTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="section_name" msdata:Caption="point_name" msprop:Generator_ColumnVarNameInTable="columnsection_name" msprop:Generator_ColumnPropNameInRow="section_name" msprop:Generator_ColumnPropNameInTable="section_nameColumn" msprop:Generator_UserColumnName="section_name" type="xs:string" minOccurs="0" />
+              <xs:element name="station_name" msdata:Caption="begin_date" msprop:Generator_ColumnVarNameInTable="columnstation_name" msprop:Generator_ColumnPropNameInRow="station_name" msprop:Generator_ColumnPropNameInTable="station_nameColumn" msprop:Generator_UserColumnName="station_name" type="xs:string" minOccurs="0" />
+              <xs:element name="province" msdata:Caption="end_date" msprop:Generator_ColumnVarNameInTable="columnprovince" msprop:Generator_ColumnPropNameInRow="province" msprop:Generator_ColumnPropNameInTable="provinceColumn" msprop:Generator_UserColumnName="province" type="xs:string" minOccurs="0" />
+              <xs:element name="river" msdata:Caption="rain_type" msprop:Generator_ColumnVarNameInTable="columnriver" msprop:Generator_ColumnPropNameInRow="river" msprop:Generator_ColumnPropNameInTable="riverColumn" msprop:Generator_UserColumnName="river" type="xs:string" minOccurs="0" />
+              <xs:element name="valley" msdata:Caption="precipitation" msprop:Generator_ColumnVarNameInTable="columnvalley" msprop:Generator_ColumnPropNameInRow="valley" msprop:Generator_ColumnPropNameInTable="valleyColumn" msprop:Generator_UserColumnName="valley" type="xs:string" minOccurs="0" />
+              <xs:element name="condition_name" msdata:Caption="num" msprop:Generator_ColumnVarNameInTable="columncondition_name" msprop:Generator_ColumnPropNameInRow="condition_name" msprop:Generator_ColumnPropNameInTable="condition_nameColumn" msprop:Generator_UserColumnName="condition_name" type="xs:int" minOccurs="0" />
+              <xs:element name="item_name" msprop:Generator_ColumnVarNameInTable="columnitem_name" msprop:Generator_ColumnPropNameInRow="item_name" msprop:Generator_ColumnPropNameInTable="item_nameColumn" msprop:Generator_UserColumnName="item_name" type="xs:string" minOccurs="0" />
+              <xs:element name="item_value" msprop:Generator_ColumnVarNameInTable="columnitem_value" msprop:Generator_ColumnPropNameInRow="item_value" msprop:Generator_ColumnPropNameInTable="item_valueColumn" msprop:Generator_UserColumnName="item_value" type="xs:string" minOccurs="0" />
+              <xs:element name="item_id" msprop:Generator_ColumnVarNameInTable="columnitem_id" msprop:Generator_ColumnPropNameInRow="item_id" msprop:Generator_ColumnPropNameInTable="item_idColumn" msprop:Generator_UserColumnName="item_id" type="xs:string" minOccurs="0" />
+              <xs:element name="order_num" msprop:Generator_ColumnVarNameInTable="columnorder_num" msprop:Generator_ColumnPropNameInRow="order_num" msprop:Generator_ColumnPropNameInTable="order_numColumn" msprop:Generator_UserColumnName="order_num" type="xs:string" minOccurs="0" />
+              <xs:element name="section_id" msprop:Generator_ColumnVarNameInTable="columnsection_id" msprop:Generator_ColumnPropNameInRow="section_id" msprop:Generator_ColumnPropNameInTable="section_idColumn" msprop:Generator_UserColumnName="section_id" type="xs:string" minOccurs="0" />
+              <xs:element name="vertical_id" msprop:Generator_ColumnVarNameInTable="columnvertical_id" msprop:Generator_ColumnPropNameInRow="vertical_id" msprop:Generator_ColumnPropNameInTable="vertical_idColumn" msprop:Generator_UserColumnName="vertical_id" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

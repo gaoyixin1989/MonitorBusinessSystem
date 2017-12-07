@@ -1,0 +1,218 @@
+﻿.dijit_layout_ContentPane_1_button
+{
+    background-color: #F4F6F6;
+    font-family: 宋体;
+    color: Black;
+    text-align: center;
+    padding: 10px 0;
+}
+#dijit_layout_ContentPane_1
+{
+    border: 0;
+}
+#dijit_layout_AccordionContainer_0
+{
+    border-left: 2px solid #84C6E3;
+}
+.claro .dijitSlider .dijitSliderProgressBarV, .claro .dijitSlider .dijitSliderBottomBumper
+{
+    background-color: #C0EAFF;
+}
+.claro .dijitSlider .dijitSliderRemainingBarV, .claro .dijitSlider .dijitSliderTopBumper
+{
+    border-color: #6DCDF3;
+}
+
+.claro .dijitSlider .dijitSliderProgressBarV, .claro .dijitSlider .dijitSliderBottomBumper
+{
+    border-color: #6DCDF3;
+}
+.claro .dijitSliderDecrementIconV
+{
+    background-position: 0 0;
+}
+.claro .dijitSliderDecrementIconH, .claro .dijitSliderIncrementIconH, .claro .dijitSliderDecrementIconV, .claro .dijitSliderIncrementIconV
+{
+    border: 0;
+    border-radius: 0 0 0 0;
+    width: 15px;
+    height: 15px;
+}
+.dijitSliderDecrementIconV
+{
+    background-image: url(images/map/zoom_.gif);
+}
+.dijitSliderIncrementIconV
+{
+    background-image: url(images/map/zoom_.gif);
+}
+.claro .dijitTitlePaneTitle
+{
+    border: 1px solid #5B9400;
+    background-image: url(images/map/maptype.gif);
+    height: 20px;
+    font-family: 宋体;
+    font-size: 13px;
+    padding: 0 7px 0 0;
+    text-align: center;
+}
+.mapSelect
+{
+    background-image: url(images/map/mapSelect.gif);
+    height: 21px;
+    border-top: 1px solid #9FCEAA;
+    border-bottom: 1px solid #9FCEAA;
+}
+.mapborderl
+{
+    border-left: 1px solid #9FCEAA;
+}
+.mapborderr
+{
+    border-right: 1px solid #9FCEAA;
+}
+.mapCurr
+{
+    background-image: url(images/map/mapCurr.gif);
+    border: 1px solid #AEBAB1;
+}
+#PIF_PointInfo .title
+{text-align : center;
+    background-image: url(images/map/mapRightTitle.gif);
+    border-top: 1px solid #23B0E5;
+    border-bottom: 1px solid #23B0E5;
+}
+#PIF_PointInfo .reportTitle
+{text-align : center;
+    background-image: url(images/map/mapRightTitle.gif);
+    border-top: 1px solid #23B0E5;
+    border-bottom: 1px solid #23B0E5;
+}
+.btnPopReport
+{
+    background-image: url(images/map/btnReport.gif);
+    cursor: pointer;
+}
+.btnReport
+{
+    background-image: url(images/map/btnReport.gif);
+    cursor: pointer;
+}
+#PIF_PointRealDataPanel
+{
+    border-top: 3px solid #B6E9F8;
+    border-bottom: 3px solid #B6E9F8;
+}
+#divMapAD
+{
+    text-align : center;
+    border-top: 1px solid #23B0E5;
+}
+.mapRightTable td
+{
+    border-bottom: 1px solid #DCE4EA;
+    border-right: 1px solid #DCE4EA;
+    padding: 4px;
+}
+
+ #PointStatusCutNav
+{
+    background-image: url(images/map/desccut.jpg);
+    width: 106px;
+    height: 65px;
+}
+
+#PointStatusNav
+{
+    background-image: url(images/map/desc.gif);
+    width: 106px;
+    height: 100px;
+}
+#PolyStatusNav
+{
+    background-image: url(images/map/standard.gif);
+    width: 68px;
+    height: 190px;
+}
+#PolyStatusTrafficNav
+{
+    background-image: url(images/map/traffic.gif);
+    width: 77px;
+    height: 74px;
+}
+.map3D
+{
+    background-image: url(images/map/3dMap.png);
+    background-repeat: no-repeat;
+}
+
+.mapZoom .zoomT,.mapZoom .zoomL,.mapZoom .zoomR,.mapZoom .zoomC,.mapZoom .zoomB,.mapZoom .zoomAdd,.mapZoom .zoomMinus
+{
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor:pointer;
+    background-repeat:no-repeat;
+    }
+.mapZoom .zoomT
+{
+    background-image: url(images/map/mtop.gif);
+    
+}
+.mapZoom .zoomAdd
+{
+    background-image: url(images/map/mzoomadd.gif);
+    }
+.mapZoom .zoomL
+{
+    background-image: url(images/map/mleft.gif);
+   
+}
+.mapZoom .zoomR
+{
+    background-image: url(images/map/mright.gif);
+    
+}
+.mapZoom .zoomC
+{
+    background-image: url(images/map/mcenter.gif);
+}
+.mapZoom .zoomB
+{
+    background-image: url(images/map/mbottom.gif);
+}
+.mapZoom .zoomMinus
+{
+        background-image: url(images/map/mZoom-.gif);
+    }
+.mapZoom .zoomSc
+{
+    border: 1px solid #6DCDF3;
+    height: 80px;
+    display: inline-block;
+    margin-left: 3px;
+    width: 7px;
+     background-color:#C0EAFF;
+}
+.mapZoom .zoomSc .zoomScc
+{
+    background-color:  White;
+    width: 7px;
+    display:inline-block;
+}
+
+.metaData .meta{ background-color:#E7E3E7;}
+.metaData .data{ background-color:#FFFFFF;}
+.metaData
+{
+    
+    border: 1px solid #BEBEBE;
+}
+
+.metaPopData
+{
+    
+    border: 1px solid #BEBEBE;
+}
+.metaPopData tbody tr  th{ background-color:#E7E3E7;}
+.metaPopData  tbody tr td{ background-color:#FFFFFF;}

@@ -1,0 +1,62 @@
+﻿#tabContainer
+{
+    float: left;
+    height: 1024px;
+    background-color: #D8E9EC;
+    padding-top: 12px;
+    width: 21px;
+    margin-top:1px; padding-left:3px;
+}
+#tabContainer ul{ list-style:none;}
+
+#tabContainer a.on
+{
+    color: Black;
+    background-image: url(image/tab.png);
+    background-repeat: no-repeat;
+}
+#tabContainer a
+{
+    color: White;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-image: url(image/tabSelect.png);
+    width: 21px;
+    height: 98px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+#DivContainer
+{
+    background: url(image/tabBG.png) repeat-y 0 0;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="image/tabBG.png" ,sizingMethod="crop");
+    float: left;
+    height: 1024px;
+    left: 21px;
+    margin-top: 1px;
+    position: absolute;
+    padding-top: 13px;
+    z-index:1;
+}
+#con2
+{
+    padding-left: 3px;
+}
+
+#tabContainer li
+{
+    text-align: center;
+}
+#tabContainer ul
+{
+    position:absolute;
+    z-index:2;
+    padding: 0;
+    margin: 0;
+}
+#tabContainer a
+{
+    display: block;
+}

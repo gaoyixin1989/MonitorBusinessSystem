@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--环境空气导出配置信息-->
+
+<!--模板设置-->
+<GlobalSettings type="export">
+  <Point pointtable="T_ENV_P_AIR" itemtable="T_ENV_P_AIR_ITEM" startrow="2">
+    <PointInfo>
+      <Column tablecolumn="POINT_NAME" column="1">监测点名称</Column>
+    </PointInfo>
+  </Point>
+  <!--数据填报信息-->
+  <FillData>
+    <Config>
+      <!--数据填报表名称【必须】-->
+      <FillTableName>T_ENV_FILL_AIR</FillTableName>
+      <!--数据填报表对应的监测点字段名称【必须】-->
+      <FillTablePointColumnName>POINT_ID</FillTablePointColumnName>
+      <!--数据填报监测项目表名称【必须】-->
+      <FillItemTableName>T_ENV_FILL_AIR_ITEM</FillItemTableName>
+    </Config>
+    <FillInfo>
+      <FillData tablecolumn="YEAR" column="0">年</FillData>
+      <FillData tablecolumn="MONTH" column="2">月</FillData>
+      <FillData tablecolumn="DAY"   column="3">日</FillData>
+      <FillData tablecolumn="AQI_CODE" column="4">空气质量指数</FillData>
+      <FillData tablecolumn="AIR_LEVEL" column="5">空气质量级别</FillData>
+      <FillData tablecolumn="AIR_STATE" column="6">空气质量状况</FillData>
+      <FillData tablecolumn="MAIN_AIR" column="7">首要污染物</FillData>
+    </FillInfo>
+    <ItemInfo>
+      <Item column="8" ItemName="二氧化硫">
+        <Evaluation rowtype="horizontal" tablecolumn="IAQI" column="9">二氧化硫污染物分指数</Evaluation>
+      </Item>
+      <Item column="10"  ItemName="二氧化氮">
+        <Evaluation rowtype="horizontal" tablecolumn="IAQI" column="11">二氧化氮污染物分指数</Evaluation>
+      </Item>
+      <Item column="12"  ItemName="一氧化碳">
+        <Evaluation rowtype="horizontal" tablecolumn="IAQI" column="13">一氧化碳污染物分指数</Evaluation>
+      </Item>
+      <Item column="14"  ItemName="PM10">
+        <Evaluation rowtype="horizontal" tablecolumn="IAQI" column="15">PM10污染物分指数</Evaluation>
+      </Item>
+      <Item column="16"  ItemName="PM2.5">
+        <Evaluation rowtype="horizontal" tablecolumn="IAQI" column="17">PM2.5污染物分指数</Evaluation>
+      </Item>
+      <Item column="18"  ItemName="臭氧最大8小时滑动平均">
+        <Evaluation rowtype="horizontal" tablecolumn="IAQI" column="19">臭氧最大8小时滑动平均污染物分指数</Evaluation>
+      </Item>
+    </ItemInfo>
+  </FillData>
+</GlobalSettings>

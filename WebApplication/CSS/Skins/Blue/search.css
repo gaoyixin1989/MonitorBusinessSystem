@@ -1,0 +1,36 @@
+﻿
+.filter input.search
+{
+    background-image: url(images/master/search.gif);
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    padding: 0;
+    width: 65px;
+    border: 0;
+}
+/* 工具栏 */
+.common
+{
+    background-image: url(images/grid/topTool.gif);
+    border-left: 1px solid #8CCAF5;
+    border-right: 1px solid #8CCAF5;
+    border-top: 1px solid #8CCAF5;
+    height: 26px;
+}
+.dataPager
+{
+      background-image: url(images/grid/paging.gif);
+    border-bottom: 1px solid #8FC0E3;
+    border-left: 1px solid #8FC0E3;
+    border-right: 1px solid #8FC0E3;
+    height: 24px;
+    padding-left: 25px;
+    padding-top: 3px;
+    }
+    .dataPager .curPage{padding-top: 4px;}
+.firstPage,.prevPage,.nextPage,.lastPage{ text-decoration:none; display:inline-block; width:16px; height:16px; cursor:pointer;}
+    .firstPage{  background-image:url(images/grid/pagination_first.gif); }
+    .prevPage{  background-image:url(images/grid/pagination_prev.gif); }
+    .nextPage{  background-image:url(images/grid/pagination_next.gif); }
+    .lastPage{  background-image:url(images/grid/pagination_last.gif); }
